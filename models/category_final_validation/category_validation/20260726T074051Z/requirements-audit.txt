@@ -1,0 +1,3 @@
+# Standalone binary AndroidManifest.xml decoder. This package is used only via
+# its low-level AXMLPrinter on in-memory manifest bytes; no APK/DEX API is used.
+axml==0.0.2

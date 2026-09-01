@@ -1,0 +1,2625 @@
+{
+  "feature_count": 153,
+  "ordered_feature_list_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+  "source_permission_columns": 309,
+  "single_source_features": 11,
+  "multi_source_features": 142,
+  "features": [
+    {
+      "feature": "android.permission.ACCESS_ALL_DOWNLOADS",
+      "bare_name": "ACCESS_ALL_DOWNLOADS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14639,
+          "raw_header": "android.permission.ACCESS+AF8-ALL+AF8-DOWNLOADS",
+          "decoded_header": "android.permission.ACCESS_ALL_DOWNLOADS"
+        },
+        {
+          "zero_based_index": 40277,
+          "raw_header": "android.permission.ACCESS_ALL_DOWNLOADS",
+          "decoded_header": "android.permission.ACCESS_ALL_DOWNLOADS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_CACHE_FILESYSTEM",
+      "bare_name": "ACCESS_CACHE_FILESYSTEM",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14643,
+          "raw_header": "android.permission.ACCESS+AF8-CACHE+AF8-FILESYSTEM",
+          "decoded_header": "android.permission.ACCESS_CACHE_FILESYSTEM"
+        },
+        {
+          "zero_based_index": 33728,
+          "raw_header": "android.permission.ACCESS_CACHE_FILESYSTEM",
+          "decoded_header": "android.permission.ACCESS_CACHE_FILESYSTEM"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_CHECKIN_PROPERTIES",
+      "bare_name": "ACCESS_CHECKIN_PROPERTIES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14644,
+          "raw_header": "android.permission.ACCESS+AF8-CHECKIN+AF8-PROPERTIES",
+          "decoded_header": "android.permission.ACCESS_CHECKIN_PROPERTIES"
+        },
+        {
+          "zero_based_index": 31797,
+          "raw_header": "android.permission.ACCESS_CHECKIN_PROPERTIES",
+          "decoded_header": "android.permission.ACCESS_CHECKIN_PROPERTIES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_COARSE_LOCATION",
+      "bare_name": "ACCESS_COARSE_LOCATION",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 3213,
+          "raw_header": "ANDROID.PERMISSION.ACCESS+AF8-COARSE+AF8-LOCATION",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_COARSE_LOCATION"
+        },
+        {
+          "zero_based_index": 14647,
+          "raw_header": "android.permission.ACCESS+AF8-COARSE+AF8-LOCATION",
+          "decoded_header": "android.permission.ACCESS_COARSE_LOCATION"
+        },
+        {
+          "zero_based_index": 31712,
+          "raw_header": "android.permission.ACCESS_COARSE_LOCATION",
+          "decoded_header": "android.permission.ACCESS_COARSE_LOCATION"
+        },
+        {
+          "zero_based_index": 39927,
+          "raw_header": "ANDROID.PERMISSION.ACCESS_COARSE_LOCATION",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_COARSE_LOCATION"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_COARSE_UPDATES",
+      "bare_name": "ACCESS_COARSE_UPDATES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14648,
+          "raw_header": "android.permission.ACCESS+AF8-COARSE+AF8-UPDATES",
+          "decoded_header": "android.permission.ACCESS_COARSE_UPDATES"
+        },
+        {
+          "zero_based_index": 32594,
+          "raw_header": "android.permission.ACCESS_COARSE_UPDATES",
+          "decoded_header": "android.permission.ACCESS_COARSE_UPDATES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_FINE_LOCATION",
+      "bare_name": "ACCESS_FINE_LOCATION",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 3214,
+          "raw_header": "ANDROID.PERMISSION.ACCESS+AF8-FINE+AF8-LOCATION",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_FINE_LOCATION"
+        },
+        {
+          "zero_based_index": 14655,
+          "raw_header": "android.permission.ACCESS+AF8-FINE+AF8-LOCATION",
+          "decoded_header": "android.permission.ACCESS_FINE_LOCATION"
+        },
+        {
+          "zero_based_index": 31705,
+          "raw_header": "android.permission.ACCESS_FINE_LOCATION",
+          "decoded_header": "android.permission.ACCESS_FINE_LOCATION"
+        },
+        {
+          "zero_based_index": 39928,
+          "raw_header": "ANDROID.PERMISSION.ACCESS_FINE_LOCATION",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_FINE_LOCATION"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+      "bare_name": "ACCESS_LOCATION_EXTRA_COMMANDS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 3215,
+          "raw_header": "ANDROID.PERMISSION.ACCESS+AF8-LOCATION+AF8-EXTRA+AF8-COMMANDS",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_LOCATION_EXTRA_COMMANDS"
+        },
+        {
+          "zero_based_index": 14658,
+          "raw_header": "android.permission.ACCESS+AF8-LOCATION+AF8-EXTRA+AF8-COMMANDS",
+          "decoded_header": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"
+        },
+        {
+          "zero_based_index": 31821,
+          "raw_header": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+          "decoded_header": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"
+        },
+        {
+          "zero_based_index": 39657,
+          "raw_header": "ANDROID.PERMISSION.ACCESS_LOCATION_EXTRA_COMMANDS",
+          "decoded_header": "ANDROID.PERMISSION.ACCESS_LOCATION_EXTRA_COMMANDS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_MOCK_LOCATION",
+      "bare_name": "ACCESS_MOCK_LOCATION",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14660,
+          "raw_header": "android.permission.ACCESS+AF8-MOCK+AF8-LOCATION",
+          "decoded_header": "android.permission.ACCESS_MOCK_LOCATION"
+        },
+        {
+          "zero_based_index": 31966,
+          "raw_header": "android.permission.ACCESS_MOCK_LOCATION",
+          "decoded_header": "android.permission.ACCESS_MOCK_LOCATION"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_MTK_MMHW",
+      "bare_name": "ACCESS_MTK_MMHW",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14661,
+          "raw_header": "android.permission.ACCESS+AF8-MTK+AF8-MMHW",
+          "decoded_header": "android.permission.ACCESS_MTK_MMHW"
+        },
+        {
+          "zero_based_index": 32754,
+          "raw_header": "android.permission.ACCESS_MTK_MMHW",
+          "decoded_header": "android.permission.ACCESS_MTK_MMHW"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_NETWORK_STATE",
+      "bare_name": "ACCESS_NETWORK_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14663,
+          "raw_header": "android.permission.ACCESS+AF8-NETWORK+AF8-STATE",
+          "decoded_header": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+          "zero_based_index": 31710,
+          "raw_header": "android.permission.ACCESS_NETWORK_STATE",
+          "decoded_header": "android.permission.ACCESS_NETWORK_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_SUPERUSER",
+      "bare_name": "ACCESS_SUPERUSER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14667,
+          "raw_header": "android.permission.ACCESS+AF8-SUPERUSER",
+          "decoded_header": "android.permission.ACCESS_SUPERUSER"
+        },
+        {
+          "zero_based_index": 32182,
+          "raw_header": "android.permission.ACCESS_SUPERUSER",
+          "decoded_header": "android.permission.ACCESS_SUPERUSER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_SURFACE_FLINGER",
+      "bare_name": "ACCESS_SURFACE_FLINGER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14668,
+          "raw_header": "android.permission.ACCESS+AF8-SURFACE+AF8-FLINGER",
+          "decoded_header": "android.permission.ACCESS_SURFACE_FLINGER"
+        },
+        {
+          "zero_based_index": 32119,
+          "raw_header": "android.permission.ACCESS_SURFACE_FLINGER",
+          "decoded_header": "android.permission.ACCESS_SURFACE_FLINGER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCESS_WIFI_STATE",
+      "bare_name": "ACCESS_WIFI_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14672,
+          "raw_header": "android.permission.ACCESS+AF8-WIFI+AF8-STATE",
+          "decoded_header": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+          "zero_based_index": 31731,
+          "raw_header": "android.permission.ACCESS_WIFI_STATE",
+          "decoded_header": "android.permission.ACCESS_WIFI_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.ACCOUNT_MANAGER",
+      "bare_name": "ACCOUNT_MANAGER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14676,
+          "raw_header": "android.permission.ACCOUNT+AF8-MANAGER",
+          "decoded_header": "android.permission.ACCOUNT_MANAGER"
+        },
+        {
+          "zero_based_index": 31854,
+          "raw_header": "android.permission.ACCOUNT_MANAGER",
+          "decoded_header": "android.permission.ACCOUNT_MANAGER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.AUTHENTICATE_ACCOUNTS",
+      "bare_name": "AUTHENTICATE_ACCOUNTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14682,
+          "raw_header": "android.permission.AUTHENTICATE+AF8-ACCOUNTS",
+          "decoded_header": "android.permission.AUTHENTICATE_ACCOUNTS"
+        },
+        {
+          "zero_based_index": 31853,
+          "raw_header": "android.permission.AUTHENTICATE_ACCOUNTS",
+          "decoded_header": "android.permission.AUTHENTICATE_ACCOUNTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BATTERY_STATS",
+      "bare_name": "BATTERY_STATS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14685,
+          "raw_header": "android.permission.BATTERY+AF8-STATS",
+          "decoded_header": "android.permission.BATTERY_STATS"
+        },
+        {
+          "zero_based_index": 32724,
+          "raw_header": "android.permission.BATTERY_STATS",
+          "decoded_header": "android.permission.BATTERY_STATS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BILLING",
+      "bare_name": "BILLING",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14686,
+          "raw_header": "android.permission.BILLING",
+          "decoded_header": "android.permission.BILLING"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "bare_name": "BIND_ACCESSIBILITY_SERVICE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14687,
+          "raw_header": "android.permission.BIND+AF8-ACCESSIBILITY+AF8-SERVICE",
+          "decoded_header": "android.permission.BIND_ACCESSIBILITY_SERVICE"
+        },
+        {
+          "zero_based_index": 32602,
+          "raw_header": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+          "decoded_header": "android.permission.BIND_ACCESSIBILITY_SERVICE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_APPWIDGET",
+      "bare_name": "BIND_APPWIDGET",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14688,
+          "raw_header": "android.permission.BIND+AF8-APPWIDGET",
+          "decoded_header": "android.permission.BIND_APPWIDGET"
+        },
+        {
+          "zero_based_index": 36382,
+          "raw_header": "android.permission.BIND_APPWIDGET",
+          "decoded_header": "android.permission.BIND_APPWIDGET"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_DEVICE_ADMIN",
+      "bare_name": "BIND_DEVICE_ADMIN",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14690,
+          "raw_header": "android.permission.BIND+AF8-DEVICE+AF8-ADMIN",
+          "decoded_header": "android.permission.BIND_DEVICE_ADMIN"
+        },
+        {
+          "zero_based_index": 34156,
+          "raw_header": "android.permission.BIND_DEVICE_ADMIN",
+          "decoded_header": "android.permission.BIND_DEVICE_ADMIN"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_INPUT_METHOD",
+      "bare_name": "BIND_INPUT_METHOD",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14692,
+          "raw_header": "android.permission.BIND+AF8-INPUT+AF8-METHOD",
+          "decoded_header": "android.permission.BIND_INPUT_METHOD"
+        },
+        {
+          "zero_based_index": 38872,
+          "raw_header": "android.permission.BIND_INPUT_METHOD",
+          "decoded_header": "android.permission.BIND_INPUT_METHOD"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_REMOTEVIEWS",
+      "bare_name": "BIND_REMOTEVIEWS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14695,
+          "raw_header": "android.permission.BIND+AF8-REMOTEVIEWS",
+          "decoded_header": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+          "zero_based_index": 35625,
+          "raw_header": "android.permission.BIND_REMOTEVIEWS",
+          "decoded_header": "android.permission.BIND_REMOTEVIEWS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BIND_WALLPAPER",
+      "bare_name": "BIND_WALLPAPER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14696,
+          "raw_header": "android.permission.BIND+AF8-WALLPAPER",
+          "decoded_header": "android.permission.BIND_WALLPAPER"
+        },
+        {
+          "zero_based_index": 32002,
+          "raw_header": "android.permission.BIND_WALLPAPER",
+          "decoded_header": "android.permission.BIND_WALLPAPER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BLUETOOTH",
+      "bare_name": "BLUETOOTH",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14697,
+          "raw_header": "android.permission.BLUETOOTH",
+          "decoded_header": "android.permission.BLUETOOTH"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BLUETOOTH_ADMIN",
+      "bare_name": "BLUETOOTH_ADMIN",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14698,
+          "raw_header": "android.permission.BLUETOOTH+AF8-ADMIN",
+          "decoded_header": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+          "zero_based_index": 31743,
+          "raw_header": "android.permission.BLUETOOTH_ADMIN",
+          "decoded_header": "android.permission.BLUETOOTH_ADMIN"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BLUETOOTH_PRIVILEGED",
+      "bare_name": "BLUETOOTH_PRIVILEGED",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14699,
+          "raw_header": "android.permission.BLUETOOTH+AF8-PRIVILEGED",
+          "decoded_header": "android.permission.BLUETOOTH_PRIVILEGED"
+        },
+        {
+          "zero_based_index": 42517,
+          "raw_header": "android.permission.BLUETOOTH_PRIVILEGED",
+          "decoded_header": "android.permission.BLUETOOTH_PRIVILEGED"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BODY_SENSORS",
+      "bare_name": "BODY_SENSORS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14700,
+          "raw_header": "android.permission.BODY+AF8-SENSORS",
+          "decoded_header": "android.permission.BODY_SENSORS"
+        },
+        {
+          "zero_based_index": 34321,
+          "raw_header": "android.permission.BODY_SENSORS",
+          "decoded_header": "android.permission.BODY_SENSORS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BRICK",
+      "bare_name": "BRICK",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14701,
+          "raw_header": "android.permission.BRICK",
+          "decoded_header": "android.permission.BRICK"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BROADCAST_PACKAGE_REMOVED",
+      "bare_name": "BROADCAST_PACKAGE_REMOVED",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14705,
+          "raw_header": "android.permission.BROADCAST+AF8-PACKAGE+AF8-REMOVED",
+          "decoded_header": "android.permission.BROADCAST_PACKAGE_REMOVED"
+        },
+        {
+          "zero_based_index": 34867,
+          "raw_header": "android.permission.BROADCAST_PACKAGE_REMOVED",
+          "decoded_header": "android.permission.BROADCAST_PACKAGE_REMOVED"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BROADCAST_SMS",
+      "bare_name": "BROADCAST_SMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14707,
+          "raw_header": "android.permission.BROADCAST+AF8-SMS",
+          "decoded_header": "android.permission.BROADCAST_SMS"
+        },
+        {
+          "zero_based_index": 32120,
+          "raw_header": "android.permission.BROADCAST_SMS",
+          "decoded_header": "android.permission.BROADCAST_SMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BROADCAST_STICKY",
+      "bare_name": "BROADCAST_STICKY",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14708,
+          "raw_header": "android.permission.BROADCAST+AF8-STICKY",
+          "decoded_header": "android.permission.BROADCAST_STICKY"
+        },
+        {
+          "zero_based_index": 31917,
+          "raw_header": "android.permission.BROADCAST_STICKY",
+          "decoded_header": "android.permission.BROADCAST_STICKY"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.BROADCAST_WAP_PUSH",
+      "bare_name": "BROADCAST_WAP_PUSH",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14709,
+          "raw_header": "android.permission.BROADCAST+AF8-WAP+AF8-PUSH",
+          "decoded_header": "android.permission.BROADCAST_WAP_PUSH"
+        },
+        {
+          "zero_based_index": 32121,
+          "raw_header": "android.permission.BROADCAST_WAP_PUSH",
+          "decoded_header": "android.permission.BROADCAST_WAP_PUSH"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.C2D_MESSAGE",
+      "bare_name": "C2D_MESSAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14710,
+          "raw_header": "android.permission.C2D+AF8-MESSAGE",
+          "decoded_header": "android.permission.C2D_MESSAGE"
+        },
+        {
+          "zero_based_index": 44555,
+          "raw_header": "android.permission.C2D_MESSAGE",
+          "decoded_header": "android.permission.C2D_MESSAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CALL_PHONE",
+      "bare_name": "CALL_PHONE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14711,
+          "raw_header": "android.permission.CALL+AF8-PHONE",
+          "decoded_header": "android.permission.CALL_PHONE"
+        },
+        {
+          "zero_based_index": 31761,
+          "raw_header": "android.permission.CALL_PHONE",
+          "decoded_header": "android.permission.CALL_PHONE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CALL_PRIVILEGED",
+      "bare_name": "CALL_PRIVILEGED",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14712,
+          "raw_header": "android.permission.CALL+AF8-PRIVILEGED",
+          "decoded_header": "android.permission.CALL_PRIVILEGED"
+        },
+        {
+          "zero_based_index": 32882,
+          "raw_header": "android.permission.CALL_PRIVILEGED",
+          "decoded_header": "android.permission.CALL_PRIVILEGED"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CAMERA",
+      "bare_name": "CAMERA",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14713,
+          "raw_header": "android.permission.CAMERA",
+          "decoded_header": "android.permission.CAMERA"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CAPTURE_AUDIO_OUTPUT",
+      "bare_name": "CAPTURE_AUDIO_OUTPUT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14715,
+          "raw_header": "android.permission.CAPTURE+AF8-AUDIO+AF8-OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_AUDIO_OUTPUT"
+        },
+        {
+          "zero_based_index": 35584,
+          "raw_header": "android.permission.CAPTURE_AUDIO_OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_AUDIO_OUTPUT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT",
+      "bare_name": "CAPTURE_SECURE_VIDEO_OUTPUT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14716,
+          "raw_header": "android.permission.CAPTURE+AF8-SECURE+AF8-VIDEO+AF8-OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"
+        },
+        {
+          "zero_based_index": 41288,
+          "raw_header": "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CAPTURE_VIDEO_OUTPUT",
+      "bare_name": "CAPTURE_VIDEO_OUTPUT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14717,
+          "raw_header": "android.permission.CAPTURE+AF8-VIDEO+AF8-OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_VIDEO_OUTPUT"
+        },
+        {
+          "zero_based_index": 41289,
+          "raw_header": "android.permission.CAPTURE_VIDEO_OUTPUT",
+          "decoded_header": "android.permission.CAPTURE_VIDEO_OUTPUT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+      "bare_name": "CHANGE_COMPONENT_ENABLED_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14718,
+          "raw_header": "android.permission.CHANGE+AF8-COMPONENT+AF8-ENABLED+AF8-STATE",
+          "decoded_header": "android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        },
+        {
+          "zero_based_index": 32103,
+          "raw_header": "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+          "decoded_header": "android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CHANGE_CONFIGURATION",
+      "bare_name": "CHANGE_CONFIGURATION",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 3240,
+          "raw_header": "Android.permission.CHANGE+AF8-CONFIGURATION",
+          "decoded_header": "Android.permission.CHANGE_CONFIGURATION"
+        },
+        {
+          "zero_based_index": 14719,
+          "raw_header": "android.permission.CHANGE+AF8-CONFIGURATION",
+          "decoded_header": "android.permission.CHANGE_CONFIGURATION"
+        },
+        {
+          "zero_based_index": 31911,
+          "raw_header": "android.permission.CHANGE_CONFIGURATION",
+          "decoded_header": "android.permission.CHANGE_CONFIGURATION"
+        },
+        {
+          "zero_based_index": 36637,
+          "raw_header": "Android.permission.CHANGE_CONFIGURATION",
+          "decoded_header": "Android.permission.CHANGE_CONFIGURATION"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CHANGE_NETWORK_STATE",
+      "bare_name": "CHANGE_NETWORK_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14720,
+          "raw_header": "android.permission.CHANGE+AF8-NETWORK+AF8-STATE",
+          "decoded_header": "android.permission.CHANGE_NETWORK_STATE"
+        },
+        {
+          "zero_based_index": 31780,
+          "raw_header": "android.permission.CHANGE_NETWORK_STATE",
+          "decoded_header": "android.permission.CHANGE_NETWORK_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+      "bare_name": "CHANGE_WIFI_MULTICAST_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14721,
+          "raw_header": "android.permission.CHANGE+AF8-WIFI+AF8-MULTICAST+AF8-STATE",
+          "decoded_header": "android.permission.CHANGE_WIFI_MULTICAST_STATE"
+        },
+        {
+          "zero_based_index": 31852,
+          "raw_header": "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+          "decoded_header": "android.permission.CHANGE_WIFI_MULTICAST_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CHANGE_WIFI_STATE",
+      "bare_name": "CHANGE_WIFI_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14722,
+          "raw_header": "android.permission.CHANGE+AF8-WIFI+AF8-STATE",
+          "decoded_header": "android.permission.CHANGE_WIFI_STATE"
+        },
+        {
+          "zero_based_index": 31730,
+          "raw_header": "android.permission.CHANGE_WIFI_STATE",
+          "decoded_header": "android.permission.CHANGE_WIFI_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CLEAR_APP_CACHE",
+      "bare_name": "CLEAR_APP_CACHE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14724,
+          "raw_header": "android.permission.CLEAR+AF8-APP+AF8-CACHE",
+          "decoded_header": "android.permission.CLEAR_APP_CACHE"
+        },
+        {
+          "zero_based_index": 31951,
+          "raw_header": "android.permission.CLEAR_APP_CACHE",
+          "decoded_header": "android.permission.CLEAR_APP_CACHE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CLEAR_APP_USER_DATA",
+      "bare_name": "CLEAR_APP_USER_DATA",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14725,
+          "raw_header": "android.permission.CLEAR+AF8-APP+AF8-USER+AF8-DATA",
+          "decoded_header": "android.permission.CLEAR_APP_USER_DATA"
+        },
+        {
+          "zero_based_index": 31975,
+          "raw_header": "android.permission.CLEAR_APP_USER_DATA",
+          "decoded_header": "android.permission.CLEAR_APP_USER_DATA"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.CONTROL_LOCATION_UPDATES",
+      "bare_name": "CONTROL_LOCATION_UPDATES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14728,
+          "raw_header": "android.permission.CONTROL+AF8-LOCATION+AF8-UPDATES",
+          "decoded_header": "android.permission.CONTROL_LOCATION_UPDATES"
+        },
+        {
+          "zero_based_index": 31943,
+          "raw_header": "android.permission.CONTROL_LOCATION_UPDATES",
+          "decoded_header": "android.permission.CONTROL_LOCATION_UPDATES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.DELETE_CACHE_FILES",
+      "bare_name": "DELETE_CACHE_FILES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14730,
+          "raw_header": "android.permission.DELETE+AF8-CACHE+AF8-FILES",
+          "decoded_header": "android.permission.DELETE_CACHE_FILES"
+        },
+        {
+          "zero_based_index": 31977,
+          "raw_header": "android.permission.DELETE_CACHE_FILES",
+          "decoded_header": "android.permission.DELETE_CACHE_FILES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.DELETE_PACKAGES",
+      "bare_name": "DELETE_PACKAGES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14731,
+          "raw_header": "android.permission.DELETE+AF8-PACKAGES",
+          "decoded_header": "android.permission.DELETE_PACKAGES"
+        },
+        {
+          "zero_based_index": 14910,
+          "raw_header": "android.permission.delete+AF8-packages",
+          "decoded_header": "android.permission.delete_packages"
+        },
+        {
+          "zero_based_index": 31976,
+          "raw_header": "android.permission.DELETE_PACKAGES",
+          "decoded_header": "android.permission.DELETE_PACKAGES"
+        },
+        {
+          "zero_based_index": 36339,
+          "raw_header": "android.permission.delete_packages",
+          "decoded_header": "android.permission.delete_packages"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.DEVICE_POWER",
+      "bare_name": "DEVICE_POWER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14732,
+          "raw_header": "android.permission.DEVICE+AF8-POWER",
+          "decoded_header": "android.permission.DEVICE_POWER"
+        },
+        {
+          "zero_based_index": 31813,
+          "raw_header": "android.permission.DEVICE_POWER",
+          "decoded_header": "android.permission.DEVICE_POWER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.DISABLE_KEYGUARD",
+      "bare_name": "DISABLE_KEYGUARD",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14735,
+          "raw_header": "android.permission.DISABLE+AF8-KEYGUARD",
+          "decoded_header": "android.permission.DISABLE_KEYGUARD"
+        },
+        {
+          "zero_based_index": 31795,
+          "raw_header": "android.permission.DISABLE_KEYGUARD",
+          "decoded_header": "android.permission.DISABLE_KEYGUARD"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.DUMP",
+      "bare_name": "DUMP",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14737,
+          "raw_header": "android.permission.DUMP",
+          "decoded_header": "android.permission.DUMP"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.EXPAND_STATUS_BAR",
+      "bare_name": "EXPAND_STATUS_BAR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14738,
+          "raw_header": "android.permission.EXPAND+AF8-STATUS+AF8-BAR",
+          "decoded_header": "android.permission.EXPAND_STATUS_BAR"
+        },
+        {
+          "zero_based_index": 31893,
+          "raw_header": "android.permission.EXPAND_STATUS_BAR",
+          "decoded_header": "android.permission.EXPAND_STATUS_BAR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.FLASHLIGHT",
+      "bare_name": "FLASHLIGHT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14741,
+          "raw_header": "android.permission.FLASHLIGHT",
+          "decoded_header": "android.permission.FLASHLIGHT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.FORCE_BACK",
+      "bare_name": "FORCE_BACK",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14743,
+          "raw_header": "android.permission.FORCE+AF8-BACK",
+          "decoded_header": "android.permission.FORCE_BACK"
+        },
+        {
+          "zero_based_index": 35615,
+          "raw_header": "android.permission.FORCE_BACK",
+          "decoded_header": "android.permission.FORCE_BACK"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.GET_ACCOUNTS",
+      "bare_name": "GET_ACCOUNTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14745,
+          "raw_header": "android.permission.GET+AF8-ACCOUNTS",
+          "decoded_header": "android.permission.GET_ACCOUNTS"
+        },
+        {
+          "zero_based_index": 31850,
+          "raw_header": "android.permission.GET_ACCOUNTS",
+          "decoded_header": "android.permission.GET_ACCOUNTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.GET_PACKAGE_SIZE",
+      "bare_name": "GET_PACKAGE_SIZE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14749,
+          "raw_header": "android.permission.GET+AF8-PACKAGE+AF8-SIZE",
+          "decoded_header": "android.permission.GET_PACKAGE_SIZE"
+        },
+        {
+          "zero_based_index": 31952,
+          "raw_header": "android.permission.GET_PACKAGE_SIZE",
+          "decoded_header": "android.permission.GET_PACKAGE_SIZE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.GET_TASKS",
+      "bare_name": "GET_TASKS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14751,
+          "raw_header": "android.permission.GET+AF8-TASKS",
+          "decoded_header": "android.permission.GET_TASKS"
+        },
+        {
+          "zero_based_index": 31711,
+          "raw_header": "android.permission.GET_TASKS",
+          "decoded_header": "android.permission.GET_TASKS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.GET_TOP_ACTIVITY_INFO",
+      "bare_name": "GET_TOP_ACTIVITY_INFO",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14752,
+          "raw_header": "android.permission.GET+AF8-TOP+AF8-ACTIVITY+AF8-INFO",
+          "decoded_header": "android.permission.GET_TOP_ACTIVITY_INFO"
+        },
+        {
+          "zero_based_index": 34130,
+          "raw_header": "android.permission.GET_TOP_ACTIVITY_INFO",
+          "decoded_header": "android.permission.GET_TOP_ACTIVITY_INFO"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.GLOBAL_SEARCH",
+      "bare_name": "GLOBAL_SEARCH",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14753,
+          "raw_header": "android.permission.GLOBAL+AF8-SEARCH",
+          "decoded_header": "android.permission.GLOBAL_SEARCH"
+        },
+        {
+          "zero_based_index": 35620,
+          "raw_header": "android.permission.GLOBAL_SEARCH",
+          "decoded_header": "android.permission.GLOBAL_SEARCH"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.HARDWARE_TEST",
+      "bare_name": "HARDWARE_TEST",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14754,
+          "raw_header": "android.permission.HARDWARE+AF8-TEST",
+          "decoded_header": "android.permission.HARDWARE_TEST"
+        },
+        {
+          "zero_based_index": 32186,
+          "raw_header": "android.permission.HARDWARE_TEST",
+          "decoded_header": "android.permission.HARDWARE_TEST"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INJECT_EVENTS",
+      "bare_name": "INJECT_EVENTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14757,
+          "raw_header": "android.permission.INJECT+AF8-EVENTS",
+          "decoded_header": "android.permission.INJECT_EVENTS"
+        },
+        {
+          "zero_based_index": 35040,
+          "raw_header": "android.permission.INJECT_EVENTS",
+          "decoded_header": "android.permission.INJECT_EVENTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INSTALL_LOCATION_PROVIDER",
+      "bare_name": "INSTALL_LOCATION_PROVIDER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14759,
+          "raw_header": "android.permission.INSTALL+AF8-LOCATION+AF8-PROVIDER",
+          "decoded_header": "android.permission.INSTALL_LOCATION_PROVIDER"
+        },
+        {
+          "zero_based_index": 35647,
+          "raw_header": "android.permission.INSTALL_LOCATION_PROVIDER",
+          "decoded_header": "android.permission.INSTALL_LOCATION_PROVIDER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INSTALL_PACKAGES",
+      "bare_name": "INSTALL_PACKAGES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14760,
+          "raw_header": "android.permission.INSTALL+AF8-PACKAGES",
+          "decoded_header": "android.permission.INSTALL_PACKAGES"
+        },
+        {
+          "zero_based_index": 14912,
+          "raw_header": "android.permission.install+AF8-packages",
+          "decoded_header": "android.permission.install_packages"
+        },
+        {
+          "zero_based_index": 31755,
+          "raw_header": "android.permission.INSTALL_PACKAGES",
+          "decoded_header": "android.permission.INSTALL_PACKAGES"
+        },
+        {
+          "zero_based_index": 36338,
+          "raw_header": "android.permission.install_packages",
+          "decoded_header": "android.permission.install_packages"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INSTALL_SHORTCUT",
+      "bare_name": "INSTALL_SHORTCUT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14761,
+          "raw_header": "android.permission.INSTALL+AF8-SHORTCUT",
+          "decoded_header": "android.permission.INSTALL_SHORTCUT"
+        },
+        {
+          "zero_based_index": 35218,
+          "raw_header": "android.permission.INSTALL_SHORTCUT",
+          "decoded_header": "android.permission.INSTALL_SHORTCUT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INTERACT_ACROSS_USERS",
+      "bare_name": "INTERACT_ACROSS_USERS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14762,
+          "raw_header": "android.permission.INTERACT+AF8-ACROSS+AF8-USERS",
+          "decoded_header": "android.permission.INTERACT_ACROSS_USERS"
+        },
+        {
+          "zero_based_index": 37240,
+          "raw_header": "android.permission.INTERACT_ACROSS_USERS",
+          "decoded_header": "android.permission.INTERACT_ACROSS_USERS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INTERNAL_SYSTEM_WINDOW",
+      "bare_name": "INTERNAL_SYSTEM_WINDOW",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14764,
+          "raw_header": "android.permission.INTERNAL+AF8-SYSTEM+AF8-WINDOW",
+          "decoded_header": "android.permission.INTERNAL_SYSTEM_WINDOW"
+        },
+        {
+          "zero_based_index": 31796,
+          "raw_header": "android.permission.INTERNAL_SYSTEM_WINDOW",
+          "decoded_header": "android.permission.INTERNAL_SYSTEM_WINDOW"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.INTERNET",
+      "bare_name": "INTERNET",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14765,
+          "raw_header": "android.permission.INTERNET",
+          "decoded_header": "android.permission.INTERNET"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.KILL_BACKGROUND_PROCESSES",
+      "bare_name": "KILL_BACKGROUND_PROCESSES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14766,
+          "raw_header": "android.permission.KILL+AF8-BACKGROUND+AF8-PROCESSES",
+          "decoded_header": "android.permission.KILL_BACKGROUND_PROCESSES"
+        },
+        {
+          "zero_based_index": 31751,
+          "raw_header": "android.permission.KILL_BACKGROUND_PROCESSES",
+          "decoded_header": "android.permission.KILL_BACKGROUND_PROCESSES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MANAGE_ACCOUNTS",
+      "bare_name": "MANAGE_ACCOUNTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14769,
+          "raw_header": "android.permission.MANAGE+AF8-ACCOUNTS",
+          "decoded_header": "android.permission.MANAGE_ACCOUNTS"
+        },
+        {
+          "zero_based_index": 31851,
+          "raw_header": "android.permission.MANAGE_ACCOUNTS",
+          "decoded_header": "android.permission.MANAGE_ACCOUNTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MANAGE_APP_TOKENS",
+      "bare_name": "MANAGE_APP_TOKENS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14770,
+          "raw_header": "android.permission.MANAGE+AF8-APP+AF8-TOKENS",
+          "decoded_header": "android.permission.MANAGE_APP_TOKENS"
+        },
+        {
+          "zero_based_index": 35579,
+          "raw_header": "android.permission.MANAGE_APP_TOKENS",
+          "decoded_header": "android.permission.MANAGE_APP_TOKENS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MANAGE_DOCUMENTS",
+      "bare_name": "MANAGE_DOCUMENTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14773,
+          "raw_header": "android.permission.MANAGE+AF8-DOCUMENTS",
+          "decoded_header": "android.permission.MANAGE_DOCUMENTS"
+        },
+        {
+          "zero_based_index": 37239,
+          "raw_header": "android.permission.MANAGE_DOCUMENTS",
+          "decoded_header": "android.permission.MANAGE_DOCUMENTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MASTER_CLEAR",
+      "bare_name": "MASTER_CLEAR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14778,
+          "raw_header": "android.permission.MASTER+AF8-CLEAR",
+          "decoded_header": "android.permission.MASTER_CLEAR"
+        },
+        {
+          "zero_based_index": 33729,
+          "raw_header": "android.permission.MASTER_CLEAR",
+          "decoded_header": "android.permission.MASTER_CLEAR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MEDIA_CONTENT_CONTROL",
+      "bare_name": "MEDIA_CONTENT_CONTROL",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14779,
+          "raw_header": "android.permission.MEDIA+AF8-CONTENT+AF8-CONTROL",
+          "decoded_header": "android.permission.MEDIA_CONTENT_CONTROL"
+        },
+        {
+          "zero_based_index": 35991,
+          "raw_header": "android.permission.MEDIA_CONTENT_CONTROL",
+          "decoded_header": "android.permission.MEDIA_CONTENT_CONTROL"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MODIFY_AUDIO_SETTINGS",
+      "bare_name": "MODIFY_AUDIO_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14781,
+          "raw_header": "android.permission.MODIFY+AF8-AUDIO+AF8-SETTINGS",
+          "decoded_header": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+          "zero_based_index": 31707,
+          "raw_header": "android.permission.MODIFY_AUDIO_SETTINGS",
+          "decoded_header": "android.permission.MODIFY_AUDIO_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MODIFY_PHONE_STATE",
+      "bare_name": "MODIFY_PHONE_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14782,
+          "raw_header": "android.permission.MODIFY+AF8-PHONE+AF8-STATE",
+          "decoded_header": "android.permission.MODIFY_PHONE_STATE"
+        },
+        {
+          "zero_based_index": 31781,
+          "raw_header": "android.permission.MODIFY_PHONE_STATE",
+          "decoded_header": "android.permission.MODIFY_PHONE_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MOUNT_FORMAT_FILESYSTEMS",
+      "bare_name": "MOUNT_FORMAT_FILESYSTEMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14783,
+          "raw_header": "android.permission.MOUNT+AF8-FORMAT+AF8-FILESYSTEMS",
+          "decoded_header": "android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        },
+        {
+          "zero_based_index": 34093,
+          "raw_header": "android.permission.MOUNT_FORMAT_FILESYSTEMS",
+          "decoded_header": "android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+      "bare_name": "MOUNT_UNMOUNT_FILESYSTEMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14784,
+          "raw_header": "android.permission.MOUNT+AF8-UNMOUNT+AF8-FILESYSTEMS",
+          "decoded_header": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        },
+        {
+          "zero_based_index": 31754,
+          "raw_header": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+          "decoded_header": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.NFC",
+      "bare_name": "NFC",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14787,
+          "raw_header": "android.permission.NFC",
+          "decoded_header": "android.permission.NFC"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.PERSISTENT_ACTIVITY",
+      "bare_name": "PERSISTENT_ACTIVITY",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14791,
+          "raw_header": "android.permission.PERSISTENT+AF8-ACTIVITY",
+          "decoded_header": "android.permission.PERSISTENT_ACTIVITY"
+        },
+        {
+          "zero_based_index": 34066,
+          "raw_header": "android.permission.PERSISTENT_ACTIVITY",
+          "decoded_header": "android.permission.PERSISTENT_ACTIVITY"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.PROCESS_OUTGOING_CALLS",
+      "bare_name": "PROCESS_OUTGOING_CALLS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14795,
+          "raw_header": "android.permission.PROCESS+AF8-OUTGOING+AF8-CALLS",
+          "decoded_header": "android.permission.PROCESS_OUTGOING_CALLS"
+        },
+        {
+          "zero_based_index": 31812,
+          "raw_header": "android.permission.PROCESS_OUTGOING_CALLS",
+          "decoded_header": "android.permission.PROCESS_OUTGOING_CALLS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_CALENDAR",
+      "bare_name": "READ_CALENDAR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14799,
+          "raw_header": "android.permission.READ+AF8-CALENDAR",
+          "decoded_header": "android.permission.READ_CALENDAR"
+        },
+        {
+          "zero_based_index": 33714,
+          "raw_header": "android.permission.READ_CALENDAR",
+          "decoded_header": "android.permission.READ_CALENDAR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_CALL_LOG",
+      "bare_name": "READ_CALL_LOG",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14800,
+          "raw_header": "android.permission.READ+AF8-CALL+AF8-LOG",
+          "decoded_header": "android.permission.READ_CALL_LOG"
+        },
+        {
+          "zero_based_index": 31954,
+          "raw_header": "android.permission.READ_CALL_LOG",
+          "decoded_header": "android.permission.READ_CALL_LOG"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_CONTACTS",
+      "bare_name": "READ_CONTACTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14803,
+          "raw_header": "android.permission.READ+AF8-CONTACTS",
+          "decoded_header": "android.permission.READ_CONTACTS"
+        },
+        {
+          "zero_based_index": 31760,
+          "raw_header": "android.permission.READ_CONTACTS",
+          "decoded_header": "android.permission.READ_CONTACTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_EXTERNAL_STORAGE",
+      "bare_name": "READ_EXTERNAL_STORAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14804,
+          "raw_header": "android.permission.READ+AF8-EXTERNAL+AF8-STORAGE",
+          "decoded_header": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+          "zero_based_index": 31818,
+          "raw_header": "android.permission.READ_EXTERNAL_STORAGE",
+          "decoded_header": "android.permission.READ_EXTERNAL_STORAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_FRAME_BUFFER",
+      "bare_name": "READ_FRAME_BUFFER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14805,
+          "raw_header": "android.permission.READ+AF8-FRAME+AF8-BUFFER",
+          "decoded_header": "android.permission.READ_FRAME_BUFFER"
+        },
+        {
+          "zero_based_index": 34822,
+          "raw_header": "android.permission.READ_FRAME_BUFFER",
+          "decoded_header": "android.permission.READ_FRAME_BUFFER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_HISTORY_BOOKMARKS",
+      "bare_name": "READ_HISTORY_BOOKMARKS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14806,
+          "raw_header": "android.permission.READ+AF8-HISTORY+AF8-BOOKMARKS",
+          "decoded_header": "android.permission.READ_HISTORY_BOOKMARKS"
+        },
+        {
+          "zero_based_index": 35219,
+          "raw_header": "android.permission.READ_HISTORY_BOOKMARKS",
+          "decoded_header": "android.permission.READ_HISTORY_BOOKMARKS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_INPUT_STATE",
+      "bare_name": "READ_INPUT_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14807,
+          "raw_header": "android.permission.READ+AF8-INPUT+AF8-STATE",
+          "decoded_header": "android.permission.READ_INPUT_STATE"
+        },
+        {
+          "zero_based_index": 35624,
+          "raw_header": "android.permission.READ_INPUT_STATE",
+          "decoded_header": "android.permission.READ_INPUT_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_LOGS",
+      "bare_name": "READ_LOGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14810,
+          "raw_header": "android.permission.READ+AF8-LOGS",
+          "decoded_header": "android.permission.READ_LOGS"
+        },
+        {
+          "zero_based_index": 31758,
+          "raw_header": "android.permission.READ_LOGS",
+          "decoded_header": "android.permission.READ_LOGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_OWNER_DATA",
+      "bare_name": "READ_OWNER_DATA",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14815,
+          "raw_header": "android.permission.READ+AF8-OWNER+AF8-DATA",
+          "decoded_header": "android.permission.READ_OWNER_DATA"
+        },
+        {
+          "zero_based_index": 31978,
+          "raw_header": "android.permission.READ_OWNER_DATA",
+          "decoded_header": "android.permission.READ_OWNER_DATA"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_PHONE_STATE",
+      "bare_name": "READ_PHONE_STATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14817,
+          "raw_header": "android.permission.READ+AF8-PHONE+AF8-STATE",
+          "decoded_header": "android.permission.READ_PHONE_STATE"
+        },
+        {
+          "zero_based_index": 31704,
+          "raw_header": "android.permission.READ_PHONE_STATE",
+          "decoded_header": "android.permission.READ_PHONE_STATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_PROFILE",
+      "bare_name": "READ_PROFILE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14819,
+          "raw_header": "android.permission.READ+AF8-PROFILE",
+          "decoded_header": "android.permission.READ_PROFILE"
+        },
+        {
+          "zero_based_index": 34304,
+          "raw_header": "android.permission.READ_PROFILE",
+          "decoded_header": "android.permission.READ_PROFILE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_SETTINGS",
+      "bare_name": "READ_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14821,
+          "raw_header": "android.permission.READ+AF8-SETTINGS",
+          "decoded_header": "android.permission.READ_SETTINGS"
+        },
+        {
+          "zero_based_index": 34120,
+          "raw_header": "android.permission.READ_SETTINGS",
+          "decoded_header": "android.permission.READ_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_SMS",
+      "bare_name": "READ_SMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14822,
+          "raw_header": "android.permission.READ+AF8-SMS",
+          "decoded_header": "android.permission.READ_SMS"
+        },
+        {
+          "zero_based_index": 31753,
+          "raw_header": "android.permission.READ_SMS",
+          "decoded_header": "android.permission.READ_SMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_SOCIAL_STREAM",
+      "bare_name": "READ_SOCIAL_STREAM",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14823,
+          "raw_header": "android.permission.READ+AF8-SOCIAL+AF8-STREAM",
+          "decoded_header": "android.permission.READ_SOCIAL_STREAM"
+        },
+        {
+          "zero_based_index": 34324,
+          "raw_header": "android.permission.READ_SOCIAL_STREAM",
+          "decoded_header": "android.permission.READ_SOCIAL_STREAM"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_SYNC_SETTINGS",
+      "bare_name": "READ_SYNC_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14824,
+          "raw_header": "android.permission.READ+AF8-SYNC+AF8-SETTINGS",
+          "decoded_header": "android.permission.READ_SYNC_SETTINGS"
+        },
+        {
+          "zero_based_index": 31919,
+          "raw_header": "android.permission.READ_SYNC_SETTINGS",
+          "decoded_header": "android.permission.READ_SYNC_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_SYNC_STATS",
+      "bare_name": "READ_SYNC_STATS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14825,
+          "raw_header": "android.permission.READ+AF8-SYNC+AF8-STATS",
+          "decoded_header": "android.permission.READ_SYNC_STATS"
+        },
+        {
+          "zero_based_index": 34052,
+          "raw_header": "android.permission.READ_SYNC_STATS",
+          "decoded_header": "android.permission.READ_SYNC_STATS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.READ_USER_DICTIONARY",
+      "bare_name": "READ_USER_DICTIONARY",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14826,
+          "raw_header": "android.permission.READ+AF8-USER+AF8-DICTIONARY",
+          "decoded_header": "android.permission.READ_USER_DICTIONARY"
+        },
+        {
+          "zero_based_index": 34089,
+          "raw_header": "android.permission.READ_USER_DICTIONARY",
+          "decoded_header": "android.permission.READ_USER_DICTIONARY"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.REBOOT",
+      "bare_name": "REBOOT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14828,
+          "raw_header": "android.permission.REBOOT",
+          "decoded_header": "android.permission.REBOOT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "bare_name": "RECEIVE_BOOT_COMPLETED",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14829,
+          "raw_header": "android.permission.RECEIVE+AF8-BOOT+AF8-COMPLETED",
+          "decoded_header": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+          "zero_based_index": 31739,
+          "raw_header": "android.permission.RECEIVE_BOOT_COMPLETED",
+          "decoded_header": "android.permission.RECEIVE_BOOT_COMPLETED"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECEIVE_MMS",
+      "bare_name": "RECEIVE_MMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14830,
+          "raw_header": "android.permission.RECEIVE+AF8-MMS",
+          "decoded_header": "android.permission.RECEIVE_MMS"
+        },
+        {
+          "zero_based_index": 31932,
+          "raw_header": "android.permission.RECEIVE_MMS",
+          "decoded_header": "android.permission.RECEIVE_MMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECEIVE_SMS",
+      "bare_name": "RECEIVE_SMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14831,
+          "raw_header": "android.permission.RECEIVE+AF8-SMS",
+          "decoded_header": "android.permission.RECEIVE_SMS"
+        },
+        {
+          "zero_based_index": 31855,
+          "raw_header": "android.permission.RECEIVE_SMS",
+          "decoded_header": "android.permission.RECEIVE_SMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECEIVE_USER_PRESENT",
+      "bare_name": "RECEIVE_USER_PRESENT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14832,
+          "raw_header": "android.permission.RECEIVE+AF8-USER+AF8-PRESENT",
+          "decoded_header": "android.permission.RECEIVE_USER_PRESENT"
+        },
+        {
+          "zero_based_index": 32044,
+          "raw_header": "android.permission.RECEIVE_USER_PRESENT",
+          "decoded_header": "android.permission.RECEIVE_USER_PRESENT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECEIVE_WAP_PUSH",
+      "bare_name": "RECEIVE_WAP_PUSH",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14833,
+          "raw_header": "android.permission.RECEIVE+AF8-WAP+AF8-PUSH",
+          "decoded_header": "android.permission.RECEIVE_WAP_PUSH"
+        },
+        {
+          "zero_based_index": 32032,
+          "raw_header": "android.permission.RECEIVE_WAP_PUSH",
+          "decoded_header": "android.permission.RECEIVE_WAP_PUSH"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RECORD_AUDIO",
+      "bare_name": "RECORD_AUDIO",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14834,
+          "raw_header": "android.permission.RECORD+AF8-AUDIO",
+          "decoded_header": "android.permission.RECORD_AUDIO"
+        },
+        {
+          "zero_based_index": 31709,
+          "raw_header": "android.permission.RECORD_AUDIO",
+          "decoded_header": "android.permission.RECORD_AUDIO"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.REORDER_TASKS",
+      "bare_name": "REORDER_TASKS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14837,
+          "raw_header": "android.permission.REORDER+AF8-TASKS",
+          "decoded_header": "android.permission.REORDER_TASKS"
+        },
+        {
+          "zero_based_index": 31979,
+          "raw_header": "android.permission.REORDER_TASKS",
+          "decoded_header": "android.permission.REORDER_TASKS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.RESTART_PACKAGES",
+      "bare_name": "RESTART_PACKAGES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14840,
+          "raw_header": "android.permission.RESTART+AF8-PACKAGES",
+          "decoded_header": "android.permission.RESTART_PACKAGES"
+        },
+        {
+          "zero_based_index": 31750,
+          "raw_header": "android.permission.RESTART_PACKAGES",
+          "decoded_header": "android.permission.RESTART_PACKAGES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SEND_RESPOND_VIA_MESSAGE",
+      "bare_name": "SEND_RESPOND_VIA_MESSAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14845,
+          "raw_header": "android.permission.SEND+AF8-RESPOND+AF8-VIA+AF8-MESSAGE",
+          "decoded_header": "android.permission.SEND_RESPOND_VIA_MESSAGE"
+        },
+        {
+          "zero_based_index": 34800,
+          "raw_header": "android.permission.SEND_RESPOND_VIA_MESSAGE",
+          "decoded_header": "android.permission.SEND_RESPOND_VIA_MESSAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SEND_SMS",
+      "bare_name": "SEND_SMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14846,
+          "raw_header": "android.permission.SEND+AF8-SMS",
+          "decoded_header": "android.permission.SEND_SMS"
+        },
+        {
+          "zero_based_index": 31910,
+          "raw_header": "android.permission.SEND_SMS",
+          "decoded_header": "android.permission.SEND_SMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_ACTIVITY_WATCHER",
+      "bare_name": "SET_ACTIVITY_WATCHER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14848,
+          "raw_header": "android.permission.SET+AF8-ACTIVITY+AF8-WATCHER",
+          "decoded_header": "android.permission.SET_ACTIVITY_WATCHER"
+        },
+        {
+          "zero_based_index": 35601,
+          "raw_header": "android.permission.SET_ACTIVITY_WATCHER",
+          "decoded_header": "android.permission.SET_ACTIVITY_WATCHER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_ALWAYS_FINISH",
+      "bare_name": "SET_ALWAYS_FINISH",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14849,
+          "raw_header": "android.permission.SET+AF8-ALWAYS+AF8-FINISH",
+          "decoded_header": "android.permission.SET_ALWAYS_FINISH"
+        },
+        {
+          "zero_based_index": 35614,
+          "raw_header": "android.permission.SET_ALWAYS_FINISH",
+          "decoded_header": "android.permission.SET_ALWAYS_FINISH"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_ANIMATION_SCALE",
+      "bare_name": "SET_ANIMATION_SCALE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14850,
+          "raw_header": "android.permission.SET+AF8-ANIMATION+AF8-SCALE",
+          "decoded_header": "android.permission.SET_ANIMATION_SCALE"
+        },
+        {
+          "zero_based_index": 35644,
+          "raw_header": "android.permission.SET_ANIMATION_SCALE",
+          "decoded_header": "android.permission.SET_ANIMATION_SCALE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_DEBUG_APP",
+      "bare_name": "SET_DEBUG_APP",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14851,
+          "raw_header": "android.permission.SET+AF8-DEBUG+AF8-APP",
+          "decoded_header": "android.permission.SET_DEBUG_APP"
+        },
+        {
+          "zero_based_index": 32723,
+          "raw_header": "android.permission.SET_DEBUG_APP",
+          "decoded_header": "android.permission.SET_DEBUG_APP"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_ORIENTATION",
+      "bare_name": "SET_ORIENTATION",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14852,
+          "raw_header": "android.permission.SET+AF8-ORIENTATION",
+          "decoded_header": "android.permission.SET_ORIENTATION"
+        },
+        {
+          "zero_based_index": 32764,
+          "raw_header": "android.permission.SET_ORIENTATION",
+          "decoded_header": "android.permission.SET_ORIENTATION"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_POINTER_SPEED",
+      "bare_name": "SET_POINTER_SPEED",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14853,
+          "raw_header": "android.permission.SET+AF8-POINTER+AF8-SPEED",
+          "decoded_header": "android.permission.SET_POINTER_SPEED"
+        },
+        {
+          "zero_based_index": 35600,
+          "raw_header": "android.permission.SET_POINTER_SPEED",
+          "decoded_header": "android.permission.SET_POINTER_SPEED"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_PREFERRED_APPLICATIONS",
+      "bare_name": "SET_PREFERRED_APPLICATIONS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14854,
+          "raw_header": "android.permission.SET+AF8-PREFERRED+AF8-APPLICATIONS",
+          "decoded_header": "android.permission.SET_PREFERRED_APPLICATIONS"
+        },
+        {
+          "zero_based_index": 35680,
+          "raw_header": "android.permission.SET_PREFERRED_APPLICATIONS",
+          "decoded_header": "android.permission.SET_PREFERRED_APPLICATIONS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_PROCESS_LIMIT",
+      "bare_name": "SET_PROCESS_LIMIT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14856,
+          "raw_header": "android.permission.SET+AF8-PROCESS+AF8-LIMIT",
+          "decoded_header": "android.permission.SET_PROCESS_LIMIT"
+        },
+        {
+          "zero_based_index": 35653,
+          "raw_header": "android.permission.SET_PROCESS_LIMIT",
+          "decoded_header": "android.permission.SET_PROCESS_LIMIT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_TIME",
+      "bare_name": "SET_TIME",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14857,
+          "raw_header": "android.permission.SET+AF8-TIME",
+          "decoded_header": "android.permission.SET_TIME"
+        },
+        {
+          "zero_based_index": 35643,
+          "raw_header": "android.permission.SET_TIME",
+          "decoded_header": "android.permission.SET_TIME"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_TIME_ZONE",
+      "bare_name": "SET_TIME_ZONE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14858,
+          "raw_header": "android.permission.SET+AF8-TIME+AF8-ZONE",
+          "decoded_header": "android.permission.SET_TIME_ZONE"
+        },
+        {
+          "zero_based_index": 32292,
+          "raw_header": "android.permission.SET_TIME_ZONE",
+          "decoded_header": "android.permission.SET_TIME_ZONE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_WALLPAPER",
+      "bare_name": "SET_WALLPAPER",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14859,
+          "raw_header": "android.permission.SET+AF8-WALLPAPER",
+          "decoded_header": "android.permission.SET_WALLPAPER"
+        },
+        {
+          "zero_based_index": 31802,
+          "raw_header": "android.permission.SET_WALLPAPER",
+          "decoded_header": "android.permission.SET_WALLPAPER"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SET_WALLPAPER_HINTS",
+      "bare_name": "SET_WALLPAPER_HINTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14861,
+          "raw_header": "android.permission.SET+AF8-WALLPAPER+AF8-HINTS",
+          "decoded_header": "android.permission.SET_WALLPAPER_HINTS"
+        },
+        {
+          "zero_based_index": 31890,
+          "raw_header": "android.permission.SET_WALLPAPER_HINTS",
+          "decoded_header": "android.permission.SET_WALLPAPER_HINTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+      "bare_name": "SIGNAL_PERSISTENT_PROCESSES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14862,
+          "raw_header": "android.permission.SIGNAL+AF8-PERSISTENT+AF8-PROCESSES",
+          "decoded_header": "android.permission.SIGNAL_PERSISTENT_PROCESSES"
+        },
+        {
+          "zero_based_index": 35613,
+          "raw_header": "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+          "decoded_header": "android.permission.SIGNAL_PERSISTENT_PROCESSES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.STATUS_BAR",
+      "bare_name": "STATUS_BAR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14866,
+          "raw_header": "android.permission.STATUS+AF8-BAR",
+          "decoded_header": "android.permission.STATUS_BAR"
+        },
+        {
+          "zero_based_index": 33727,
+          "raw_header": "android.permission.STATUS_BAR",
+          "decoded_header": "android.permission.STATUS_BAR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.STORAGE",
+      "bare_name": "STORAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14868,
+          "raw_header": "android.permission.STORAGE",
+          "decoded_header": "android.permission.STORAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SUBSCRIBED_FEEDS_READ",
+      "bare_name": "SUBSCRIBED_FEEDS_READ",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14869,
+          "raw_header": "android.permission.SUBSCRIBED+AF8-FEEDS+AF8-READ",
+          "decoded_header": "android.permission.SUBSCRIBED_FEEDS_READ"
+        },
+        {
+          "zero_based_index": 34088,
+          "raw_header": "android.permission.SUBSCRIBED_FEEDS_READ",
+          "decoded_header": "android.permission.SUBSCRIBED_FEEDS_READ"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SUBSCRIBED_FEEDS_WRITE",
+      "bare_name": "SUBSCRIBED_FEEDS_WRITE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14870,
+          "raw_header": "android.permission.SUBSCRIBED+AF8-FEEDS+AF8-WRITE",
+          "decoded_header": "android.permission.SUBSCRIBED_FEEDS_WRITE"
+        },
+        {
+          "zero_based_index": 34325,
+          "raw_header": "android.permission.SUBSCRIBED_FEEDS_WRITE",
+          "decoded_header": "android.permission.SUBSCRIBED_FEEDS_WRITE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.SYSTEM_ALERT_WINDOW",
+      "bare_name": "SYSTEM_ALERT_WINDOW",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14871,
+          "raw_header": "android.permission.SYSTEM+AF8-ALERT+AF8-WINDOW",
+          "decoded_header": "android.permission.SYSTEM_ALERT_WINDOW"
+        },
+        {
+          "zero_based_index": 31752,
+          "raw_header": "android.permission.SYSTEM_ALERT_WINDOW",
+          "decoded_header": "android.permission.SYSTEM_ALERT_WINDOW"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.TRANSMIT_IR",
+      "bare_name": "TRANSMIT_IR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14873,
+          "raw_header": "android.permission.TRANSMIT+AF8-IR",
+          "decoded_header": "android.permission.TRANSMIT_IR"
+        },
+        {
+          "zero_based_index": 34326,
+          "raw_header": "android.permission.TRANSMIT_IR",
+          "decoded_header": "android.permission.TRANSMIT_IR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.UPDATE_DEVICE_STATS",
+      "bare_name": "UPDATE_DEVICE_STATS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14875,
+          "raw_header": "android.permission.UPDATE+AF8-DEVICE+AF8-STATS",
+          "decoded_header": "android.permission.UPDATE_DEVICE_STATS"
+        },
+        {
+          "zero_based_index": 32227,
+          "raw_header": "android.permission.UPDATE_DEVICE_STATS",
+          "decoded_header": "android.permission.UPDATE_DEVICE_STATS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.USES_POLICY_FORCE_LOCK",
+      "bare_name": "USES_POLICY_FORCE_LOCK",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14877,
+          "raw_header": "android.permission.USES+AF8-POLICY+AF8-FORCE+AF8-LOCK",
+          "decoded_header": "android.permission.USES_POLICY_FORCE_LOCK"
+        },
+        {
+          "zero_based_index": 34483,
+          "raw_header": "android.permission.USES_POLICY_FORCE_LOCK",
+          "decoded_header": "android.permission.USES_POLICY_FORCE_LOCK"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.USE_CREDENTIALS",
+      "bare_name": "USE_CREDENTIALS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14878,
+          "raw_header": "android.permission.USE+AF8-CREDENTIALS",
+          "decoded_header": "android.permission.USE_CREDENTIALS"
+        },
+        {
+          "zero_based_index": 31918,
+          "raw_header": "android.permission.USE_CREDENTIALS",
+          "decoded_header": "android.permission.USE_CREDENTIALS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.USE_FINGERPRINT",
+      "bare_name": "USE_FINGERPRINT",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14879,
+          "raw_header": "android.permission.USE+AF8-FINGERPRINT",
+          "decoded_header": "android.permission.USE_FINGERPRINT"
+        },
+        {
+          "zero_based_index": 35736,
+          "raw_header": "android.permission.USE_FINGERPRINT",
+          "decoded_header": "android.permission.USE_FINGERPRINT"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.USE_SIP",
+      "bare_name": "USE_SIP",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14880,
+          "raw_header": "android.permission.USE+AF8-SIP",
+          "decoded_header": "android.permission.USE_SIP"
+        },
+        {
+          "zero_based_index": 34090,
+          "raw_header": "android.permission.USE_SIP",
+          "decoded_header": "android.permission.USE_SIP"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.VIBRATE",
+      "bare_name": "VIBRATE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 3216,
+          "raw_header": "ANDROID.permission.VIBRATE",
+          "decoded_header": "ANDROID.permission.VIBRATE"
+        },
+        {
+          "zero_based_index": 14881,
+          "raw_header": "android.permission.VIBRATE",
+          "decoded_header": "android.permission.VIBRATE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WAKE_LOCK",
+      "bare_name": "WAKE_LOCK",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14882,
+          "raw_header": "android.permission.WAKE+AF8-LOCK",
+          "decoded_header": "android.permission.WAKE_LOCK"
+        },
+        {
+          "zero_based_index": 14938,
+          "raw_header": "android.permission.wake+AF8-lock",
+          "decoded_header": "android.permission.wake_lock"
+        },
+        {
+          "zero_based_index": 31708,
+          "raw_header": "android.permission.WAKE_LOCK",
+          "decoded_header": "android.permission.WAKE_LOCK"
+        },
+        {
+          "zero_based_index": 48937,
+          "raw_header": "android.permission.wake_lock",
+          "decoded_header": "android.permission.wake_lock"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE",
+      "bare_name": "WRITE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14883,
+          "raw_header": "android.permission.WRITE",
+          "decoded_header": "android.permission.WRITE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_APN_SETTINGS",
+      "bare_name": "WRITE_APN_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14884,
+          "raw_header": "android.permission.WRITE+AF8-APN+AF8-SETTINGS",
+          "decoded_header": "android.permission.WRITE_APN_SETTINGS"
+        },
+        {
+          "zero_based_index": 31779,
+          "raw_header": "android.permission.WRITE_APN_SETTINGS",
+          "decoded_header": "android.permission.WRITE_APN_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_CALENDAR",
+      "bare_name": "WRITE_CALENDAR",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14886,
+          "raw_header": "android.permission.WRITE+AF8-CALENDAR",
+          "decoded_header": "android.permission.WRITE_CALENDAR"
+        },
+        {
+          "zero_based_index": 33713,
+          "raw_header": "android.permission.WRITE_CALENDAR",
+          "decoded_header": "android.permission.WRITE_CALENDAR"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_CALL_LOG",
+      "bare_name": "WRITE_CALL_LOG",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14887,
+          "raw_header": "android.permission.WRITE+AF8-CALL+AF8-LOG",
+          "decoded_header": "android.permission.WRITE_CALL_LOG"
+        },
+        {
+          "zero_based_index": 31955,
+          "raw_header": "android.permission.WRITE_CALL_LOG",
+          "decoded_header": "android.permission.WRITE_CALL_LOG"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_CONTACTS",
+      "bare_name": "WRITE_CONTACTS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14889,
+          "raw_header": "android.permission.WRITE+AF8-CONTACTS",
+          "decoded_header": "android.permission.WRITE_CONTACTS"
+        },
+        {
+          "zero_based_index": 31759,
+          "raw_header": "android.permission.WRITE_CONTACTS",
+          "decoded_header": "android.permission.WRITE_CONTACTS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "bare_name": "WRITE_EXTERNAL_STORAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14891,
+          "raw_header": "android.permission.WRITE+AF8-EXTERNAL+AF8-STORAGE",
+          "decoded_header": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+          "zero_based_index": 31720,
+          "raw_header": "android.permission.WRITE_EXTERNAL_STORAGE",
+          "decoded_header": "android.permission.WRITE_EXTERNAL_STORAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_GSERVICES",
+      "bare_name": "WRITE_GSERVICES",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14894,
+          "raw_header": "android.permission.WRITE+AF8-GSERVICES",
+          "decoded_header": "android.permission.WRITE_GSERVICES"
+        },
+        {
+          "zero_based_index": 34064,
+          "raw_header": "android.permission.WRITE_GSERVICES",
+          "decoded_header": "android.permission.WRITE_GSERVICES"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_HISTORY_BOOKMARKS",
+      "bare_name": "WRITE_HISTORY_BOOKMARKS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14895,
+          "raw_header": "android.permission.WRITE+AF8-HISTORY+AF8-BOOKMARKS",
+          "decoded_header": "android.permission.WRITE_HISTORY_BOOKMARKS"
+        },
+        {
+          "zero_based_index": 31967,
+          "raw_header": "android.permission.WRITE_HISTORY_BOOKMARKS",
+          "decoded_header": "android.permission.WRITE_HISTORY_BOOKMARKS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_INTERNAL_STORAGE",
+      "bare_name": "WRITE_INTERNAL_STORAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14896,
+          "raw_header": "android.permission.WRITE+AF8-INTERNAL+AF8-STORAGE",
+          "decoded_header": "android.permission.WRITE_INTERNAL_STORAGE"
+        },
+        {
+          "zero_based_index": 34998,
+          "raw_header": "android.permission.WRITE_INTERNAL_STORAGE",
+          "decoded_header": "android.permission.WRITE_INTERNAL_STORAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_MEDIA_STORAGE",
+      "bare_name": "WRITE_MEDIA_STORAGE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14897,
+          "raw_header": "android.permission.WRITE+AF8-MEDIA+AF8-STORAGE",
+          "decoded_header": "android.permission.WRITE_MEDIA_STORAGE"
+        },
+        {
+          "zero_based_index": 33828,
+          "raw_header": "android.permission.WRITE_MEDIA_STORAGE",
+          "decoded_header": "android.permission.WRITE_MEDIA_STORAGE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_OWNER_DATA",
+      "bare_name": "WRITE_OWNER_DATA",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14900,
+          "raw_header": "android.permission.WRITE+AF8-OWNER+AF8-DATA",
+          "decoded_header": "android.permission.WRITE_OWNER_DATA"
+        },
+        {
+          "zero_based_index": 32755,
+          "raw_header": "android.permission.WRITE_OWNER_DATA",
+          "decoded_header": "android.permission.WRITE_OWNER_DATA"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_PROFILE",
+      "bare_name": "WRITE_PROFILE",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14901,
+          "raw_header": "android.permission.WRITE+AF8-PROFILE",
+          "decoded_header": "android.permission.WRITE_PROFILE"
+        },
+        {
+          "zero_based_index": 34327,
+          "raw_header": "android.permission.WRITE_PROFILE",
+          "decoded_header": "android.permission.WRITE_PROFILE"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_SECURE_SETTINGS",
+      "bare_name": "WRITE_SECURE_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14903,
+          "raw_header": "android.permission.WRITE+AF8-SECURE+AF8-SETTINGS",
+          "decoded_header": "android.permission.WRITE_SECURE_SETTINGS"
+        },
+        {
+          "zero_based_index": 31782,
+          "raw_header": "android.permission.WRITE_SECURE_SETTINGS",
+          "decoded_header": "android.permission.WRITE_SECURE_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_SETTINGS",
+      "bare_name": "WRITE_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14904,
+          "raw_header": "android.permission.WRITE+AF8-SETTINGS",
+          "decoded_header": "android.permission.WRITE_SETTINGS"
+        },
+        {
+          "zero_based_index": 31706,
+          "raw_header": "android.permission.WRITE_SETTINGS",
+          "decoded_header": "android.permission.WRITE_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_SMS",
+      "bare_name": "WRITE_SMS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14905,
+          "raw_header": "android.permission.WRITE+AF8-SMS",
+          "decoded_header": "android.permission.WRITE_SMS"
+        },
+        {
+          "zero_based_index": 31787,
+          "raw_header": "android.permission.WRITE_SMS",
+          "decoded_header": "android.permission.WRITE_SMS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_SOCIAL_STREAM",
+      "bare_name": "WRITE_SOCIAL_STREAM",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14906,
+          "raw_header": "android.permission.WRITE+AF8-SOCIAL+AF8-STREAM",
+          "decoded_header": "android.permission.WRITE_SOCIAL_STREAM"
+        },
+        {
+          "zero_based_index": 34328,
+          "raw_header": "android.permission.WRITE_SOCIAL_STREAM",
+          "decoded_header": "android.permission.WRITE_SOCIAL_STREAM"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_SYNC_SETTINGS",
+      "bare_name": "WRITE_SYNC_SETTINGS",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14907,
+          "raw_header": "android.permission.WRITE+AF8-SYNC+AF8-SETTINGS",
+          "decoded_header": "android.permission.WRITE_SYNC_SETTINGS"
+        },
+        {
+          "zero_based_index": 31920,
+          "raw_header": "android.permission.WRITE_SYNC_SETTINGS",
+          "decoded_header": "android.permission.WRITE_SYNC_SETTINGS"
+        }
+      ]
+    },
+    {
+      "feature": "android.permission.WRITE_USER_DICTIONARY",
+      "bare_name": "WRITE_USER_DICTIONARY",
+      "aggregation": "logical OR after numeric/boolean value > 0",
+      "source_columns": [
+        {
+          "zero_based_index": 14908,
+          "raw_header": "android.permission.WRITE+AF8-USER+AF8-DICTIONARY",
+          "decoded_header": "android.permission.WRITE_USER_DICTIONARY"
+        },
+        {
+          "zero_based_index": 34329,
+          "raw_header": "android.permission.WRITE_USER_DICTIONARY",
+          "decoded_header": "android.permission.WRITE_USER_DICTIONARY"
+        }
+      ]
+    }
+  ]
+}

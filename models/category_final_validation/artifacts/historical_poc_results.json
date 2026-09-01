@@ -1,0 +1,111 @@
+{
+  "status": "immutable_historical_poc_evidence",
+  "source_directory": "D:\\beeeen\\android adware detection system1\\models\\category_experimental",
+  "artifacts": {
+    "metrics.json": {
+      "sha256": "cb5e1334ff22f2c8d1736b125ee5286dc8a4880b7cb6a373166649e49e86e4fa",
+      "bytes": 19012
+    },
+    "model_comparison.csv": {
+      "sha256": "b00b2af2a484832f3eff252e17a48ea83ac7e8510680b175160951a71c6b9d2e",
+      "bytes": 672
+    },
+    "split_manifest.csv": {
+      "sha256": "d14dd5eaece6b4772981aab800f17d919ee3dfb45abe00adb440b062ffa4cced",
+      "bytes": 272768
+    },
+    "natural_split_manifest.csv": {
+      "sha256": "f884942ddd45909697b4fc749dcba68b5293945652c3b524d342c87595f1c5b2",
+      "bytes": 639579
+    },
+    "permission_features.json": {
+      "sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd",
+      "bytes": 6497
+    },
+    "experiment_config.json": {
+      "sha256": "d977bd896a2dc99fad576f48c9c424db41b1a07cfe04ec789d42aae8978d5b3c",
+      "bytes": 2324
+    },
+    "permission_source_mapping.json": {
+      "sha256": "59cfec267197b4c7efc075b47999401a9d702d245ac1a44fe0de4f7532340811",
+      "bytes": 94135
+    },
+    "source_data_fingerprints.json": {
+      "sha256": "71ff81753e0758185f515f821e482fa9c2cbe484121a9d1021900cde726c28bc",
+      "bytes": 490
+    },
+    "train_category_poc.py": {
+      "sha256": "8736de3f5241193f451538de5488edbec385a3424ad019f62e83e10e4107fd3f",
+      "bytes": 53993
+    }
+  },
+  "verbatim_model_comparison_csv": "model,split,macro_f1,weighted_f1,balanced_accuracy,accuracy_context_only,worst_class_recall,training_seconds\nLogistic Regression,validation,0.91493458,0.91493458,0.91500000,0.91500000,0.87500000,0.22005850\nLogistic Regression,test,0.88750240,0.88750240,0.88750000,0.88750000,0.85000000,0.22005850\nRandom Forest,validation,0.92519556,0.92519556,0.92500000,0.92500000,0.90000000,1.40702570\nRandom Forest,test,0.92884022,0.92884022,0.92875000,0.92875000,0.90000000,1.40702570\nHistGradientBoosting,validation,0.92763547,0.92763547,0.92750000,0.92750000,0.90500000,22.56351480\nHistGradientBoosting,test,0.90172134,0.90172134,0.90125000,0.90125000,0.89000000,22.56351480\n",
+  "results": [
+    {
+      "model": "Logistic Regression",
+      "split": "validation",
+      "macro_f1": 0.91493458,
+      "weighted_f1": 0.91493458,
+      "balanced_accuracy": 0.915,
+      "accuracy_context_only": 0.915,
+      "worst_class_recall": 0.875,
+      "training_seconds": 0.2200585
+    },
+    {
+      "model": "Logistic Regression",
+      "split": "test",
+      "macro_f1": 0.8875024,
+      "weighted_f1": 0.8875024,
+      "balanced_accuracy": 0.8875,
+      "accuracy_context_only": 0.8875,
+      "worst_class_recall": 0.85,
+      "training_seconds": 0.2200585
+    },
+    {
+      "model": "Random Forest",
+      "split": "validation",
+      "macro_f1": 0.92519556,
+      "weighted_f1": 0.92519556,
+      "balanced_accuracy": 0.925,
+      "accuracy_context_only": 0.925,
+      "worst_class_recall": 0.9,
+      "training_seconds": 1.4070257
+    },
+    {
+      "model": "Random Forest",
+      "split": "test",
+      "macro_f1": 0.92884022,
+      "weighted_f1": 0.92884022,
+      "balanced_accuracy": 0.92875,
+      "accuracy_context_only": 0.92875,
+      "worst_class_recall": 0.9,
+      "training_seconds": 1.4070257
+    },
+    {
+      "model": "HistGradientBoosting",
+      "split": "validation",
+      "macro_f1": 0.92763547,
+      "weighted_f1": 0.92763547,
+      "balanced_accuracy": 0.9275,
+      "accuracy_context_only": 0.9275,
+      "worst_class_recall": 0.905,
+      "training_seconds": 22.5635148
+    },
+    {
+      "model": "HistGradientBoosting",
+      "split": "test",
+      "macro_f1": 0.90172134,
+      "weighted_f1": 0.90172134,
+      "balanced_accuracy": 0.90125,
+      "accuracy_context_only": 0.90125,
+      "worst_class_recall": 0.89,
+      "training_seconds": 22.5635148
+    }
+  ],
+  "historical_test_used_for_current_selection": false,
+  "historical_selection_remains": {
+    "selected_model": "HistGradientBoosting",
+    "basis": "historical validation Macro F1 only",
+    "not_retroactively_changed_to_test_leader": true
+  }
+}

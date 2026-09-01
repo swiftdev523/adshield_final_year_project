@@ -1,0 +1,218 @@
+{
+  "status": "completed_one_time_final_supplementary_evaluation",
+  "evaluated_at_utc": "2026-07-27T04:10:41.079472Z",
+  "evaluation_identity": {
+    "model_sha256": "9b2f3b2a880372ff077fdc37e6e3d7909c9ba3ba28cabce371a58d1f6b80f3b9",
+    "holdout_manifest_sha256": "6f426d8b1ddf8466917aeda5168ce0fc2c4cf9e377a22ee4ec7e02043afa9240",
+    "holdout_features_sha256": "4586dbf74de7762a0a55ff687ac5010792d3babdbdec05741a86126734492f6a"
+  },
+  "preflight": {
+    "all_gates_passed_before_prediction": true,
+    "frozen_holdout_artifacts": {
+      "final_holdout_manifest.csv": {
+        "bytes": 62880,
+        "expected_sha256": "6f426d8b1ddf8466917aeda5168ce0fc2c4cf9e377a22ee4ec7e02043afa9240",
+        "actual_sha256": "6f426d8b1ddf8466917aeda5168ce0fc2c4cf9e377a22ee4ec7e02043afa9240",
+        "matches": true
+      },
+      "final_holdout_features.csv": {
+        "bytes": 65550,
+        "expected_sha256": "4586dbf74de7762a0a55ff687ac5010792d3babdbdec05741a86126734492f6a",
+        "actual_sha256": "4586dbf74de7762a0a55ff687ac5010792d3babdbdec05741a86126734492f6a",
+        "matches": true
+      },
+      "final_holdout_selection_report.json": {
+        "bytes": 11646,
+        "expected_sha256": "37e2f95003ada45bcc0aed0cbe63c303ca18fa389df022267ee189e2871733f7",
+        "actual_sha256": "37e2f95003ada45bcc0aed0cbe63c303ca18fa389df022267ee189e2871733f7",
+        "matches": true
+      },
+      "final_holdout_sha256.txt": {
+        "bytes": 288,
+        "sha256": "1478b36d4bc80cacf0243eebafeaf3228007ac10bceb07e08ac34bfff3408fca",
+        "note": "Checksum manifest is recorded separately and does not self-hash."
+      }
+    },
+    "runtime": {
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "python_executable": "D:\\beeeen\\android adware detection system1\\.runtime\\category-final-venv\\Scripts\\python.exe",
+      "platform": "Windows-11-10.0.22000-SP0",
+      "scikit_learn": "1.6.1",
+      "required_scikit_learn": "1.6.1",
+      "exact_version_match": true,
+      "joblib": "1.5.3",
+      "numpy": "1.26.4"
+    },
+    "feature_contract": {
+      "count": 153,
+      "ordered_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+      "required_ordered_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+      "exact_match": true,
+      "feature_header_equals_bundle_feature_names": true
+    },
+    "model": {
+      "path": "models/category_final_validation/artifacts/selected_category_model_provisional.joblib",
+      "bytes": 32012459,
+      "sha256": "9b2f3b2a880372ff077fdc37e6e3d7909c9ba3ba28cabce371a58d1f6b80f3b9",
+      "matches_historical_run_manifest": true,
+      "bundle_model_name": "Random Forest",
+      "estimator_type": "RandomForestClassifier",
+      "n_features_in": 153,
+      "classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "class_dtype": "int8",
+      "class_mapping": {
+        "0": "Adware",
+        "1": "Banking Malware",
+        "2": "SMS Malware",
+        "3": "Riskware"
+      },
+      "n_estimators": 400,
+      "max_features": "sqrt",
+      "random_state": 42,
+      "probabilities_calibrated": false
+    },
+    "holdout": {
+      "rows": 196,
+      "features": 153,
+      "class_counts": {
+        "Adware": 49,
+        "Banking Malware": 49,
+        "SMS Malware": 49,
+        "Riskware": 49
+      },
+      "manifest_indices_are_0_through_195": true,
+      "manifest_feature_row_alignment_preserved": true,
+      "all_features_binary": true,
+      "no_all_zero_vectors": true
+    }
+  },
+  "inference": {
+    "evaluation_transactions": 1,
+    "predict_calls": 1,
+    "predict_proba_calls": 1,
+    "predict_matches_predict_proba_argmax": true,
+    "raw_probabilities_saved": true,
+    "raw_probabilities_calibrated": false,
+    "raw_probability_disclaimer": "Raw four-class research diagnostics only; not calibrated confidence."
+  },
+  "metrics": {
+    "accuracy": 0.8061224489795918,
+    "macro_f1": 0.7945772889976753,
+    "weighted_f1": 0.7945772889976755,
+    "balanced_accuracy": 0.8061224489795918,
+    "per_class": {
+      "Adware": {
+        "precision": 0.7966101694915254,
+        "recall": 0.9591836734693877,
+        "f1": 0.8703703703703703,
+        "support": 49
+      },
+      "Banking Malware": {
+        "precision": 0.7666666666666667,
+        "recall": 0.46938775510204084,
+        "f1": 0.5822784810126582,
+        "support": 49
+      },
+      "SMS Malware": {
+        "precision": 0.9761904761904762,
+        "recall": 0.8367346938775511,
+        "f1": 0.9010989010989011,
+        "support": 49
+      },
+      "Riskware": {
+        "precision": 0.7230769230769231,
+        "recall": 0.9591836734693877,
+        "f1": 0.8245614035087719,
+        "support": 49
+      }
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Adware",
+      "Banking Malware",
+      "SMS Malware",
+      "Riskware"
+    ],
+    "orientation": "rows actual; columns predicted",
+    "rows_actual_columns_predicted": [
+      [
+        47,
+        1,
+        0,
+        1
+      ],
+      [
+        11,
+        23,
+        1,
+        14
+      ],
+      [
+        0,
+        5,
+        41,
+        3
+      ],
+      [
+        1,
+        1,
+        0,
+        47
+      ]
+    ]
+  },
+  "experimental_integration_criterion": {
+    "name": "predeclared FYP prototype heuristic",
+    "macro_f1_threshold": 0.8,
+    "minimum_recall_each_supported_category": 0.7,
+    "observed_macro_f1": 0.7945772889976753,
+    "minimum_class_recall": 0.46938775510204084,
+    "macro_f1_requirement_passed": false,
+    "all_class_recall_requirement_passed": false,
+    "passed": false,
+    "scope_disclaimer": "Project-specific experimental integration criterion; not a production-security certification threshold."
+  },
+  "repeated_grouped_cv_comparison": {
+    "model": "Random Forest",
+    "baseline_macro_f1_reported": 0.914532,
+    "baseline_macro_f1_stored_unrounded": 0.9145319265188838,
+    "holdout_macro_f1": 0.7945772889976753,
+    "holdout_minus_reported_baseline": -0.11995471100232469,
+    "holdout_minus_stored_unrounded_baseline": -0.1199546375212085,
+    "difference_percentage_points": -11.995471100232468,
+    "comparison_type": "descriptive only; no significance claim"
+  },
+  "limitations": [
+    "The holdout contains only 49 packages per class; one additional error changes a class recall by about 2.04 percentage points.",
+    "The balanced 49/49/49/49 class distribution is an evaluation design and does not represent real-world malware-family prevalence.",
+    "This is a within-CICMalDroid supplementary holdout with mixed static-source and Kali APK-extraction provenance, not a fully independent external dataset.",
+    "Adware/Riskware labels rely on documented positional alignment; Banking/SMS labels are inherited from audited source folders rather than independent multi-engine family adjudication.",
+    "Only Banking and SMS samples have linkable APK SHA-256 evidence, covering 98 of 196 holdout samples.",
+    "Package-disjoint grouping cannot prove that differently named packages are not repackaged or closely related variants.",
+    "The model uses only 153 static permission-presence features and cannot observe code behavior, payloads, URLs, runtime actions, or other static structures.",
+    "The classifier is closed-set: unsupported malware families are forced into one of Adware, Banking Malware, SMS Malware, or Riskware.",
+    "Raw probabilities are uncalibrated and conditional on the upstream binary detector already classifying the application as malicious.",
+    "This one-time holdout must not be reused for model, threshold, feature, or hyperparameter selection."
+  ],
+  "post_inference_integrity": {
+    "frozen_holdout_hashes_unchanged": true,
+    "selected_model_hash_unchanged": true,
+    "selected_model_sha256_after": "9b2f3b2a880372ff077fdc37e6e3d7909c9ba3ba28cabce371a58d1f6b80f3b9"
+  },
+  "non_actions": {
+    "model_retrained": false,
+    "model_calibrated": false,
+    "hyperparameters_tuned": false,
+    "thresholds_changed": false,
+    "holdout_modified": false,
+    "labels_modified": false,
+    "sample_selection_modified": false,
+    "fastapi_integrated": false
+  }
+}

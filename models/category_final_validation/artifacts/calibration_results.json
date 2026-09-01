@@ -1,0 +1,1666 @@
+{
+  "selected_model_family": "Random Forest",
+  "protocol": {
+    "outer": "5-fold StratifiedGroupKFold, package-disjoint",
+    "outer_seed": 6201,
+    "inner": "explicit 4-fold StratifiedGroupKFold passed to CalibratedClassifierCV",
+    "inner_seed_base": 7300,
+    "calibrated_ensemble": true,
+    "methods": [
+      "raw",
+      "sigmoid",
+      "isotonic"
+    ],
+    "evaluation_data": "outer held-out package groups only"
+  },
+  "metrics": {
+    "raw": {
+      "macro_f1": 0.9109822176113779,
+      "balanced_accuracy": 0.9112627986348123,
+      "worst_class_recall": 0.8418657565415245,
+      "per_class": {
+        "Adware": {
+          "precision": 0.8865546218487395,
+          "recall": 0.9601820250284414,
+          "f1": 0.9219006007646096,
+          "support": 879
+        },
+        "Banking Malware": {
+          "precision": 0.8799048751486326,
+          "recall": 0.8418657565415245,
+          "f1": 0.8604651162790697,
+          "support": 879
+        },
+        "SMS Malware": {
+          "precision": 0.958139534883721,
+          "recall": 0.9374288964732651,
+          "f1": 0.9476710753306498,
+          "support": 879
+        },
+        "Riskware": {
+          "precision": 0.9223638470451911,
+          "recall": 0.9055745164960182,
+          "f1": 0.9138920780711826,
+          "support": 879
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Adware",
+          "Banking Malware",
+          "SMS Malware",
+          "Riskware"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            844,
+            24,
+            0,
+            11
+          ],
+          [
+            55,
+            740,
+            35,
+            49
+          ],
+          [
+            5,
+            43,
+            824,
+            7
+          ],
+          [
+            48,
+            34,
+            1,
+            796
+          ]
+        ]
+      },
+      "multiclass_log_loss": 0.3237229494416331,
+      "multiclass_brier_mean_sum_squared_error": 0.12447994758290096,
+      "top_label_ece_10_equal_width_bins": 0.019455059004217467,
+      "top_label_reliability_bins": [
+        {
+          "bin": 1,
+          "lower_inclusive": 0.0,
+          "upper_inclusive_only_for_last_bin": 0.1,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 2,
+          "lower_inclusive": 0.1,
+          "upper_inclusive_only_for_last_bin": 0.2,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 3,
+          "lower_inclusive": 0.2,
+          "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+          "support": 2,
+          "mean_probability": 0.28,
+          "observed_rate": 0.0,
+          "absolute_gap": 0.28
+        },
+        {
+          "bin": 4,
+          "lower_inclusive": 0.30000000000000004,
+          "upper_inclusive_only_for_last_bin": 0.4,
+          "support": 42,
+          "mean_probability": 0.3686096467019959,
+          "observed_rate": 0.09523809523809523,
+          "absolute_gap": 0.2733715514639007
+        },
+        {
+          "bin": 5,
+          "lower_inclusive": 0.4,
+          "upper_inclusive_only_for_last_bin": 0.5,
+          "support": 141,
+          "mean_probability": 0.4557853202582102,
+          "observed_rate": 0.46808510638297873,
+          "absolute_gap": 0.012299786124768508
+        },
+        {
+          "bin": 6,
+          "lower_inclusive": 0.5,
+          "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+          "support": 156,
+          "mean_probability": 0.5494205857884786,
+          "observed_rate": 0.5897435897435898,
+          "absolute_gap": 0.040323003955111125
+        },
+        {
+          "bin": 7,
+          "lower_inclusive": 0.6000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+          "support": 183,
+          "mean_probability": 0.6502748385074433,
+          "observed_rate": 0.7103825136612022,
+          "absolute_gap": 0.06010767515375892
+        },
+        {
+          "bin": 8,
+          "lower_inclusive": 0.7000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.8,
+          "support": 202,
+          "mean_probability": 0.7524825753019693,
+          "observed_rate": 0.7871287128712872,
+          "absolute_gap": 0.03464613756931789
+        },
+        {
+          "bin": 9,
+          "lower_inclusive": 0.8,
+          "upper_inclusive_only_for_last_bin": 0.9,
+          "support": 286,
+          "mean_probability": 0.8504244298202982,
+          "observed_rate": 0.9475524475524476,
+          "absolute_gap": 0.09712801773214941
+        },
+        {
+          "bin": 10,
+          "lower_inclusive": 0.9,
+          "upper_inclusive_only_for_last_bin": 1.0,
+          "support": 2504,
+          "mean_probability": 0.9901913392878513,
+          "observed_rate": 0.9912140575079872,
+          "absolute_gap": 0.0010227182201358875
+        }
+      ],
+      "per_class_probability_metrics": {
+        "Adware": {
+          "one_vs_rest_brier": 0.028768782400957864,
+          "ece_10_equal_width_bins": 0.0151173287179,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2352,
+              "mean_probability": 0.007967088668761852,
+              "observed_rate": 0.0021258503401360546,
+              "absolute_gap": 0.005841238328625797
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 80,
+              "mean_probability": 0.14290362148900543,
+              "observed_rate": 0.0375,
+              "absolute_gap": 0.10540362148900542
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 87,
+              "mean_probability": 0.24755964991301463,
+              "observed_rate": 0.12643678160919541,
+              "absolute_gap": 0.12112286830381921
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 50,
+              "mean_probability": 0.34959777863349295,
+              "observed_rate": 0.32,
+              "absolute_gap": 0.029597778633492944
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 44,
+              "mean_probability": 0.46358426255262936,
+              "observed_rate": 0.45454545454545453,
+              "absolute_gap": 0.009038808007174826
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 46,
+              "mean_probability": 0.5561615764658506,
+              "observed_rate": 0.5434782608695652,
+              "absolute_gap": 0.012683315596285438
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 56,
+              "mean_probability": 0.6504935424675147,
+              "observed_rate": 0.6964285714285714,
+              "absolute_gap": 0.04593502896105672
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 75,
+              "mean_probability": 0.7524301569092261,
+              "observed_rate": 0.7466666666666667,
+              "absolute_gap": 0.005763490242559399
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 112,
+              "mean_probability": 0.8480694295174384,
+              "observed_rate": 0.9375,
+              "absolute_gap": 0.08943057048256164
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 614,
+              "mean_probability": 0.9836515955638083,
+              "observed_rate": 0.9755700325732899,
+              "absolute_gap": 0.008081562990518432
+            }
+          ]
+        },
+        "Banking Malware": {
+          "one_vs_rest_brier": 0.047375522742539256,
+          "ece_10_equal_width_bins": 0.012973975039061449,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2161,
+              "mean_probability": 0.010919954859568507,
+              "observed_rate": 0.016658954187875982,
+              "absolute_gap": 0.005738999328307475
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 247,
+              "mean_probability": 0.1365689133606432,
+              "observed_rate": 0.13360323886639677,
+              "absolute_gap": 0.002965674494246423
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 145,
+              "mean_probability": 0.24618000975881466,
+              "observed_rate": 0.21379310344827587,
+              "absolute_gap": 0.03238690631053878
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 109,
+              "mean_probability": 0.3376857804161588,
+              "observed_rate": 0.29357798165137616,
+              "absolute_gap": 0.04410779876478266
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 67,
+              "mean_probability": 0.4421602986718824,
+              "observed_rate": 0.3283582089552239,
+              "absolute_gap": 0.1138020897166585
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 56,
+              "mean_probability": 0.5389654322627322,
+              "observed_rate": 0.48214285714285715,
+              "absolute_gap": 0.05682257511987504
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 59,
+              "mean_probability": 0.6454751659979554,
+              "observed_rate": 0.6440677966101694,
+              "absolute_gap": 0.0014073693877859617
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 46,
+              "mean_probability": 0.7492336956521738,
+              "observed_rate": 0.9130434782608695,
+              "absolute_gap": 0.16380978260869572
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 52,
+              "mean_probability": 0.8473667773199024,
+              "observed_rate": 0.9038461538461539,
+              "absolute_gap": 0.05647937652625146
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 574,
+              "mean_probability": 0.9919579633842758,
+              "observed_rate": 0.9947735191637631,
+              "absolute_gap": 0.002815555779487333
+            }
+          ]
+        },
+        "SMS Malware": {
+          "one_vs_rest_brier": 0.018669005424390865,
+          "ece_10_equal_width_bins": 0.015832296808143312,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2493,
+              "mean_probability": 0.0061580795038711335,
+              "observed_rate": 0.003208985158443642,
+              "absolute_gap": 0.0029490943454274915
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 88,
+              "mean_probability": 0.13887083389260027,
+              "observed_rate": 0.13636363636363635,
+              "absolute_gap": 0.002507197528963917
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 32,
+              "mean_probability": 0.24064435954670332,
+              "observed_rate": 0.1875,
+              "absolute_gap": 0.053144359546703324
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 32,
+              "mean_probability": 0.34951872702205883,
+              "observed_rate": 0.59375,
+              "absolute_gap": 0.24423127297794117
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 43,
+              "mean_probability": 0.44973067049229837,
+              "observed_rate": 0.5581395348837209,
+              "absolute_gap": 0.10840886439142255
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 26,
+              "mean_probability": 0.5609782130262899,
+              "observed_rate": 0.8846153846153846,
+              "absolute_gap": 0.32363717158909466
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 34,
+              "mean_probability": 0.649539381574308,
+              "observed_rate": 0.8823529411764706,
+              "absolute_gap": 0.23281355960216255
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 46,
+              "mean_probability": 0.7499054777459809,
+              "observed_rate": 0.8478260869565217,
+              "absolute_gap": 0.0979206092105408
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 83,
+              "mean_probability": 0.8523568883777182,
+              "observed_rate": 0.9879518072289156,
+              "absolute_gap": 0.13559491885119745
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 639,
+              "mean_probability": 0.9924458923223971,
+              "observed_rate": 0.9953051643192489,
+              "absolute_gap": 0.0028592719968517644
+            }
+          ]
+        },
+        "Riskware": {
+          "one_vs_rest_brier": 0.029666637015012973,
+          "ece_10_equal_width_bins": 0.01253091931419791,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2298,
+              "mean_probability": 0.01226984568657489,
+              "observed_rate": 0.008703220191470844,
+              "absolute_gap": 0.0035666254951040467
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 214,
+              "mean_probability": 0.14307678313280503,
+              "observed_rate": 0.0794392523364486,
+              "absolute_gap": 0.06363753079635644
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 80,
+              "mean_probability": 0.24825241329515996,
+              "observed_rate": 0.225,
+              "absolute_gap": 0.02325241329515995
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 62,
+              "mean_probability": 0.3400139373582503,
+              "observed_rate": 0.41935483870967744,
+              "absolute_gap": 0.07934090135142713
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 49,
+              "mean_probability": 0.4496092096164698,
+              "observed_rate": 0.46938775510204084,
+              "absolute_gap": 0.019778545485571064
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 28,
+              "mean_probability": 0.5485243257206069,
+              "observed_rate": 0.6071428571428571,
+              "absolute_gap": 0.05861853142225015
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 34,
+              "mean_probability": 0.6589789206257483,
+              "observed_rate": 0.6764705882352942,
+              "absolute_gap": 0.017491667609545902
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 35,
+              "mean_probability": 0.7602518990425915,
+              "observed_rate": 0.6285714285714286,
+              "absolute_gap": 0.13168047047116294
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 39,
+              "mean_probability": 0.8571517094017094,
+              "observed_rate": 0.9487179487179487,
+              "absolute_gap": 0.0915662393162393
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 677,
+              "mean_probability": 0.9924966583811158,
+              "observed_rate": 0.9985228951255539,
+              "absolute_gap": 0.00602623674443814
+            }
+          ]
+        }
+      }
+    },
+    "sigmoid": {
+      "macro_f1": 0.9120309419094259,
+      "balanced_accuracy": 0.9124004550625711,
+      "worst_class_recall": 0.8395904436860068,
+      "per_class": {
+        "Adware": {
+          "precision": 0.895187165775401,
+          "recall": 0.9522184300341296,
+          "f1": 0.9228224917309813,
+          "support": 879
+        },
+        "Banking Malware": {
+          "precision": 0.8848920863309353,
+          "recall": 0.8395904436860068,
+          "f1": 0.861646234676007,
+          "support": 879
+        },
+        "SMS Malware": {
+          "precision": 0.9541284403669725,
+          "recall": 0.9465301478953356,
+          "f1": 0.9503141062250143,
+          "support": 879
+        },
+        "Riskware": {
+          "precision": 0.9154285714285715,
+          "recall": 0.9112627986348123,
+          "f1": 0.9133409350057012,
+          "support": 879
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Adware",
+          "Banking Malware",
+          "SMS Malware",
+          "Riskware"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            837,
+            26,
+            0,
+            16
+          ],
+          [
+            51,
+            738,
+            39,
+            51
+          ],
+          [
+            2,
+            38,
+            832,
+            7
+          ],
+          [
+            45,
+            32,
+            1,
+            801
+          ]
+        ]
+      },
+      "multiclass_log_loss": 0.264072081700721,
+      "multiclass_brier_mean_sum_squared_error": 0.12483406228299514,
+      "top_label_ece_10_equal_width_bins": 0.03825872409792283,
+      "top_label_reliability_bins": [
+        {
+          "bin": 1,
+          "lower_inclusive": 0.0,
+          "upper_inclusive_only_for_last_bin": 0.1,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 2,
+          "lower_inclusive": 0.1,
+          "upper_inclusive_only_for_last_bin": 0.2,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 3,
+          "lower_inclusive": 0.2,
+          "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 4,
+          "lower_inclusive": 0.30000000000000004,
+          "upper_inclusive_only_for_last_bin": 0.4,
+          "support": 8,
+          "mean_probability": 0.3798229971013135,
+          "observed_rate": 0.25,
+          "absolute_gap": 0.1298229971013135
+        },
+        {
+          "bin": 5,
+          "lower_inclusive": 0.4,
+          "upper_inclusive_only_for_last_bin": 0.5,
+          "support": 55,
+          "mean_probability": 0.4631210540160022,
+          "observed_rate": 0.23636363636363636,
+          "absolute_gap": 0.22675741765236582
+        },
+        {
+          "bin": 6,
+          "lower_inclusive": 0.5,
+          "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+          "support": 111,
+          "mean_probability": 0.546908835027555,
+          "observed_rate": 0.38738738738738737,
+          "absolute_gap": 0.15952144764016768
+        },
+        {
+          "bin": 7,
+          "lower_inclusive": 0.6000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+          "support": 137,
+          "mean_probability": 0.650860577173605,
+          "observed_rate": 0.6058394160583942,
+          "absolute_gap": 0.04502116111521082
+        },
+        {
+          "bin": 8,
+          "lower_inclusive": 0.7000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.8,
+          "support": 139,
+          "mean_probability": 0.7480325021382437,
+          "observed_rate": 0.6762589928057554,
+          "absolute_gap": 0.07177350933248827
+        },
+        {
+          "bin": 9,
+          "lower_inclusive": 0.8,
+          "upper_inclusive_only_for_last_bin": 0.9,
+          "support": 351,
+          "mean_probability": 0.8619687432938404,
+          "observed_rate": 0.8575498575498576,
+          "absolute_gap": 0.004418885743982859
+        },
+        {
+          "bin": 10,
+          "lower_inclusive": 0.9,
+          "upper_inclusive_only_for_last_bin": 1.0,
+          "support": 2715,
+          "mean_probability": 0.9526316370068473,
+          "observed_rate": 0.9841620626151013,
+          "absolute_gap": 0.03153042560825403
+        }
+      ],
+      "per_class_probability_metrics": {
+        "Adware": {
+          "one_vs_rest_brier": 0.028605203710864394,
+          "ece_10_equal_width_bins": 0.01604083233003331,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2476,
+              "mean_probability": 0.011307276523193922,
+              "observed_rate": 0.005250403877221325,
+              "absolute_gap": 0.006056872645972597
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 44,
+              "mean_probability": 0.1451874649039114,
+              "observed_rate": 0.18181818181818182,
+              "absolute_gap": 0.03663071691427042
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 28,
+              "mean_probability": 0.24495052264831393,
+              "observed_rate": 0.32142857142857145,
+              "absolute_gap": 0.07647804878025752
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 28,
+              "mean_probability": 0.3375172139191965,
+              "observed_rate": 0.35714285714285715,
+              "absolute_gap": 0.01962564322366067
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 24,
+              "mean_probability": 0.4533455843061171,
+              "observed_rate": 0.25,
+              "absolute_gap": 0.2033455843061171
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 29,
+              "mean_probability": 0.5410131976422341,
+              "observed_rate": 0.5862068965517241,
+              "absolute_gap": 0.04519369890948999
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 27,
+              "mean_probability": 0.6573721022348422,
+              "observed_rate": 0.5925925925925926,
+              "absolute_gap": 0.06477950964224966
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 45,
+              "mean_probability": 0.7534785735542201,
+              "observed_rate": 0.6222222222222222,
+              "absolute_gap": 0.13125635133199787
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 135,
+              "mean_probability": 0.8634046419762879,
+              "observed_rate": 0.8222222222222222,
+              "absolute_gap": 0.04118241975406567
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 680,
+              "mean_probability": 0.9460382730120149,
+              "observed_rate": 0.9720588235294118,
+              "absolute_gap": 0.026020550517396823
+            }
+          ]
+        },
+        "Banking Malware": {
+          "one_vs_rest_brier": 0.04820870814669194,
+          "ece_10_equal_width_bins": 0.01679537662942289,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2352,
+              "mean_probability": 0.029490267216331755,
+              "observed_rate": 0.02806122448979592,
+              "absolute_gap": 0.0014290427265358369
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 151,
+              "mean_probability": 0.14327074305377946,
+              "observed_rate": 0.13245033112582782,
+              "absolute_gap": 0.010820411927951634
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 95,
+              "mean_probability": 0.2530476461806219,
+              "observed_rate": 0.2631578947368421,
+              "absolute_gap": 0.01011024855622017
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 66,
+              "mean_probability": 0.3468521936623745,
+              "observed_rate": 0.3787878787878788,
+              "absolute_gap": 0.031935685125504265
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 38,
+              "mean_probability": 0.44657602518441203,
+              "observed_rate": 0.21052631578947367,
+              "absolute_gap": 0.23604970939493836
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 29,
+              "mean_probability": 0.544735860252657,
+              "observed_rate": 0.41379310344827586,
+              "absolute_gap": 0.1309427568043811
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 47,
+              "mean_probability": 0.6488556563555659,
+              "observed_rate": 0.3617021276595745,
+              "absolute_gap": 0.28715352869599137
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 28,
+              "mean_probability": 0.7443241958039666,
+              "observed_rate": 0.5714285714285714,
+              "absolute_gap": 0.17289562437539518
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 73,
+              "mean_probability": 0.8583271981684222,
+              "observed_rate": 0.8356164383561644,
+              "absolute_gap": 0.022710759812257786
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 637,
+              "mean_probability": 0.9588274458365126,
+              "observed_rate": 0.9874411302982732,
+              "absolute_gap": 0.028613684461760602
+            }
+          ]
+        },
+        "SMS Malware": {
+          "one_vs_rest_brier": 0.01764873834779579,
+          "ece_10_equal_width_bins": 0.022914990518356264,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2567,
+              "mean_probability": 0.013123095269601513,
+              "observed_rate": 0.006622516556291391,
+              "absolute_gap": 0.006500578713310122
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 24,
+              "mean_probability": 0.1376358047224607,
+              "observed_rate": 0.125,
+              "absolute_gap": 0.012635804722460703
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 24,
+              "mean_probability": 0.2378840322310368,
+              "observed_rate": 0.3333333333333333,
+              "absolute_gap": 0.09544930110229652
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 16,
+              "mean_probability": 0.334931108653525,
+              "observed_rate": 0.6875,
+              "absolute_gap": 0.352568891346475
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 19,
+              "mean_probability": 0.4345935480585693,
+              "observed_rate": 0.42105263157894735,
+              "absolute_gap": 0.013540916479621967
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 18,
+              "mean_probability": 0.5482644644645143,
+              "observed_rate": 0.2222222222222222,
+              "absolute_gap": 0.32604224224229206
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 34,
+              "mean_probability": 0.6487745680145356,
+              "observed_rate": 0.8823529411764706,
+              "absolute_gap": 0.23357837316193497
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 29,
+              "mean_probability": 0.7389317181206486,
+              "observed_rate": 0.7586206896551724,
+              "absolute_gap": 0.019688971534523758
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 110,
+              "mean_probability": 0.8625898199315208,
+              "observed_rate": 0.9636363636363636,
+              "absolute_gap": 0.10104654370484278
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 675,
+              "mean_probability": 0.948306409094634,
+              "observed_rate": 0.9925925925925926,
+              "absolute_gap": 0.04428618349795854
+            }
+          ]
+        },
+        "Riskware": {
+          "one_vs_rest_brier": 0.030371412077643004,
+          "ece_10_equal_width_bins": 0.019995620236391162,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2486,
+              "mean_probability": 0.022902904776689822,
+              "observed_rate": 0.014481094127111826,
+              "absolute_gap": 0.008421810649577996
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 80,
+              "mean_probability": 0.14325315739845856,
+              "observed_rate": 0.1,
+              "absolute_gap": 0.04325315739845856
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 35,
+              "mean_probability": 0.2547225389997393,
+              "observed_rate": 0.42857142857142855,
+              "absolute_gap": 0.17384888957168926
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 27,
+              "mean_probability": 0.3487386080690748,
+              "observed_rate": 0.4074074074074074,
+              "absolute_gap": 0.05866879933833258
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 31,
+              "mean_probability": 0.4415461462211491,
+              "observed_rate": 0.5161290322580645,
+              "absolute_gap": 0.07458288603691537
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 35,
+              "mean_probability": 0.5528970756784435,
+              "observed_rate": 0.2857142857142857,
+              "absolute_gap": 0.2671827899641578
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 29,
+              "mean_probability": 0.650493143146115,
+              "observed_rate": 0.6896551724137931,
+              "absolute_gap": 0.0391620292676782
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 37,
+              "mean_probability": 0.7513482345747597,
+              "observed_rate": 0.7567567567567568,
+              "absolute_gap": 0.005408522181997055
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 33,
+              "mean_probability": 0.8620798960780919,
+              "observed_rate": 0.696969696969697,
+              "absolute_gap": 0.16511019910839486
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 723,
+              "mean_probability": 0.9574121157519833,
+              "observed_rate": 0.9847856154910097,
+              "absolute_gap": 0.027373499739026474
+            }
+          ]
+        }
+      }
+    },
+    "isotonic": {
+      "macro_f1": 0.9147039205093133,
+      "balanced_accuracy": 0.9152445961319682,
+      "worst_class_recall": 0.8339021615472128,
+      "per_class": {
+        "Adware": {
+          "precision": 0.8971061093247589,
+          "recall": 0.9522184300341296,
+          "f1": 0.9238410596026491,
+          "support": 879
+        },
+        "Banking Malware": {
+          "precision": 0.903822441430333,
+          "recall": 0.8339021615472128,
+          "f1": 0.8674556213017751,
+          "support": 879
+        },
+        "SMS Malware": {
+          "precision": 0.953514739229025,
+          "recall": 0.9567690557451649,
+          "f1": 0.9551391254968767,
+          "support": 879
+        },
+        "Riskware": {
+          "precision": 0.9067415730337078,
+          "recall": 0.9180887372013652,
+          "f1": 0.9123798756359525,
+          "support": 879
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Adware",
+          "Banking Malware",
+          "SMS Malware",
+          "Riskware"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            837,
+            21,
+            0,
+            21
+          ],
+          [
+            52,
+            733,
+            40,
+            54
+          ],
+          [
+            3,
+            27,
+            841,
+            8
+          ],
+          [
+            41,
+            30,
+            1,
+            807
+          ]
+        ]
+      },
+      "multiclass_log_loss": 0.2818831720908815,
+      "multiclass_brier_mean_sum_squared_error": 0.1221525671419408,
+      "top_label_ece_10_equal_width_bins": 0.015491742337619921,
+      "top_label_reliability_bins": [
+        {
+          "bin": 1,
+          "lower_inclusive": 0.0,
+          "upper_inclusive_only_for_last_bin": 0.1,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 2,
+          "lower_inclusive": 0.1,
+          "upper_inclusive_only_for_last_bin": 0.2,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 3,
+          "lower_inclusive": 0.2,
+          "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+          "support": 0,
+          "mean_probability": null,
+          "observed_rate": null,
+          "absolute_gap": null
+        },
+        {
+          "bin": 4,
+          "lower_inclusive": 0.30000000000000004,
+          "upper_inclusive_only_for_last_bin": 0.4,
+          "support": 11,
+          "mean_probability": 0.3786324277601936,
+          "observed_rate": 0.2727272727272727,
+          "absolute_gap": 0.10590515503292092
+        },
+        {
+          "bin": 5,
+          "lower_inclusive": 0.4,
+          "upper_inclusive_only_for_last_bin": 0.5,
+          "support": 73,
+          "mean_probability": 0.4561174826999037,
+          "observed_rate": 0.4383561643835616,
+          "absolute_gap": 0.01776131831634209
+        },
+        {
+          "bin": 6,
+          "lower_inclusive": 0.5,
+          "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+          "support": 139,
+          "mean_probability": 0.5498902628445325,
+          "observed_rate": 0.4748201438848921,
+          "absolute_gap": 0.07507011895964039
+        },
+        {
+          "bin": 7,
+          "lower_inclusive": 0.6000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+          "support": 120,
+          "mean_probability": 0.6471271207970114,
+          "observed_rate": 0.525,
+          "absolute_gap": 0.12212712079701138
+        },
+        {
+          "bin": 8,
+          "lower_inclusive": 0.7000000000000001,
+          "upper_inclusive_only_for_last_bin": 0.8,
+          "support": 211,
+          "mean_probability": 0.7530506512578278,
+          "observed_rate": 0.7440758293838863,
+          "absolute_gap": 0.008974821873941496
+        },
+        {
+          "bin": 9,
+          "lower_inclusive": 0.8,
+          "upper_inclusive_only_for_last_bin": 0.9,
+          "support": 313,
+          "mean_probability": 0.8587394158160044,
+          "observed_rate": 0.8945686900958466,
+          "absolute_gap": 0.03582927427984217
+        },
+        {
+          "bin": 10,
+          "lower_inclusive": 0.9,
+          "upper_inclusive_only_for_last_bin": 1.0,
+          "support": 2649,
+          "mean_probability": 0.9827069906302027,
+          "observed_rate": 0.9879199697999245,
+          "absolute_gap": 0.005212979169721743
+        }
+      ],
+      "per_class_probability_metrics": {
+        "Adware": {
+          "one_vs_rest_brier": 0.028109230402331545,
+          "ece_10_equal_width_bins": 0.0033192338238693217,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2434,
+              "mean_probability": 0.004293089180215226,
+              "observed_rate": 0.004108463434675432,
+              "absolute_gap": 0.00018462574553979472
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 80,
+              "mean_probability": 0.14521059719611448,
+              "observed_rate": 0.125,
+              "absolute_gap": 0.020210597196114483
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 30,
+              "mean_probability": 0.24997272048300057,
+              "observed_rate": 0.23333333333333334,
+              "absolute_gap": 0.01663938714966723
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 30,
+              "mean_probability": 0.35129381289428985,
+              "observed_rate": 0.36666666666666664,
+              "absolute_gap": 0.015372853772376793
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 27,
+              "mean_probability": 0.44722603412756534,
+              "observed_rate": 0.4444444444444444,
+              "absolute_gap": 0.002781589683120922
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 34,
+              "mean_probability": 0.5544458915709609,
+              "observed_rate": 0.5,
+              "absolute_gap": 0.054445891570960914
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 37,
+              "mean_probability": 0.6488402939969031,
+              "observed_rate": 0.4864864864864865,
+              "absolute_gap": 0.16235380751041661
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 66,
+              "mean_probability": 0.7488498842823241,
+              "observed_rate": 0.7424242424242424,
+              "absolute_gap": 0.006425641858081699
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 117,
+              "mean_probability": 0.854336774875738,
+              "observed_rate": 0.8547008547008547,
+              "absolute_gap": 0.0003640798251166588
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 661,
+              "mean_probability": 0.976163068444502,
+              "observed_rate": 0.9757942511346445,
+              "absolute_gap": 0.0003688173098574943
+            }
+          ]
+        },
+        "Banking Malware": {
+          "one_vs_rest_brier": 0.04669323322489003,
+          "ece_10_equal_width_bins": 0.0136372210665079,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2234,
+              "mean_probability": 0.018416624426302455,
+              "observed_rate": 0.020590868397493287,
+              "absolute_gap": 0.002174243971190832
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 230,
+              "mean_probability": 0.1391599462581056,
+              "observed_rate": 0.1565217391304348,
+              "absolute_gap": 0.017361792872329196
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 142,
+              "mean_probability": 0.24706281758737347,
+              "observed_rate": 0.20422535211267606,
+              "absolute_gap": 0.04283746547469741
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 77,
+              "mean_probability": 0.34371290502481966,
+              "observed_rate": 0.4155844155844156,
+              "absolute_gap": 0.07187151055959595
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 42,
+              "mean_probability": 0.43635729429066444,
+              "observed_rate": 0.23809523809523808,
+              "absolute_gap": 0.19826205619542636
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 40,
+              "mean_probability": 0.5418903780921009,
+              "observed_rate": 0.3,
+              "absolute_gap": 0.24189037809210095
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 26,
+              "mean_probability": 0.6531803959674143,
+              "observed_rate": 0.5384615384615384,
+              "absolute_gap": 0.11471885750587585
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 39,
+              "mean_probability": 0.7506536328018949,
+              "observed_rate": 0.6923076923076923,
+              "absolute_gap": 0.05834594049420261
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 61,
+              "mean_probability": 0.8592712930313932,
+              "observed_rate": 0.9016393442622951,
+              "absolute_gap": 0.042368051230901926
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 625,
+              "mean_probability": 0.9861828561861341,
+              "observed_rate": 0.9888,
+              "absolute_gap": 0.0026171438138659076
+            }
+          ]
+        },
+        "SMS Malware": {
+          "one_vs_rest_brier": 0.01732735627353378,
+          "ece_10_equal_width_bins": 0.011668068175856637,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2556,
+              "mean_probability": 0.005040316314495281,
+              "observed_rate": 0.006259780907668232,
+              "absolute_gap": 0.0012194645931729508
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 37,
+              "mean_probability": 0.12979629611794974,
+              "observed_rate": 0.10810810810810811,
+              "absolute_gap": 0.021688188009841625
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 21,
+              "mean_probability": 0.2626794524510829,
+              "observed_rate": 0.38095238095238093,
+              "absolute_gap": 0.11827292850129806
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 16,
+              "mean_probability": 0.36593720377458744,
+              "observed_rate": 0.625,
+              "absolute_gap": 0.25906279622541256
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 21,
+              "mean_probability": 0.44175325878956045,
+              "observed_rate": 0.47619047619047616,
+              "absolute_gap": 0.03443721740091571
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 18,
+              "mean_probability": 0.5585671543695514,
+              "observed_rate": 0.6666666666666666,
+              "absolute_gap": 0.10809951229711523
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 29,
+              "mean_probability": 0.6393287141968309,
+              "observed_rate": 0.5517241379310345,
+              "absolute_gap": 0.08760457626579643
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 63,
+              "mean_probability": 0.7607555508711086,
+              "observed_rate": 0.8412698412698413,
+              "absolute_gap": 0.0805142903987327
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 88,
+              "mean_probability": 0.862325548391657,
+              "observed_rate": 0.9886363636363636,
+              "absolute_gap": 0.12631081524470666
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 667,
+              "mean_probability": 0.9803905255224376,
+              "observed_rate": 0.9940029985007496,
+              "absolute_gap": 0.013612472978312029
+            }
+          ]
+        },
+        "Riskware": {
+          "one_vs_rest_brier": 0.030022747241185407,
+          "ece_10_equal_width_bins": 0.007132370535024149,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "lower_inclusive": 0.0,
+              "upper_inclusive_only_for_last_bin": 0.1,
+              "support": 2399,
+              "mean_probability": 0.010987299578619422,
+              "observed_rate": 0.011254689453939141,
+              "absolute_gap": 0.0002673898753197193
+            },
+            {
+              "bin": 2,
+              "lower_inclusive": 0.1,
+              "upper_inclusive_only_for_last_bin": 0.2,
+              "support": 134,
+              "mean_probability": 0.14126348201368602,
+              "observed_rate": 0.09701492537313433,
+              "absolute_gap": 0.04424855664055169
+            },
+            {
+              "bin": 3,
+              "lower_inclusive": 0.2,
+              "upper_inclusive_only_for_last_bin": 0.30000000000000004,
+              "support": 41,
+              "mean_probability": 0.24979587193882896,
+              "observed_rate": 0.21951219512195122,
+              "absolute_gap": 0.03028367681687774
+            },
+            {
+              "bin": 4,
+              "lower_inclusive": 0.30000000000000004,
+              "upper_inclusive_only_for_last_bin": 0.4,
+              "support": 46,
+              "mean_probability": 0.3492016360903273,
+              "observed_rate": 0.32608695652173914,
+              "absolute_gap": 0.023114679568588148
+            },
+            {
+              "bin": 5,
+              "lower_inclusive": 0.4,
+              "upper_inclusive_only_for_last_bin": 0.5,
+              "support": 35,
+              "mean_probability": 0.4545441647758394,
+              "observed_rate": 0.5142857142857142,
+              "absolute_gap": 0.059741549509874814
+            },
+            {
+              "bin": 6,
+              "lower_inclusive": 0.5,
+              "upper_inclusive_only_for_last_bin": 0.6000000000000001,
+              "support": 47,
+              "mean_probability": 0.5500800493540722,
+              "observed_rate": 0.5319148936170213,
+              "absolute_gap": 0.01816515573705091
+            },
+            {
+              "bin": 7,
+              "lower_inclusive": 0.6000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.7000000000000001,
+              "support": 28,
+              "mean_probability": 0.6473193075319669,
+              "observed_rate": 0.5357142857142857,
+              "absolute_gap": 0.11160502181768117
+            },
+            {
+              "bin": 8,
+              "lower_inclusive": 0.7000000000000001,
+              "upper_inclusive_only_for_last_bin": 0.8,
+              "support": 43,
+              "mean_probability": 0.7503838062468491,
+              "observed_rate": 0.6511627906976745,
+              "absolute_gap": 0.09922101554917462
+            },
+            {
+              "bin": 9,
+              "lower_inclusive": 0.8,
+              "upper_inclusive_only_for_last_bin": 0.9,
+              "support": 47,
+              "mean_probability": 0.8622944118418563,
+              "observed_rate": 0.8085106382978723,
+              "absolute_gap": 0.053783773543984004
+            },
+            {
+              "bin": 10,
+              "lower_inclusive": 0.9,
+              "upper_inclusive_only_for_last_bin": 1.0,
+              "support": 696,
+              "mean_probability": 0.9880204946807355,
+              "observed_rate": 0.992816091954023,
+              "absolute_gap": 0.0047955972732874885
+            }
+          ]
+        }
+      }
+    }
+  },
+  "candidate_rule": {
+    "sigmoid": "Must improve aggregate log loss and multiclass Brier over raw, keep top-label ECE within +0.005, and keep Macro F1 within -0.005.",
+    "isotonic": "Must first satisfy sigmoid eligibility, then beat sigmoid aggregate log loss and Brier, not worsen ECE, keep Macro F1 within -0.005 of raw, and beat sigmoid log loss in at least four of five outer folds.",
+    "isotonic_outer_fold_logloss_wins_over_sigmoid": 4
+  },
+  "calibration_candidate_method": null,
+  "independent_validation": false,
+  "post_selection_caveat": "Model-family selection and calibration exploration reuse the same development cohort. Nested grouping prevents direct fit/evaluation leakage, but the comparison can still be post-selection optimistic.",
+  "user_facing_confidence_allowed": false,
+  "reason_user_facing_confidence_disallowed": "Nested grouped CV describes the capped historical CICMalDroid study distribution, not current deployment prevalence, and no fresh package-unseen four-class holdout is available. Probabilities are conditional on an upstream malicious decision and on the true type being one of the four supported classes."
+}

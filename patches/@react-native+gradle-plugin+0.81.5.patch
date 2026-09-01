@@ -1,0 +1,56 @@
+diff --git a/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateAutolinkingNewArchitecturesFileTask.kt b/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateAutolinkingNewArchitecturesFileTask.kt
+index 38a31b8..368b8a5 100644
+--- a/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateAutolinkingNewArchitecturesFileTask.kt
++++ b/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateAutolinkingNewArchitecturesFileTask.kt
+@@ -60,14 +60,26 @@ abstract class GenerateAutolinkingNewArchitecturesFileTask : DefaultTask() {
+           if (libraryName != null && cmakeListsPath != null) {
+             // If user provided a custom cmakeListsPath, let's honor it.
+             val nativeFolderPath = sanitizeCmakeListsPath(cmakeListsPath)
++            val buildDirectorySuffix =
++                if (System.getenv("REACT_NATIVE_SHORT_ROOT").isNullOrBlank()) {
++                  "_autolinked_build"
++                } else {
++                  "_b"
++                }
+             addDirectoryString +=
+-                "add_subdirectory(\"$nativeFolderPath\" ${libraryName}_autolinked_build)"
++                "add_subdirectory(\"$nativeFolderPath\" $libraryName$buildDirectorySuffix)"
+           }
+           if (cxxModuleCMakeListsPath != null) {
+             // If user provided a custom cxxModuleCMakeListsPath, let's honor it.
+             val nativeFolderPath = sanitizeCmakeListsPath(cxxModuleCMakeListsPath)
++            val cxxBuildDirectorySuffix =
++                if (System.getenv("REACT_NATIVE_SHORT_ROOT").isNullOrBlank()) {
++                  "_cxxmodule_autolinked_build"
++                } else {
++                  "_cxx_b"
++                }
+             addDirectoryString +=
+-                "\nadd_subdirectory(\"$nativeFolderPath\" ${libraryName}_cxxmodule_autolinked_build)"
++                "\nadd_subdirectory(\"$nativeFolderPath\" $libraryName$cxxBuildDirectorySuffix)"
+           }
+           addDirectoryString
+         }
+@@ -159,8 +171,20 @@ abstract class GenerateAutolinkingNewArchitecturesFileTask : DefaultTask() {
+     const val COMPONENT_DESCRIPTOR_FILENAME = "ComponentDescriptors.h"
+     const val COMPONENT_INCLUDE_PATH = "react/renderer/components"
+ 
+-    internal fun sanitizeCmakeListsPath(cmakeListsPath: String): String =
+-        cmakeListsPath.replace("CMakeLists.txt", "").replace(" ", "\\ ")
++    internal fun sanitizeCmakeListsPath(cmakeListsPath: String): String {
++      val shortProjectRoot = System.getenv("REACT_NATIVE_SHORT_ROOT")
++      val normalizedPath = cmakeListsPath.replace('\\', '/')
++      val nodeModulesMarker = "/node_modules/"
++      val markerIndex = normalizedPath.indexOf(nodeModulesMarker)
++      val buildPath =
++          if (!shortProjectRoot.isNullOrBlank() && markerIndex >= 0) {
++            shortProjectRoot.trimEnd('/', '\\') + normalizedPath.substring(markerIndex)
++          } else {
++            cmakeListsPath
++          }
++
++      return buildPath.replace('\\', '/').replace("CMakeLists.txt", "").replace(" ", "\\ ")
++    }
+ 
+     // language=cmake
+     val CMAKE_TEMPLATE =

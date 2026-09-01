@@ -1,0 +1,85 @@
+{
+  "rows": 3516,
+  "rows_per_class": 879,
+  "class_counts": {
+    "Adware": 879,
+    "Banking Malware": 879,
+    "Riskware": 879,
+    "SMS Malware": 879
+  },
+  "groups_per_class": {
+    "Adware": 797,
+    "Banking Malware": 594,
+    "Riskware": 780,
+    "SMS Malware": 241
+  },
+  "origin_counts_per_class": {
+    "Adware": {
+      "additional_unused_row_from_development_group": 82,
+      "historical_train_or_validation_row": 797
+    },
+    "Banking Malware": {
+      "additional_unused_row_from_development_group": 248,
+      "historical_train_or_validation_row": 631
+    },
+    "Riskware": {
+      "additional_unused_row_from_development_group": 99,
+      "historical_train_or_validation_row": 780
+    },
+    "SMS Malware": {
+      "additional_unused_row_from_development_group": 79,
+      "historical_train_or_validation_row": 800
+    }
+  },
+  "maximum_rows_per_package": 8,
+  "blank_package_rows_excluded": 192,
+  "blank_package_rows_excluded_per_class": {
+    "Adware": 3,
+    "Banking Malware": 169,
+    "SMS Malware": 0,
+    "Riskware": 20
+  },
+  "historical_test_packages_quarantined": true,
+  "casefolded_package_grouping": true,
+  "balancing_timing": "fixed development cohort before CV; no fold-specific oversampling or SMOTE",
+  "manifest_sha256": "3d2c69a0ff6f25865d728451c670f31184b0b6d4d3cbb13650cdae473fc8a33e",
+  "available_development_inventory_before_blank_exclusion": {
+    "Adware": {
+      "rows": 885,
+      "groups": 800
+    },
+    "Banking Malware": {
+      "rows": 1629,
+      "groups": 763
+    },
+    "SMS Malware": {
+      "rows": 2995,
+      "groups": 241
+    },
+    "Riskware": {
+      "rows": 1015,
+      "groups": 800
+    }
+  },
+  "eligible_named_development_inventory_before_balancing": {
+    "Adware": {
+      "rows": 882,
+      "groups": 797
+    },
+    "Banking Malware": {
+      "rows": 1460,
+      "groups": 594
+    },
+    "SMS Malware": {
+      "rows": 2995,
+      "groups": 241
+    },
+    "Riskware": {
+      "rows": 995,
+      "groups": 780
+    }
+  },
+  "label_alignment_assumption": "feature_vectors_static.csv contains no label or hash. Labels are attached by row position because the static matrix and both accompanying 5-category files have exactly 11,598 rows, both Class vectors match row-for-row, and their contiguous class runs exactly match the category counts and order published for CICMalDroid 2020. This is strong positional evidence, not an independently keyed hash join.",
+  "cross_label_conflict_package_count": 18,
+  "cross_label_conflict_rows_removed": 264
+}

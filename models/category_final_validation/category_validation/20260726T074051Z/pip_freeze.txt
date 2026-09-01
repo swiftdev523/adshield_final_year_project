@@ -1,0 +1,10 @@
+asn1crypto==1.5.1
+axml==0.0.2
+click==8.4.2
+lxml==6.1.1
+markdown-it-py==4.2.0
+mdurl==0.1.2
+pip==26.1.1
+pyaxmlparser==0.3.31
+Pygments==2.20.0
+rich==15.0.0

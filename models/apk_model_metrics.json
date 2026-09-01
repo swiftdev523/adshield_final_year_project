@@ -1,0 +1,60 @@
+{
+  "model": {
+    "name": "RandomForestClassifier",
+    "artifact": "models/adware_detection_rf_model.pkl",
+    "mode": "APK Analysis Mode",
+    "features": 241,
+    "feature_type": "raw Android permission flags (TUANDROMD schema)",
+    "decision_threshold": 0.5
+  },
+  "dataset": {
+    "source": "TUANDROMD.csv",
+    "raw_rows": 4464,
+    "unique_rows_after_deduplication": 662,
+    "duplicates_removed": 3802,
+    "malware_fraction_unique": 0.199,
+    "note": "85% of raw TUANDROMD rows are duplicates. All reported metrics use de-duplicated data only."
+  },
+  "evaluation": {
+    "method": "stratified 80/20 train_test_split",
+    "random_state": 42,
+    "train_rows": 529,
+    "test_rows": 133,
+    "malware_in_test": 26,
+    "benign_in_test": 107,
+    "held_out": true,
+    "verified_locally": true,
+    "matches_colab_report": true
+  },
+  "held_out_test_metrics": {
+    "accuracy": 0.9624,
+    "precision": 0.92,
+    "recall": 0.8846,
+    "f1_score": 0.902,
+    "roc_auc": 0.9804,
+    "confusion_matrix": {
+      "true_negative": 105,
+      "false_positive": 2,
+      "false_negative": 3,
+      "true_positive": 23
+    }
+  },
+  "colab_reported_metrics": {
+    "accuracy": 0.9624060150375939,
+    "precision": 0.92,
+    "recall": 0.8846153846153846,
+    "f1_score": 0.9019607843137255,
+    "note": "Matches local held-out evaluation after de-duplication."
+  },
+  "comparison_installed_app_mode": {
+    "model": "HistGradientBoosting",
+    "artifact": "models/final_model.joblib",
+    "dataset": "Android_Permission.csv",
+    "features": 157,
+    "held_out_roc_auc": 0.8115,
+    "held_out_f1": 0.8088,
+    "held_out_recall": 0.9506,
+    "note": "Uses permissions + store metadata. Best for Installed App Mode where metadata is available."
+  },
+  "reproduce": "python models/verify_holdout.py"
+}

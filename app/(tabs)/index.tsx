@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { router } from "expo-router";
-import { Bell, ChevronRight, Package, ShieldCheck } from "lucide-react-native";
+import { router, useFocusEffect } from "expo-router";
+import { Bell, ChevronRight, Package, ShieldCheck, Smartphone } from "lucide-react-native";
+import { useCallback, useMemo } from "react";
 import { Pressable, Text, View } from "react-native";
 import {
   SafeAreaView,
@@ -12,27 +13,84 @@ import HomeStats from "../../components/home/HomeStats";
 import RecentScans from "../../components/home/RecentScans";
 import Badge from "../../components/ui/Badge";
 import Card from "../../components/ui/Card";
-import { recentActivity, recentScans } from "../../lib/mockData";
-import { useScanStore } from "../../store/useScanStore";
-
-const scoreMap = {
-  safe: 18,
-  caution: 55,
-  dangerous: 82,
-} as const;
+import {
+  deriveHomeActivity,
+  deriveHomeMetrics,
+  latestScanSummary,
+  notificationAccessPresentation,
+} from "../../lib/home/deriveHomeDashboard";
+import { useAlertStore } from "../../store/useAlertStore";
+import { useScanHistoryStore } from "../../store/useScanHistoryStore";
+import { useSettingsStore } from "../../store/useSettingsStore";
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
+  const historyEntries = useScanHistoryStore((state) => state.entries);
+  const historyStatus = useScanHistoryStore((state) => state.status);
+  const historyError = useScanHistoryStore((state) => state.error);
+  const loadHistory = useScanHistoryStore((state) => state.loadHistory);
+  const notificationAccessStatus = useAlertStore((state) => state.accessStatus);
+  const notificationLoadStatus = useAlertStore((state) => state.loadStatus);
+  const notificationEvents = useAlertStore((state) => state.events);
+  const notificationAnalyses = useAlertStore(
+    (state) => state.analysisByEventKey,
+  );
+  const notificationAccessChanges = useAlertStore(
+    (state) => state.accessChanges,
+  );
+  const checkNotificationAccess = useAlertStore(
+    (state) => state.checkAccessAndLoad,
+  );
+  const privacyMode = useSettingsStore((state) => state.privacyMode);
   const tabBarHeight = 70;
   const bottomOffset = insets.bottom + 8;
   const contentPaddingBottom = tabBarHeight + bottomOffset + 16;
+  const recentHistory = historyEntries.slice(0, 5);
+  const dashboardMetrics = useMemo(
+    () => deriveHomeMetrics(historyEntries, historyStatus),
+    [historyEntries, historyStatus],
+  );
+  const accessPresentation = useMemo(
+    () => notificationAccessPresentation(notificationAccessStatus),
+    [notificationAccessStatus],
+  );
+  const securityActivity = useMemo(
+    () =>
+      deriveHomeActivity({
+        historyEntries,
+        notificationEvents,
+        analysisByEventKey: notificationAnalyses,
+        accessChanges: notificationAccessChanges,
+        privacyMode,
+      }),
+    [
+      historyEntries,
+      notificationAccessChanges,
+      notificationAnalyses,
+      notificationEvents,
+      privacyMode,
+    ],
+  );
+  const activityLoading =
+    historyStatus === "idle" ||
+    historyStatus === "loading" ||
+    notificationAccessStatus === "checking" ||
+    (notificationAccessStatus === "granted" &&
+      notificationLoadStatus === "loading");
 
-  const viewScan = useScanStore((state) => state.viewScan);
+  useFocusEffect(
+    useCallback(() => {
+      if (historyStatus === "idle") {
+        void loadHistory();
+      }
+    }, [historyStatus, loadHistory]),
+  );
 
-  const handleRecentScan = (item: (typeof recentScans)[number]) => {
-    viewScan(item.name, scoreMap[item.status]);
-    router.push("/scan-result");
-  };
+  useFocusEffect(
+    useCallback(() => {
+      void checkNotificationAccess();
+    }, [checkNotificationAccess]),
+  );
 
   const header = (
     <View>
@@ -90,40 +148,67 @@ export default function HomeScreen() {
           </Card>
         </Pressable>
 
+        <Pressable onPress={() => router.push("/installed-apps")} className="mt-4">
+          <Card className="border-border bg-surfaceHigh">
+            <View className="flex-row items-center justify-between">
+              <View className="flex-row items-center gap-3 flex-1">
+                <View className="h-12 w-12 items-center justify-center rounded-2xl bg-accent/15">
+                  <Smartphone size={22} color="#58D6FF" />
+                </View>
+                <View className="flex-1">
+                  <Text className="text-sm font-semibold text-textPrimary font-sans">
+                    Scan Installed App
+                  </Text>
+                  <Text className="mt-1 text-xs text-textMuted font-sans">
+                    Review a launcher-visible Android app
+                  </Text>
+                </View>
+              </View>
+              <View className="h-9 w-9 items-center justify-center rounded-full border border-accent/30 bg-accent/10">
+                <ChevronRight size={18} color="#58D6FF" />
+              </View>
+            </View>
+          </Card>
+        </Pressable>
+
         <Card
-          className="mt-4 flex-row items-center justify-between border-safe/30 bg-surfaceHigh/80"
-          glowColor="#22C55E"
+          className="mt-4 flex-row items-center justify-between border-accent/30 bg-surfaceHigh/80"
+          glowColor={notificationAccessStatus === "granted" ? "#22C55E" : "#58D6FF"}
         >
           <View className="flex-row items-center gap-4 w-full">
             <View className="h-10 w-10 items-center justify-center rounded-2xl bg-safe/15">
-              <ShieldCheck size={18} color="#22C55E" />
+              <ShieldCheck size={18} color={accessPresentation.iconColor} />
             </View>
             <View className="flex-1">
               <Badge
-                variant="safe"
-                label="DEVICE PROTECTED"
+                variant={accessPresentation.badgeVariant}
+                label={accessPresentation.badgeLabel}
                 className="self-start"
               />
               <Text className="mt-2 text-base font-semibold text-textPrimary leading-tight font-sans">
-                All systems active
+                {accessPresentation.title}
               </Text>
               <Text className="text-xs text-textMuted mt-0.5 font-sans">
-                Last scan: 2 hours ago
+                {latestScanSummary(dashboardMetrics)}
               </Text>
             </View>
             <View className="items-center rounded-2xl border border-border bg-surfaceHigh px-3 py-2">
               <Text className="text-xl font-bold text-accent mb-0.5 font-sans">
-                23
+                {dashboardMetrics.completedScans ?? "—"}
               </Text>
               <Text className="text-[10px] text-textDim font-sans">
-                apps scanned
+                scans completed
               </Text>
             </View>
           </View>
         </Card>
 
         <View className="mt-4">
-          <HomeStats safeApps={21} threats={2} score={98} />
+          <HomeStats
+            safeResults={dashboardMetrics.safeResults}
+            threats={dashboardMetrics.threats}
+            latestStatus={dashboardMetrics.latestScanStatus}
+          />
         </View>
       </View>
 
@@ -131,11 +216,26 @@ export default function HomeScreen() {
         <Text className="text-base font-semibold text-textPrimary font-sans">
           Recently Scanned
         </Text>
-        <Pressable onPress={() => router.push("/(tabs)/scan")}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="View all saved scans"
+          onPress={() => router.push("/scan-history")}>
           <Text className="text-xs text-accent font-sans">View all</Text>
         </Pressable>
       </View>
-      <RecentScans data={recentScans} onSelect={handleRecentScan} />
+      <RecentScans
+        data={recentHistory}
+        status={historyStatus}
+        error={historyError}
+        privacyMode={privacyMode}
+        onRetry={() => void loadHistory(true)}
+        onSelect={(item) =>
+          router.push({
+            pathname: "/scan-history-detail",
+            params: { id: item.id },
+          })
+        }
+      />
 
       <Text className="px-6 pt-6 text-base font-semibold text-textPrimary font-sans">
         Recent Activity
@@ -149,9 +249,10 @@ export default function HomeScreen() {
       edges={["top"]}
     >
       <ActivityFeed
-        data={recentActivity}
+        data={securityActivity}
         header={header}
         contentPaddingBottom={contentPaddingBottom}
+        loading={activityLoading}
       />
     </SafeAreaView>
   );

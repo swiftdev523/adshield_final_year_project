@@ -1,0 +1,42 @@
+{
+  "_comment": "Example output of backend.apk_analysis.analyze_apk on a sample adware-style app. The full 'feature_vector' has all 151 training columns (0/1); only the active ones are shown here under 'feature_vector_active'. This is the input a later scoring layer will consume; the ML model is NOT called by the extractor.",
+  "apk_path": "sample_adware.apk",
+  "package": "com.sample.flashlight",
+  "raw_permissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.INTERNET",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SEND_SMS",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "com.example.CUSTOM_PERMISSION"
+  ],
+  "mapped_features": {
+    "Your location : fine (GPS) location (D)": 1,
+    "Network communication : full Internet access (D)": 1,
+    "Your personal information : read contact data (D)": 1,
+    "Phone calls : read phone state and identity (D)": 1,
+    "System tools : automatically start at boot (S)": 1,
+    "Services that cost you money : send SMS messages (D)": 1,
+    "System tools : display system-level alerts (D)": 1,
+    "Hardware controls : control vibrator (S)": 1
+  },
+  "dangerous_permission_count": 6,
+  "safe_permission_count": 2,
+  "unmapped_permissions": [
+    "com.example.CUSTOM_PERMISSION"
+  ],
+  "feature_vector_active": {
+    "Your location : fine (GPS) location (D)": 1,
+    "Network communication : full Internet access (D)": 1,
+    "Your personal information : read contact data (D)": 1,
+    "Phone calls : read phone state and identity (D)": 1,
+    "System tools : automatically start at boot (S)": 1,
+    "Services that cost you money : send SMS messages (D)": 1,
+    "System tools : display system-level alerts (D)": 1,
+    "Hardware controls : control vibrator (S)": 1
+  },
+  "feature_vector_size": 151
+}

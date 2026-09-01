@@ -1,20 +1,5 @@
 export type RiskLevel = "safe" | "caution" | "dangerous";
 
-export type RecentScan = {
-  id: string;
-  name: string;
-  status: RiskLevel;
-  initials: string;
-  color: string;
-};
-
-export type ActivityItem = {
-  id: string;
-  level: "safe" | "caution" | "dangerous";
-  text: string;
-  time: string;
-};
-
 export type ScanExample = {
   id: string;
   name: string;
@@ -32,65 +17,6 @@ export type NotificationApp = {
   tag: "spam" | "suspicious" | "normal";
   score: number;
 };
-
-export const recentScans: RecentScan[] = [
-  {
-    id: "1",
-    name: "TikTok",
-    status: "safe",
-    initials: "T",
-    color: "#0EA5E9",
-  },
-  {
-    id: "2",
-    name: "WhatsApp",
-    status: "safe",
-    initials: "W",
-    color: "#22C55E",
-  },
-  {
-    id: "3",
-    name: "Unknown.apk",
-    status: "dangerous",
-    initials: "?",
-    color: "#EF4444",
-  },
-  {
-    id: "4",
-    name: "YouTube",
-    status: "safe",
-    initials: "Y",
-    color: "#DC2626",
-  },
-  {
-    id: "5",
-    name: "GameMaster",
-    status: "caution",
-    initials: "G",
-    color: "#8B5CF6",
-  },
-];
-
-export const recentActivity: ActivityItem[] = [
-  {
-    id: "1",
-    level: "dangerous",
-    text: "Unknown.apk flagged as HIGH RISK",
-    time: "2h ago",
-  },
-  {
-    id: "2",
-    level: "caution",
-    text: "GameMaster scored Moderate (52)",
-    time: "5h ago",
-  },
-  {
-    id: "3",
-    level: "dangerous",
-    text: "ShopDeals Pro sending spam notifications",
-    time: "1d ago",
-  },
-];
 
 export const scanExamples: ScanExample[] = [
   {

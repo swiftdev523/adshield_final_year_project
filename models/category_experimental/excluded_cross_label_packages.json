@@ -1,0 +1,150 @@
+{
+  "package_count": 18,
+  "rows_removed_all_classes": 264,
+  "records": [
+    {
+      "package": "ad.notify1",
+      "total_rows": 79,
+      "class_counts": {
+        "Banking Malware": 6,
+        "SMS Malware": 73
+      }
+    },
+    {
+      "package": "com.ahnlab.v3mobileplus",
+      "total_rows": 10,
+      "class_counts": {
+        "Banking Malware": 9,
+        "Benign": 1
+      }
+    },
+    {
+      "package": "com.android.blackmarket",
+      "total_rows": 11,
+      "class_counts": {
+        "Banking Malware": 8,
+        "SMS Malware": 3
+      }
+    },
+    {
+      "package": "com.android.system",
+      "total_rows": 61,
+      "class_counts": {
+        "Banking Malware": 1,
+        "SMS Malware": 60
+      }
+    },
+    {
+      "package": "com.aniapps.shortstories",
+      "total_rows": 2,
+      "class_counts": {
+        "Riskware": 1,
+        "Benign": 1
+      }
+    },
+    {
+      "package": "com.eset.ems2.gp",
+      "total_rows": 3,
+      "class_counts": {
+        "Riskware": 2,
+        "Benign": 1
+      }
+    },
+    {
+      "package": "com.haitui.slotsparadise",
+      "total_rows": 2,
+      "class_counts": {
+        "Banking Malware": 1,
+        "Riskware": 1
+      }
+    },
+    {
+      "package": "com.neore.ukeee",
+      "total_rows": 6,
+      "class_counts": {
+        "Banking Malware": 1,
+        "SMS Malware": 5
+      }
+    },
+    {
+      "package": "com.saavn.android",
+      "total_rows": 9,
+      "class_counts": {
+        "Banking Malware": 8,
+        "Benign": 1
+      }
+    },
+    {
+      "package": "com.sdwiurse",
+      "total_rows": 25,
+      "class_counts": {
+        "Banking Malware": 24,
+        "SMS Malware": 1
+      }
+    },
+    {
+      "package": "com.tseringsoft.notebook",
+      "total_rows": 2,
+      "class_counts": {
+        "Adware": 1,
+        "Riskware": 1
+      }
+    },
+    {
+      "package": "com.wimolife.wallpaper.fireworksfree",
+      "total_rows": 2,
+      "class_counts": {
+        "Adware": 1,
+        "Riskware": 1
+      }
+    },
+    {
+      "package": "com.zu.zu",
+      "total_rows": 25,
+      "class_counts": {
+        "Banking Malware": 1,
+        "Riskware": 24
+      }
+    },
+    {
+      "package": "ggican.timer",
+      "total_rows": 2,
+      "class_counts": {
+        "Adware": 1,
+        "Riskware": 1
+      }
+    },
+    {
+      "package": "kk.android",
+      "total_rows": 3,
+      "class_counts": {
+        "Banking Malware": 1,
+        "SMS Malware": 2
+      }
+    },
+    {
+      "package": "opera.updater",
+      "total_rows": 4,
+      "class_counts": {
+        "Banking Malware": 1,
+        "SMS Malware": 3
+      }
+    },
+    {
+      "package": "org.secure.smsgps",
+      "total_rows": 2,
+      "class_counts": {
+        "Banking Malware": 1,
+        "Riskware": 1
+      }
+    },
+    {
+      "package": "ua.netlizard.egypt",
+      "total_rows": 16,
+      "class_counts": {
+        "Banking Malware": 1,
+        "Riskware": 15
+      }
+    }
+  ]
+}

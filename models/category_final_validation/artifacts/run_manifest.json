@@ -1,0 +1,145 @@
+{
+  "experimental": true,
+  "integrated_with_fastapi": false,
+  "binary_detectors_modified": false,
+  "feature_count": 153,
+  "feature_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+  "classes": [
+    "Adware",
+    "Banking Malware",
+    "SMS Malware",
+    "Riskware"
+  ],
+  "label_alignment_audit": {
+    "status": "verified_positional_invariants_with_documented_assumption",
+    "static_rows_expected": 11598,
+    "class_vectors_identical": true,
+    "expected_and_observed_class_runs": {
+      "1": {
+        "name": "Adware",
+        "rows": 1253
+      },
+      "2": {
+        "name": "Banking Malware",
+        "rows": 2100
+      },
+      "3": {
+        "name": "SMS Malware",
+        "rows": 3904
+      },
+      "4": {
+        "name": "Riskware",
+        "rows": 2546
+      },
+      "5": {
+        "name": "Benign",
+        "rows": 1795
+      }
+    },
+    "dynamic_input_features_used": false,
+    "class_columns_only": true,
+    "assumption": "feature_vectors_static.csv contains no label or hash. Labels are attached by row position because the static matrix and both accompanying 5-category files have exactly 11,598 rows, both Class vectors match row-for-row, and their contiguous class runs exactly match the category counts and order published for CICMalDroid 2020. This is strong positional evidence, not an independently keyed hash join.",
+    "official_reference": "https://www.unb.ca/cic/datasets/maldroid-2020.html"
+  },
+  "cross_label_conflict_package_count": 18,
+  "cross_label_conflict_rows_removed": 264,
+  "source_data_fingerprints_verified_current_run": {
+    "feature_vectors_static.csv": {
+      "bytes": 595821499,
+      "sha256": "3b229c3d570f9fb3c4d25cc3fcb912c69996574dbf058fe2da16b8a07f23c4fe"
+    },
+    "feature_vectors_syscalls_frequency_5_Cat.csv": {
+      "bytes": 14626377,
+      "sha256": "3415babdd76a2b77c400a9ec3a8a6057705d5a57a9e91753191ecc2946df7c00"
+    },
+    "feature_vectors_syscallsbinders_frequency_5_Cat.csv": {
+      "bytes": 11701483,
+      "sha256": "f345df28987fe6e3fb54cc711317dd1057a249b71ceb55f9a16cfadaee23f59d"
+    }
+  },
+  "historical_artifact_hashes_before": {
+    "metrics.json": {
+      "sha256": "cb5e1334ff22f2c8d1736b125ee5286dc8a4880b7cb6a373166649e49e86e4fa",
+      "bytes": 19012
+    },
+    "model_comparison.csv": {
+      "sha256": "b00b2af2a484832f3eff252e17a48ea83ac7e8510680b175160951a71c6b9d2e",
+      "bytes": 672
+    },
+    "split_manifest.csv": {
+      "sha256": "d14dd5eaece6b4772981aab800f17d919ee3dfb45abe00adb440b062ffa4cced",
+      "bytes": 272768
+    },
+    "natural_split_manifest.csv": {
+      "sha256": "f884942ddd45909697b4fc749dcba68b5293945652c3b524d342c87595f1c5b2",
+      "bytes": 639579
+    },
+    "permission_features.json": {
+      "sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd",
+      "bytes": 6497
+    },
+    "experiment_config.json": {
+      "sha256": "d977bd896a2dc99fad576f48c9c424db41b1a07cfe04ec789d42aae8978d5b3c",
+      "bytes": 2324
+    },
+    "permission_source_mapping.json": {
+      "sha256": "59cfec267197b4c7efc075b47999401a9d702d245ac1a44fe0de4f7532340811",
+      "bytes": 94135
+    },
+    "source_data_fingerprints.json": {
+      "sha256": "71ff81753e0758185f515f821e482fa9c2cbe484121a9d1021900cde726c28bc",
+      "bytes": 490
+    },
+    "train_category_poc.py": {
+      "sha256": "8736de3f5241193f451538de5488edbec385a3424ad019f62e83e10e4107fd3f",
+      "bytes": 53993
+    }
+  },
+  "development_manifest_sha256": "3d2c69a0ff6f25865d728451c670f31184b0b6d4d3cbb13650cdae473fc8a33e",
+  "selected_model_artifact": "selected_category_model_provisional.joblib",
+  "selected_model_artifact_sha256": "9b2f3b2a880372ff077fdc37e6e3d7909c9ba3ba28cabce371a58d1f6b80f3b9",
+  "selected_model": "Random Forest",
+  "fresh_holdout_evaluated": false,
+  "calibration_candidate_method": null,
+  "probabilities_approved_for_user_facing_confidence": false,
+  "elapsed_seconds": 460.5869920999976,
+  "historical_artifact_hashes_after": {
+    "metrics.json": {
+      "sha256": "cb5e1334ff22f2c8d1736b125ee5286dc8a4880b7cb6a373166649e49e86e4fa",
+      "bytes": 19012
+    },
+    "model_comparison.csv": {
+      "sha256": "b00b2af2a484832f3eff252e17a48ea83ac7e8510680b175160951a71c6b9d2e",
+      "bytes": 672
+    },
+    "split_manifest.csv": {
+      "sha256": "d14dd5eaece6b4772981aab800f17d919ee3dfb45abe00adb440b062ffa4cced",
+      "bytes": 272768
+    },
+    "natural_split_manifest.csv": {
+      "sha256": "f884942ddd45909697b4fc749dcba68b5293945652c3b524d342c87595f1c5b2",
+      "bytes": 639579
+    },
+    "permission_features.json": {
+      "sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd",
+      "bytes": 6497
+    },
+    "experiment_config.json": {
+      "sha256": "d977bd896a2dc99fad576f48c9c424db41b1a07cfe04ec789d42aae8978d5b3c",
+      "bytes": 2324
+    },
+    "permission_source_mapping.json": {
+      "sha256": "59cfec267197b4c7efc075b47999401a9d702d245ac1a44fe0de4f7532340811",
+      "bytes": 94135
+    },
+    "source_data_fingerprints.json": {
+      "sha256": "71ff81753e0758185f515f821e482fa9c2cbe484121a9d1021900cde726c28bc",
+      "bytes": 490
+    },
+    "train_category_poc.py": {
+      "sha256": "8736de3f5241193f451538de5488edbec385a3424ad019f62e83e10e4107fd3f",
+      "bytes": 53993
+    }
+  },
+  "historical_artifacts_unchanged": true
+}

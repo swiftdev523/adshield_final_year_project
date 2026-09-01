@@ -1,0 +1,103 @@
+{
+  "method": "StratifiedGroupKFold; package is group, missing packages are unique row groups",
+  "random_states": {
+    "outer": 42,
+    "inner": 43
+  },
+  "target_proportions": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  },
+  "outer_test_fold_selection": {
+    "fold_index": 1,
+    "target_fraction": 0.2,
+    "score_absolute_class_fraction_error": 0.011598703964489143,
+    "held_out_counts": {
+      "Adware": 252,
+      "Banking Malware": 408,
+      "SMS Malware": 762,
+      "Riskware": 517
+    },
+    "held_out_class_fractions": {
+      "Adware": 0.2016,
+      "Banking Malware": 0.20029455081001474,
+      "SMS Malware": 0.20282140005323396,
+      "Riskware": 0.2068827531012405
+    }
+  },
+  "inner_validation_fold_selection": {
+    "fold_index": 3,
+    "target_fraction": 0.25,
+    "score_absolute_class_fraction_error": 0.13601073915051676,
+    "held_out_counts": {
+      "Adware": 247,
+      "Banking Malware": 410,
+      "SMS Malware": 462,
+      "Riskware": 567
+    },
+    "held_out_class_fractions": {
+      "Adware": 0.24749498997995992,
+      "Banking Malware": 0.25168815224063845,
+      "SMS Malware": 0.15425709515859767,
+      "Riskware": 0.2860746720484359
+    }
+  },
+  "natural_split_counts": {
+    "train": {
+      "Adware": 751,
+      "Banking Malware": 1219,
+      "SMS Malware": 2533,
+      "Riskware": 1415
+    },
+    "validation": {
+      "Adware": 247,
+      "Banking Malware": 410,
+      "SMS Malware": 462,
+      "Riskware": 567
+    },
+    "test": {
+      "Adware": 252,
+      "Banking Malware": 408,
+      "SMS Malware": 762,
+      "Riskware": 517
+    }
+  },
+  "natural_split_sizes": {
+    "train": 5918,
+    "validation": 1686,
+    "test": 1939
+  },
+  "package_group_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "balancing_method": "Deterministic within-split round-robin package-group downsampling after natural package-group assignment, capped at 8 rows per package; no oversampling and no SMOTE.",
+  "maximum_rows_per_package_group": 8,
+  "balanced_cohort_counts": {
+    "train": {
+      "Adware": 600,
+      "Banking Malware": 600,
+      "SMS Malware": 600,
+      "Riskware": 600
+    },
+    "validation": {
+      "Adware": 200,
+      "Banking Malware": 200,
+      "SMS Malware": 200,
+      "Riskware": 200
+    },
+    "test": {
+      "Adware": 200,
+      "Banking Malware": 200,
+      "SMS Malware": 200,
+      "Riskware": 200
+    }
+  },
+  "balanced_cohort_sizes": {
+    "train": 2400,
+    "validation": 800,
+    "test": 800
+  }
+}

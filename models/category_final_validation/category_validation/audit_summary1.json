@@ -1,0 +1,89 @@
+{
+  "audit_complete": true,
+  "category_counts": {
+    "banking": {
+      "discovered": 2415,
+      "eligible_holdout": 514,
+      "parse_failed": 1,
+      "parse_success": 2414,
+      "selected": 2415
+    },
+    "sms": {
+      "discovered": 4786,
+      "eligible_holdout": 59,
+      "parse_failed": 0,
+      "parse_success": 4786,
+      "selected": 4786
+    }
+  },
+  "cross_category_hash_conflict_rows": 0,
+  "cross_category_package_conflict_rows": 240,
+  "duplicate_package_rows": 6379,
+  "duplicate_scope": "full_discovered_collection",
+  "duplicate_sha256_rows": 74,
+  "eligible_holdout_rows": 573,
+  "failed_rows": 1,
+  "feature_contract": {
+    "count": 153,
+    "normalization": "permission.strip().rsplit('.', 1)[-1].upper()",
+    "path": "permission_features.json",
+    "sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd"
+  },
+  "historical_packages": {
+    "column": "package",
+    "distinct_nonblank_packages": 3022,
+    "nonblank_rows": 3759,
+    "normalization": "strip whitespace; preserve case",
+    "path": "split_manifest.csv",
+    "rows": 4000,
+    "sha256": "d14dd5eaece6b4772981aab800f17d919ee3dfb45abe00adb440b062ffa4cced",
+    "split_counts": {
+      "test": 800,
+      "train": 2400,
+      "validation": 800
+    }
+  },
+  "input_roots": {
+    "banking": {
+      "actual": "Banking",
+      "requested": "raw/banking",
+      "used_legacy_fallback": true
+    },
+    "sms": {
+      "actual": "SMS",
+      "requested": "raw/sms",
+      "used_legacy_fallback": true
+    }
+  },
+  "limit_per_category": null,
+  "manifest_parser": {
+    "package": "axml",
+    "version": "0.0.2"
+  },
+  "outputs": [
+    "apk_audit.csv",
+    "eligible_holdout_candidates.csv",
+    "failed_apks.csv",
+    "audit_summary.json"
+  ],
+  "package_duplicate_normalization": "strip whitespace; preserve case",
+  "parser_failure_isolation": {
+    "max_manifest_bytes": 16777216,
+    "per_manifest_child_process": true
+  },
+  "safety": {
+    "android_runtime_or_emulator_invoked": false,
+    "apk_code_executed": false,
+    "apk_installed": false,
+    "apk_modified": false,
+    "archive_members_extracted_to_disk": false,
+    "category_model_loaded": false,
+    "category_predictions_generated": false,
+    "csv_formula_injection_escaped": true,
+    "parsed_archive_members": [
+      "AndroidManifest.xml"
+    ]
+  },
+  "successful_rows": 7200,
+  "total_rows": 7201
+}

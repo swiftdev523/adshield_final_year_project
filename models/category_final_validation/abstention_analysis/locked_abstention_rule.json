@@ -1,0 +1,50 @@
+{
+  "status": "locked_for_future_untouched_v2_validation",
+  "locked_date": "2026-07-30",
+  "scope": "four-class category classifier only, conditional on the upstream binary detector identifying malware",
+  "model": "existing provisional Random Forest; unchanged",
+  "class_score_semantics": "raw Random Forest class scores; not calibrated probabilities or confidence",
+  "rule": {
+    "top_score": "largest of the four class scores",
+    "second_highest_score": "second-largest of the four class scores",
+    "top_two_margin": "top_score - second_highest_score",
+    "accept_when": "top_two_margin >= 0.70",
+    "accepted_output": "top-scoring supported category",
+    "rejected_output": "Uncertain",
+    "boundary_is_inclusive": true,
+    "tie_handling": "a tied top score has margin 0 and is rejected as Uncertain"
+  },
+  "uncertain_semantics": "The category model cannot safely distinguish a supported category; this does not mean benign.",
+  "selection_evidence": {
+    "source": "saved five-repeat package-grouped development OOF predictions only",
+    "path": "models/category_final_validation/artifacts/cv_oof_predictions.csv",
+    "sha256": "720bb3fb31feb0f9819c29642e3acc0b1b95a2f148864e26f8c52d1bacf5626f",
+    "random_forest_prediction_events": 17580,
+    "development_rows_per_repeat": 3516,
+    "repeats": 5,
+    "supplementary_196_sample_holdout_used_for_selection": false
+  },
+  "pooled_development_estimates": {
+    "coverage": 0.778612,
+    "accepted_prediction_accuracy": 0.987215,
+    "accepted_macro_precision": 0.987332,
+    "rejected_prediction_events": 3892,
+    "rejected_rate": 0.221388,
+    "error_rejection_rate": 0.883333,
+    "true_banking_coverage": 0.726735,
+    "accepted_true_banking_accuracy": 0.966187,
+    "accepted_banking_label_precision": 0.991645,
+    "banking_error_rejection_rate": 0.832558,
+    "banking_to_adware_rejection_rate": 0.743772,
+    "banking_to_riskware_rejection_rate": 0.927660
+  },
+  "selection_rationale": "A coarse development-only grid showed strong separation by margin. The 0.70 cutoff approaches 99% accepted accuracy while retaining about 78% coverage; stricter cutoffs produced diminishing accuracy gains for larger coverage losses. Repeat and package-equal sensitivity checks did not reverse the conclusion.",
+  "non_actions": {
+    "random_forest_retrained": false,
+    "random_forest_tuned": false,
+    "random_forest_calibrated": false,
+    "random_forest_replaced": false,
+    "fastapi_modified": false,
+    "final_v2_evaluation_performed": false
+  }
+}

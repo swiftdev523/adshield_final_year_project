@@ -1,0 +1,311 @@
+{
+  "status": "frozen_unevaluated",
+  "purpose": "final supplementary package-disjoint four-class holdout",
+  "protocol": {
+    "package_normalization": "package.strip().casefold()",
+    "historical_exclusion": "all packages in actual historical train/validation/test and the final development cohort",
+    "known_conflicts_excluded_from_every_claimed_category": true,
+    "one_representative_per_normalized_package": true,
+    "sha256_unique_where_evidence_available": true,
+    "permission_feature_count": 153,
+    "features_binary": true,
+    "minimum_positive_permission_features": 1,
+    "selection_rule": "Within each class, filter all eligibility rules; select one representative per normalized package; sort by normalized_package, lowercase SHA-256 (blank when unavailable), then source_row_index/source_path; take first 49.",
+    "class_output_order": [
+      "Adware",
+      "Banking Malware",
+      "SMS Malware",
+      "Riskware"
+    ],
+    "natural_manifest_interpretation": "split_manifest.csv is the actual balanced 4,000-row historical POC train/validation/test cohort. natural_split_manifest.csv is the full pre-downsampling source inventory and is not treated as model-exposed."
+  },
+  "feature_contract": {
+    "count": 153,
+    "source": "models/category_experimental/permission_features.json",
+    "source_json_file_sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd",
+    "ordered_compact_json_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+    "final_feature_csv_has_exactly_153_columns": true,
+    "final_feature_order_matches_contract": true
+  },
+  "label_provenance": {
+    "Adware/Riskware": "CICMalDroid static rows use the accepted positional alignment to two identical accompanying Class vectors; no per-row APK hash join exists.",
+    "Banking Malware/SMS Malware": "Labels are inherited from the accepted, audited Kali category source roots.",
+    "dynamic_syscall_or_binder_features_used": false,
+    "class_columns_only_from_accompanying_dynamic_files": true
+  },
+  "historical_package_inventory": {
+    "authority": "models/category_experimental/split_manifest.csv",
+    "interpretation": "split_manifest.csv is the actual balanced 4,000-row historical POC train/validation/test cohort. natural_split_manifest.csv is the full pre-downsampling source inventory and is not treated as model-exposed.",
+    "split_unique_packages": {
+      "train": 1799,
+      "validation": 613,
+      "test": 610
+    },
+    "all_split_unique_packages": 3022,
+    "final_development_unique_packages": 2412,
+    "development_packages_outside_split": 0,
+    "combined_forbidden_unique_packages": 3022,
+    "normalization": "package.strip().casefold()"
+  },
+  "conflict_inventory": {
+    "explicit_known_conflict_packages": 18,
+    "observed_cross_label_packages_across_static_and_kali_sources": 19,
+    "combined_unique_conflict_packages": 19,
+    "combined_inventory_sha256": "0dfb5c1769891343ad0f92c091d6d979f2dccdc74df5f94cd5e37927220683ee",
+    "normalization": "package.strip().casefold()",
+    "candidate_pool_conflict_claims": {
+      "com.ahnlab.v3mobileplus": [
+        "Banking Malware",
+        "Benign"
+      ],
+      "com.aniapps.shortstories": [
+        "Benign",
+        "Riskware"
+      ],
+      "com.eset.ems2.gp": [
+        "Benign",
+        "Riskware"
+      ],
+      "com.haitui.slotsparadise": [
+        "Banking Malware",
+        "Riskware"
+      ],
+      "com.qqmagic": [
+        "Banking Malware",
+        "Riskware"
+      ],
+      "com.saavn.android": [
+        "Banking Malware",
+        "Benign"
+      ],
+      "com.tseringsoft.notebook": [
+        "Adware",
+        "Riskware"
+      ],
+      "com.wimolife.wallpaper.fireworksfree": [
+        "Adware",
+        "Riskware"
+      ],
+      "com.zu.zu": [
+        "Banking Malware",
+        "Riskware"
+      ],
+      "ggican.timer": [
+        "Adware",
+        "Riskware"
+      ],
+      "org.secure.smsgps": [
+        "Banking Malware",
+        "Riskware"
+      ],
+      "ua.netlizard.egypt": [
+        "Banking Malware",
+        "Riskware"
+      ]
+    }
+  },
+  "candidate_pools_before_holdout_selection": {
+    "Adware": {
+      "source_rows_for_class": 1253,
+      "named_source_rows": 1249,
+      "historical_or_development_overlap_groups": 996,
+      "known_conflict_groups": 3,
+      "known_conflict_packages": [
+        "com.tseringsoft.notebook",
+        "com.wimolife.wallpaper.fireworksfree",
+        "ggican.timer"
+      ],
+      "all_zero_source_rows": 0,
+      "eligible_rows_before_package_deduplication": 151,
+      "final_eligible_unique_packages": 138,
+      "rows_removed_by_package_deduplication": 13,
+      "sha256_evidence_available": false,
+      "representative_rule": "minimum source_row_index per normalized package",
+      "minimum_required": 49,
+      "minimum_satisfied": true,
+      "selected": 49
+    },
+    "Banking Malware": {
+      "source_unique_candidate_rows": 157,
+      "historical_or_development_overlap_groups": 0,
+      "known_conflict_groups": 7,
+      "known_conflict_packages": [
+        "com.ahnlab.v3mobileplus",
+        "com.haitui.slotsparadise",
+        "com.qqmagic",
+        "com.saavn.android",
+        "com.zu.zu",
+        "org.secure.smsgps",
+        "ua.netlizard.egypt"
+      ],
+      "all_zero_groups": 3,
+      "all_zero_packages": [
+        "com.android.security.fdiduds8",
+        "com.note.donote",
+        "com.odrkmpnsz.arrowlauncher.lliiphzl"
+      ],
+      "invalid_or_nonunique_sha256_groups": 0,
+      "final_eligible_unique_packages": 147,
+      "sha256_evidence_available": true,
+      "unique_available_sha256": 147,
+      "representative_rule": "minimum lowercase SHA-256, then source_path per normalized package",
+      "minimum_required": 49,
+      "minimum_satisfied": true,
+      "selected": 49
+    },
+    "SMS Malware": {
+      "source_unique_candidate_rows": 49,
+      "historical_or_development_overlap_groups": 0,
+      "known_conflict_groups": 0,
+      "known_conflict_packages": [],
+      "all_zero_groups": 0,
+      "all_zero_packages": [],
+      "invalid_or_nonunique_sha256_groups": 0,
+      "final_eligible_unique_packages": 49,
+      "sha256_evidence_available": true,
+      "unique_available_sha256": 49,
+      "representative_rule": "minimum lowercase SHA-256, then source_path per normalized package",
+      "minimum_required": 49,
+      "minimum_satisfied": true,
+      "selected": 49
+    },
+    "Riskware": {
+      "source_rows_for_class": 2546,
+      "named_source_rows": 2498,
+      "historical_or_development_overlap_groups": 977,
+      "known_conflict_groups": 10,
+      "known_conflict_packages": [
+        "com.aniapps.shortstories",
+        "com.eset.ems2.gp",
+        "com.haitui.slotsparadise",
+        "com.qqmagic",
+        "com.tseringsoft.notebook",
+        "com.wimolife.wallpaper.fireworksfree",
+        "com.zu.zu",
+        "ggican.timer",
+        "org.secure.smsgps",
+        "ua.netlizard.egypt"
+      ],
+      "all_zero_source_rows": 0,
+      "eligible_rows_before_package_deduplication": 1225,
+      "final_eligible_unique_packages": 1005,
+      "rows_removed_by_package_deduplication": 220,
+      "sha256_evidence_available": false,
+      "representative_rule": "minimum source_row_index per normalized package",
+      "minimum_required": 49,
+      "minimum_satisfied": true,
+      "selected": 49
+    }
+  },
+  "final_eligible_unique_package_counts": {
+    "Adware": 138,
+    "Banking Malware": 147,
+    "SMS Malware": 49,
+    "Riskware": 1005
+  },
+  "selection": {
+    "samples_per_class": 49,
+    "total_samples": 196,
+    "class_counts": {
+      "Adware": 49,
+      "Banking Malware": 49,
+      "SMS Malware": 49,
+      "Riskware": 49
+    },
+    "unique_normalized_packages": 196,
+    "sha256_evidence_samples": 98,
+    "unique_available_sha256": 98,
+    "sha256_coverage_by_class": {
+      "Adware": 0,
+      "Banking Malware": 49,
+      "SMS Malware": 49,
+      "Riskware": 0
+    }
+  },
+  "verification": {
+    "total_samples_is_196": true,
+    "each_category_has_49": true,
+    "normalized_packages_are_196_of_196_unique": true,
+    "no_historical_or_development_package_overlap": true,
+    "no_known_label_conflicts": true,
+    "no_cross_category_package_conflicts": true,
+    "available_sha256_values_are_98_of_98_unique": true,
+    "exact_153_feature_order_and_hash": true,
+    "all_features_binary": true,
+    "no_all_zero_feature_vectors": true,
+    "manifest_and_feature_rows_positionally_aligned": true
+  },
+  "safety": {
+    "category_model_loaded": false,
+    "predictions_generated": false,
+    "probabilities_generated": false,
+    "training_performed": false,
+    "retraining_performed": false,
+    "fastapi_modified": false
+  },
+  "source_fingerprints": {
+    "data/datasets/feature_vectors_static.csv": {
+      "bytes": 595821499,
+      "sha256": "3b229c3d570f9fb3c4d25cc3fcb912c69996574dbf058fe2da16b8a07f23c4fe"
+    },
+    "data/datasets/feature_vectors_syscalls_frequency_5_Cat.csv": {
+      "bytes": 14626377,
+      "sha256": "3415babdd76a2b77c400a9ec3a8a6057705d5a57a9e91753191ecc2946df7c00"
+    },
+    "data/datasets/feature_vectors_syscallsbinders_frequency_5_Cat.csv": {
+      "bytes": 11701483,
+      "sha256": "f345df28987fe6e3fb54cc711317dd1057a249b71ceb55f9a16cfadaee23f59d"
+    },
+    "models/category_experimental/permission_features.json": {
+      "bytes": 6497,
+      "sha256": "9bbbdbf826db7957a0335baefa93eb8bc3440c4edcf7f5825cccf949a105a4fd"
+    },
+    "models/category_experimental/permission_source_mapping.json": {
+      "bytes": 94135,
+      "sha256": "59cfec267197b4c7efc075b47999401a9d702d245ac1a44fe0de4f7532340811"
+    },
+    "models/category_experimental/split_manifest.csv": {
+      "bytes": 272768,
+      "sha256": "d14dd5eaece6b4772981aab800f17d919ee3dfb45abe00adb440b062ffa4cced"
+    },
+    "models/category_experimental/natural_split_manifest.csv": {
+      "bytes": 639579,
+      "sha256": "f884942ddd45909697b4fc749dcba68b5293945652c3b524d342c87595f1c5b2"
+    },
+    "models/category_experimental/excluded_cross_label_packages.json": {
+      "bytes": 3073,
+      "sha256": "cf57bc544bd547e2236dbc4a71c61766a75964747fbe7449175a3361299dbebd"
+    },
+    "models/category_final_validation/artifacts/development_manifest.csv": {
+      "bytes": 338847,
+      "sha256": "3d2c69a0ff6f25865d728451c670f31184b0b6d4d3cbb13650cdae473fc8a33e"
+    },
+    "models/category_final_validation/category_validation/20260726T074051Z/apk_audit.csv": {
+      "bytes": 9502989,
+      "sha256": "d97055c6a4b41afbd1b1bcb0d6bd7ac656b0020937e150e4fc1987ff72d220cc"
+    },
+    "models/category_final_validation/category_validation/20260726T074051Z/eligible_holdout_candidates.csv": {
+      "bytes": 728802,
+      "sha256": "4cf3d5a40064d3568812aee6e8fdeb70ab3908f5d45795854b926d53c2fc5c43"
+    },
+    "models/category_final_validation/category_validation/20260726T074051Z/banking_unique_candidates.csv": {
+      "bytes": 326194,
+      "sha256": "d491457a1bed4d00715f3132b8ad17b945c670678397fa1cb09a735cade14c49"
+    },
+    "models/category_final_validation/category_validation/20260726T074051Z/sms_unique_candidates.csv": {
+      "bytes": 78870,
+      "sha256": "ea0b4a5136b878744aa7055592df9fae3da49325f62c472c209a937c5b3c2160"
+    }
+  },
+  "outputs": {
+    "final_holdout_manifest.csv": {
+      "bytes": 62880,
+      "sha256": "6f426d8b1ddf8466917aeda5168ce0fc2c4cf9e377a22ee4ec7e02043afa9240"
+    },
+    "final_holdout_features.csv": {
+      "bytes": 65550,
+      "sha256": "4586dbf74de7762a0a55ff687ac5010792d3babdbdec05741a86126734492f6a"
+    },
+    "hash_manifest_note": "final_holdout_sha256.txt hashes manifest, features, and report; it does not self-hash."
+  }
+}

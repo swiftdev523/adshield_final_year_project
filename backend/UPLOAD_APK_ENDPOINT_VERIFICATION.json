@@ -1,0 +1,1144 @@
+{
+  "verification": {
+    "verified_at_utc": "2026-07-30T18:56:49.281724+00:00",
+    "transport": "FastAPI TestClient against backend.app.main:app",
+    "endpoint": "POST /upload-apk",
+    "multipart_route_and_real_parser": true,
+    "real_binary_model_all_scenarios": true,
+    "real_category_model_scenarios": [
+      "binary_malicious_classified",
+      "binary_malicious_uncertain"
+    ],
+    "injected_category_failure_only": true,
+    "swagger_docs_status": 200,
+    "openapi_status": 200,
+    "openapi_multipart": true,
+    "openapi_200_schema": "#/components/schemas/UploadAPKResponse",
+    "openapi_threat_assessment_nullable_discriminated_union": true,
+    "openapi_category_diagnostics_nullable": true,
+    "openapi_supported_categories": [
+      "Adware",
+      "Banking Malware",
+      "SMS Malware",
+      "Riskware"
+    ],
+    "runtime": {
+      "python": "3.12.3",
+      "fastapi": "0.136.3",
+      "pydantic": "2.13.4",
+      "httpx": "0.28.1",
+      "scikit_learn": "1.6.1",
+      "numpy": "1.26.4"
+    },
+    "category_service_calls": {
+      "binary_benign": 0,
+      "binary_malicious_classified": 1,
+      "binary_malicious_uncertain": 1,
+      "category_service_failure": 1,
+      "binary_benign_context_raised": 0
+    },
+    "sample_files": {
+      "binary_benign": "youcine (1).apk",
+      "binary_malicious_classified": "data\\datasets\\Banking\\04205e4d6749cca28254aff8a36043ad47a08e4f131aaf6f8339803af5aba4f2.apk",
+      "binary_malicious_uncertain": "data\\datasets\\Adware\\0628109ac9bc94f397e9f210bb5f37f2ba259e4ee07437fa4e57416dcc2b4462.38a717d38ecca3fc052cd0d029ddcfb1"
+    },
+    "failure_preserved_complete_noncategory_body": true,
+    "benign_context_preserved_binary_permission_assessment": true,
+    "http_status_by_scenario": {
+      "binary_benign": 200,
+      "binary_malicious_classified": 200,
+      "binary_malicious_uncertain": 200,
+      "category_service_failure": 200,
+      "binary_benign_context_raised": 200
+    },
+    "wire_body_sha256": {
+      "binary_benign": "22fb8735f411bcad727abf215cdd5842180641c548ee18b1f8b473fa0c82f2de",
+      "binary_malicious_classified": "c1462dc25440cc3153df136249e6cde5423baf56c7ceb14e642ff6a3cf784f3e",
+      "binary_malicious_uncertain": "7e358be4812a591d36027f6082a8e934671ece4fa63ddbcef99384597f9d14ef",
+      "category_service_failure": "a6dd50a235564a8c99e55acfa420eb0f3c2573fe3255078c7083b462c2c504ed",
+      "binary_benign_context_raised": "960cbf887b19797af4f7ad1bb581b8a93119b7dee86630bde449ea888e5ddbe2"
+    }
+  },
+  "response_bodies": {
+    "binary_benign": {
+      "install_source": "google_play_store",
+      "install_source_display": "Google Play Store",
+      "source_risk_level": "Low",
+      "source_risk_points": 0,
+      "source_explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety.",
+      "summary": {
+        "app": {
+          "package": "com.world.youcinemobile",
+          "filename": "youcine-verification.apk"
+        },
+        "overall_risk_score": 14,
+        "overall_risk_level": "Safe",
+        "recommendation": "Proceed only if you trust the publisher and the requested permissions match the app's purpose.",
+        "final_explanation": "Overall risk is Safe (14/100). The combined assessment found limited risk indicators. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+        "important_reasons": [
+          "This app can use the camera.",
+          "This app has full internet access.",
+          "The project's curated catalog identified 4 sensitive permissions among 31 requested permissions.",
+          "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        ],
+        "install_source_display": "Google Play Store",
+        "total_permission_count": 31,
+        "curated_sensitive_permission_count": 4
+      },
+      "risk_components": {
+        "permission_assessment": {
+          "risk_score": 14,
+          "risk_level": "Safe",
+          "model_prediction": "Benign",
+          "malware_probability": 0.14
+        },
+        "contextual_adjustment": {
+          "install_source_display": "Google Play Store",
+          "score_adjustment": 0,
+          "context_level": "Low",
+          "explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        }
+      },
+      "advanced_details": {
+        "permissions": [
+          "android.permission.ACCESS_ADSERVICES_AD_ID",
+          "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+          "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+          "android.permission.ACCESS_ADSERVICES_TOPICS",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.BLUETOOTH",
+          "android.permission.CAMERA",
+          "android.permission.CHANGE_NETWORK_STATE",
+          "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+          "android.permission.CHANGE_WIFI_STATE",
+          "android.permission.FOREGROUND_SERVICE",
+          "android.permission.GET_TASKS",
+          "android.permission.INTERNET",
+          "android.permission.MANAGE_EXTERNAL_STORAGE",
+          "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+          "android.permission.POST_NOTIFICATIONS",
+          "android.permission.READ_CALENDAR",
+          "android.permission.READ_EXTERNAL_STORAGE",
+          "android.permission.READ_MEDIA_AUDIO",
+          "android.permission.READ_MEDIA_IMAGES",
+          "android.permission.REQUEST_INSTALL_PACKAGES",
+          "android.permission.VIBRATE",
+          "android.permission.WAKE_LOCK",
+          "android.permission.WRITE_CALENDAR",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "com.google.android.c2dm.permission.RECEIVE",
+          "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+          "com.google.android.gms.permission.AD_ID",
+          "com.huawei.android.launcher.permission.CHANGE_BADGE",
+          "com.vivo.notification.permission.BADGE_ICON"
+        ],
+        "total_permission_count": 31,
+        "curated_sensitive_permission_count": 4,
+        "curated_sensitive_permissions": [
+          {
+            "label": "Hardware controls : take pictures and videos (D)",
+            "description": "can use the camera",
+            "group": "camera access",
+            "category": "camera",
+            "severity": "high"
+          },
+          {
+            "label": "Network communication : full Internet access (D)",
+            "description": "has full internet access",
+            "group": "internet access",
+            "category": "network",
+            "severity": "medium"
+          },
+          {
+            "label": "Storage : modify/delete USB storage contents modify/delete SD card contents (D)",
+            "description": "can modify or delete files in your storage",
+            "group": "storage modification",
+            "category": "storage",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : retrieve running applications (D)",
+            "description": "can see what other apps are running",
+            "group": "app monitoring",
+            "category": "system",
+            "severity": "medium"
+          }
+        ],
+        "permission_findings": [
+          "This app can use the camera.",
+          "This app has full internet access.",
+          "This app can modify or delete files in your storage.",
+          "This app can see what other apps are running.",
+          "This app can check network connectivity.",
+          "This app can check Wi-Fi status.",
+          "This app can use Bluetooth.",
+          "This app can read your calendar.",
+          "This app can read files on your storage.",
+          "This app can control the vibrator.",
+          "This app can prevent the phone from sleeping.",
+          "This app can modify your calendar."
+        ],
+        "legacy_flagged_permission_count": 12,
+        "legacy_safe_permission_count": 4
+      },
+      "diagnostics": {
+        "model_name": "RandomForestClassifier",
+        "mode": "APK Analysis Mode",
+        "permission_band_range": "0-30",
+        "overall_band_range": "0-30",
+        "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+        "internal_install_source": "google_play_store",
+        "decision_threshold": 0.5,
+        "matched_model_permissions": 18,
+        "model_feature_count": 241,
+        "legacy_confidence": 0.86,
+        "category_classification": null
+      },
+      "threat_assessment": null,
+      "model_prediction": "Benign",
+      "malware_probability": 0.14,
+      "overall_risk_score": 14,
+      "overall_risk_level": "Safe",
+      "risk_score": 14,
+      "risk_level": "Safe",
+      "prediction": "Benign",
+      "probability_malware": 0.14,
+      "confidence": 0.86,
+      "explanation": "Overall risk is Safe (14/100). The combined assessment found limited risk indicators. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+      "reasons": [
+        "This app can use the camera.",
+        "This app has full internet access.",
+        "The project's curated catalog identified 4 sensitive permissions among 31 requested permissions.",
+        "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+      ],
+      "permission_risk_score": 14,
+      "permission_risk_level": "Safe",
+      "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+      "band_range": "0-30",
+      "model_name": "RandomForestClassifier",
+      "dangerous_permission_count": 12,
+      "safe_permission_count": 4,
+      "package": "com.world.youcinemobile",
+      "filename": "youcine-verification.apk",
+      "permissions": [
+        "android.permission.ACCESS_ADSERVICES_AD_ID",
+        "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+        "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+        "android.permission.ACCESS_ADSERVICES_TOPICS",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.CAMERA",
+        "android.permission.CHANGE_NETWORK_STATE",
+        "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.GET_TASKS",
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_CALENDAR",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "com.google.android.gms.permission.AD_ID",
+        "com.huawei.android.launcher.permission.CHANGE_BADGE",
+        "com.vivo.notification.permission.BADGE_ICON"
+      ],
+      "permissions_detected": 31,
+      "mode": "APK Analysis Mode"
+    },
+    "binary_malicious_classified": {
+      "install_source": "google_play_store",
+      "install_source_display": "Google Play Store",
+      "source_risk_level": "Low",
+      "source_risk_points": 0,
+      "source_explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety.",
+      "summary": {
+        "app": {
+          "package": "com.mix.kr",
+          "filename": "banking-verification.apk"
+        },
+        "overall_risk_score": 56,
+        "overall_risk_level": "Suspicious",
+        "recommendation": "Verify the publisher and install source, then review the highlighted permissions before installing or keeping the app.",
+        "final_explanation": "Overall risk is Suspicious (56/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+        "important_reasons": [
+          "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "The project's curated catalog identified 11 sensitive permissions among 23 requested permissions.",
+          "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        ],
+        "install_source_display": "Google Play Store",
+        "total_permission_count": 23,
+        "curated_sensitive_permission_count": 11
+      },
+      "risk_components": {
+        "permission_assessment": {
+          "risk_score": 56,
+          "risk_level": "Suspicious",
+          "model_prediction": "Malicious",
+          "malware_probability": 0.56
+        },
+        "contextual_adjustment": {
+          "install_source_display": "Google Play Store",
+          "score_adjustment": 0,
+          "context_level": "Low",
+          "explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        }
+      },
+      "advanced_details": {
+        "permissions": [
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.CALL_PHONE",
+          "android.permission.CHANGE_WIFI_STATE",
+          "android.permission.GET_TASKS",
+          "android.permission.INTERNET",
+          "android.permission.KILL_BACKGROUND_PROCESSES",
+          "android.permission.MODIFY_AUDIO_SETTINGS",
+          "android.permission.MODIFY_PHONE_STATE",
+          "android.permission.READ_CONTACTS",
+          "android.permission.READ_LOGS",
+          "android.permission.READ_PHONE_STATE",
+          "android.permission.RECEIVE_BOOT_COMPLETED",
+          "android.permission.RECEIVE_SMS",
+          "android.permission.RESTART_PACKAGES",
+          "android.permission.SEND_SMS",
+          "android.permission.SYSTEM_ALERT_WINDOW",
+          "android.permission.VIBRATE",
+          "android.permission.WAKE_LOCK",
+          "android.permission.WRITE_CONTACTS",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "com.android.launcher.permission.INSTALL_SHORTCUT",
+          "com.android.launcher.permission.UNINSTALL_SHORTCUT"
+        ],
+        "total_permission_count": 23,
+        "curated_sensitive_permission_count": 11,
+        "curated_sensitive_permissions": [
+          {
+            "label": "Services that cost you money : directly call phone numbers (D)",
+            "description": "can directly call phone numbers",
+            "group": "phone calling",
+            "category": "telephony",
+            "severity": "high"
+          },
+          {
+            "label": "Services that cost you money : send SMS messages (D)",
+            "description": "can send SMS messages (which may incur charges)",
+            "group": "SMS sending",
+            "category": "sms",
+            "severity": "high"
+          },
+          {
+            "label": "System tools : display system-level alerts (D)",
+            "description": "can draw pop-ups or other content over other apps",
+            "group": "screen overlays",
+            "category": "overlay",
+            "severity": "high"
+          },
+          {
+            "label": "Your messages : receive SMS (D)",
+            "description": "can intercept incoming SMS",
+            "group": "SMS interception",
+            "category": "sms",
+            "severity": "high"
+          },
+          {
+            "label": "Your personal information : read contact data (D)",
+            "description": "can read your contacts",
+            "group": "contact access",
+            "category": "contacts",
+            "severity": "high"
+          },
+          {
+            "label": "Network communication : full Internet access (D)",
+            "description": "has full internet access",
+            "group": "internet access",
+            "category": "network",
+            "severity": "medium"
+          },
+          {
+            "label": "Phone calls : read phone state and identity (D)",
+            "description": "can read your phone identity (device ID)",
+            "group": "phone identity access",
+            "category": "telephony",
+            "severity": "medium"
+          },
+          {
+            "label": "Storage : modify/delete USB storage contents modify/delete SD card contents (D)",
+            "description": "can modify or delete files in your storage",
+            "group": "storage modification",
+            "category": "storage",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : automatically start at boot (S)",
+            "description": "starts automatically when the phone boots",
+            "group": "startup permission",
+            "category": "persistence",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : retrieve running applications (D)",
+            "description": "can see what other apps are running",
+            "group": "app monitoring",
+            "category": "system",
+            "severity": "medium"
+          },
+          {
+            "label": "Your personal information : read sensitive log data (D)",
+            "description": "can read sensitive device logs",
+            "group": "log access",
+            "category": "system",
+            "severity": "medium"
+          }
+        ],
+        "permission_findings": [
+          "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "Contact access combined with internet access could expose address-book data if misused; verify that both are necessary.",
+          "This app can directly call phone numbers.",
+          "This app can intercept incoming SMS.",
+          "This app can read your phone identity (device ID).",
+          "This app can modify or delete files in your storage.",
+          "This app can see what other apps are running.",
+          "This app can read sensitive device logs.",
+          "This app can check network connectivity.",
+          "This app can check Wi-Fi status.",
+          "This app can control the vibrator.",
+          "This app can prevent the phone from sleeping.",
+          "This app can modify your contacts."
+        ],
+        "legacy_flagged_permission_count": 14,
+        "legacy_safe_permission_count": 6
+      },
+      "diagnostics": {
+        "model_name": "RandomForestClassifier",
+        "mode": "APK Analysis Mode",
+        "permission_band_range": "31-70",
+        "overall_band_range": "31-70",
+        "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+        "internal_install_source": "google_play_store",
+        "decision_threshold": 0.5,
+        "matched_model_permissions": 23,
+        "model_feature_count": 241,
+        "legacy_confidence": 0.56,
+        "category_classification": {
+          "top_score": 0.9925,
+          "second_score": 0.0075,
+          "margin": 0.9850000000000001,
+          "threshold": 0.7
+        }
+      },
+      "threat_assessment": {
+        "status": "classified",
+        "likely_category": "Banking Malware",
+        "supported_categories": [
+          "Adware",
+          "Banking Malware",
+          "SMS Malware",
+          "Riskware"
+        ],
+        "method": "selective_category_classification"
+      },
+      "model_prediction": "Malicious",
+      "malware_probability": 0.56,
+      "overall_risk_score": 56,
+      "overall_risk_level": "Suspicious",
+      "risk_score": 56,
+      "risk_level": "Suspicious",
+      "prediction": "Malicious",
+      "probability_malware": 0.56,
+      "confidence": 0.56,
+      "explanation": "Overall risk is Suspicious (56/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+      "reasons": [
+        "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+        "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+        "The project's curated catalog identified 11 sensitive permissions among 23 requested permissions.",
+        "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+      ],
+      "permission_risk_score": 56,
+      "permission_risk_level": "Suspicious",
+      "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+      "band_range": "31-70",
+      "model_name": "RandomForestClassifier",
+      "dangerous_permission_count": 14,
+      "safe_permission_count": 6,
+      "package": "com.mix.kr",
+      "filename": "banking-verification.apk",
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CALL_PHONE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.GET_TASKS",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.MODIFY_PHONE_STATE",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_LOGS",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECEIVE_SMS",
+        "android.permission.RESTART_PACKAGES",
+        "android.permission.SEND_SMS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "com.android.launcher.permission.UNINSTALL_SHORTCUT"
+      ],
+      "permissions_detected": 23,
+      "mode": "APK Analysis Mode"
+    },
+    "binary_malicious_uncertain": {
+      "install_source": "google_play_store",
+      "install_source_display": "Google Play Store",
+      "source_risk_level": "Low",
+      "source_risk_points": 0,
+      "source_explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety.",
+      "summary": {
+        "app": {
+          "package": "com.qimikeji.zhuan",
+          "filename": "uncertain-verification.apk"
+        },
+        "overall_risk_score": 52,
+        "overall_risk_level": "Suspicious",
+        "recommendation": "Verify the publisher and install source, then review the highlighted permissions before installing or keeping the app.",
+        "final_explanation": "Overall risk is Suspicious (52/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+        "important_reasons": [
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "Location and internet access together could transmit location data if misused; verify that this matches the app's purpose.",
+          "The project's curated catalog identified 8 sensitive permissions among 16 requested permissions.",
+          "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        ],
+        "install_source_display": "Google Play Store",
+        "total_permission_count": 16,
+        "curated_sensitive_permission_count": 8
+      },
+      "risk_components": {
+        "permission_assessment": {
+          "risk_score": 52,
+          "risk_level": "Suspicious",
+          "model_prediction": "Malicious",
+          "malware_probability": 0.52
+        },
+        "contextual_adjustment": {
+          "install_source_display": "Google Play Store",
+          "score_adjustment": 0,
+          "context_level": "Low",
+          "explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        }
+      },
+      "advanced_details": {
+        "permissions": [
+          "android.permission.ACCESS_COARSE_LOCATION",
+          "android.permission.ACCESS_FINE_LOCATION",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.CHANGE_WIFI_STATE",
+          "android.permission.GET_TASKS",
+          "android.permission.INTERNET",
+          "android.permission.KILL_BACKGROUND_PROCESSES",
+          "android.permission.READ_PHONE_STATE",
+          "android.permission.RECEIVE_BOOT_COMPLETED",
+          "android.permission.RESTART_PACKAGES",
+          "android.permission.SYSTEM_ALERT_WINDOW",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "android.permission.WRITE_SETTINGS",
+          "com.android.launcher.permission.INSTALL_SHORTCUT",
+          "com.android.launcher.permission.READ_SETTINGS"
+        ],
+        "total_permission_count": 16,
+        "curated_sensitive_permission_count": 8,
+        "curated_sensitive_permissions": [
+          {
+            "label": "System tools : display system-level alerts (D)",
+            "description": "can draw pop-ups or other content over other apps",
+            "group": "screen overlays",
+            "category": "overlay",
+            "severity": "high"
+          },
+          {
+            "label": "Your location : fine (GPS) location (D)",
+            "description": "tracks your precise GPS location",
+            "group": "location tracking",
+            "category": "location",
+            "severity": "high"
+          },
+          {
+            "label": "Network communication : full Internet access (D)",
+            "description": "has full internet access",
+            "group": "internet access",
+            "category": "network",
+            "severity": "medium"
+          },
+          {
+            "label": "Phone calls : read phone state and identity (D)",
+            "description": "can read your phone identity (device ID)",
+            "group": "phone identity access",
+            "category": "telephony",
+            "severity": "medium"
+          },
+          {
+            "label": "Storage : modify/delete USB storage contents modify/delete SD card contents (D)",
+            "description": "can modify or delete files in your storage",
+            "group": "storage modification",
+            "category": "storage",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : automatically start at boot (S)",
+            "description": "starts automatically when the phone boots",
+            "group": "startup permission",
+            "category": "persistence",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : retrieve running applications (D)",
+            "description": "can see what other apps are running",
+            "group": "app monitoring",
+            "category": "system",
+            "severity": "medium"
+          },
+          {
+            "label": "Your location : coarse (network-based) location (D)",
+            "description": "tracks your approximate location",
+            "group": "location tracking",
+            "category": "location",
+            "severity": "medium"
+          }
+        ],
+        "permission_findings": [
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "Location and internet access together could transmit location data if misused; verify that this matches the app's purpose.",
+          "This app can read your phone identity (device ID).",
+          "This app can modify or delete files in your storage.",
+          "This app can see what other apps are running.",
+          "This app tracks your approximate location.",
+          "This app can check network connectivity.",
+          "This app can check Wi-Fi status."
+        ],
+        "legacy_flagged_permission_count": 9,
+        "legacy_safe_permission_count": 4
+      },
+      "diagnostics": {
+        "model_name": "RandomForestClassifier",
+        "mode": "APK Analysis Mode",
+        "permission_band_range": "31-70",
+        "overall_band_range": "31-70",
+        "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+        "internal_install_source": "google_play_store",
+        "decision_threshold": 0.5,
+        "matched_model_permissions": 16,
+        "model_feature_count": 241,
+        "legacy_confidence": 0.52,
+        "category_classification": {
+          "top_score": 0.665,
+          "second_score": 0.1775,
+          "margin": 0.48750000000000004,
+          "threshold": 0.7
+        }
+      },
+      "threat_assessment": {
+        "status": "uncertain",
+        "likely_category": null,
+        "supported_categories": [
+          "Adware",
+          "Banking Malware",
+          "SMS Malware",
+          "Riskware"
+        ],
+        "method": "selective_category_classification",
+        "message": "The app's permission pattern does not clearly match one supported threat category."
+      },
+      "model_prediction": "Malicious",
+      "malware_probability": 0.52,
+      "overall_risk_score": 52,
+      "overall_risk_level": "Suspicious",
+      "risk_score": 52,
+      "risk_level": "Suspicious",
+      "prediction": "Malicious",
+      "probability_malware": 0.52,
+      "confidence": 0.52,
+      "explanation": "Overall risk is Suspicious (52/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+      "reasons": [
+        "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+        "Location and internet access together could transmit location data if misused; verify that this matches the app's purpose.",
+        "The project's curated catalog identified 8 sensitive permissions among 16 requested permissions.",
+        "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+      ],
+      "permission_risk_score": 52,
+      "permission_risk_level": "Suspicious",
+      "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+      "band_range": "31-70",
+      "model_name": "RandomForestClassifier",
+      "dangerous_permission_count": 9,
+      "safe_permission_count": 4,
+      "package": "com.qimikeji.zhuan",
+      "filename": "uncertain-verification.apk",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.GET_TASKS",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RESTART_PACKAGES",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_SETTINGS",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "com.android.launcher.permission.READ_SETTINGS"
+      ],
+      "permissions_detected": 16,
+      "mode": "APK Analysis Mode"
+    },
+    "category_service_failure": {
+      "install_source": "google_play_store",
+      "install_source_display": "Google Play Store",
+      "source_risk_level": "Low",
+      "source_risk_points": 0,
+      "source_explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety.",
+      "summary": {
+        "app": {
+          "package": "com.mix.kr",
+          "filename": "banking-verification.apk"
+        },
+        "overall_risk_score": 56,
+        "overall_risk_level": "Suspicious",
+        "recommendation": "Verify the publisher and install source, then review the highlighted permissions before installing or keeping the app.",
+        "final_explanation": "Overall risk is Suspicious (56/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+        "important_reasons": [
+          "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "The project's curated catalog identified 11 sensitive permissions among 23 requested permissions.",
+          "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        ],
+        "install_source_display": "Google Play Store",
+        "total_permission_count": 23,
+        "curated_sensitive_permission_count": 11
+      },
+      "risk_components": {
+        "permission_assessment": {
+          "risk_score": 56,
+          "risk_level": "Suspicious",
+          "model_prediction": "Malicious",
+          "malware_probability": 0.56
+        },
+        "contextual_adjustment": {
+          "install_source_display": "Google Play Store",
+          "score_adjustment": 0,
+          "context_level": "Low",
+          "explanation": "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+        }
+      },
+      "advanced_details": {
+        "permissions": [
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.CALL_PHONE",
+          "android.permission.CHANGE_WIFI_STATE",
+          "android.permission.GET_TASKS",
+          "android.permission.INTERNET",
+          "android.permission.KILL_BACKGROUND_PROCESSES",
+          "android.permission.MODIFY_AUDIO_SETTINGS",
+          "android.permission.MODIFY_PHONE_STATE",
+          "android.permission.READ_CONTACTS",
+          "android.permission.READ_LOGS",
+          "android.permission.READ_PHONE_STATE",
+          "android.permission.RECEIVE_BOOT_COMPLETED",
+          "android.permission.RECEIVE_SMS",
+          "android.permission.RESTART_PACKAGES",
+          "android.permission.SEND_SMS",
+          "android.permission.SYSTEM_ALERT_WINDOW",
+          "android.permission.VIBRATE",
+          "android.permission.WAKE_LOCK",
+          "android.permission.WRITE_CONTACTS",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "com.android.launcher.permission.INSTALL_SHORTCUT",
+          "com.android.launcher.permission.UNINSTALL_SHORTCUT"
+        ],
+        "total_permission_count": 23,
+        "curated_sensitive_permission_count": 11,
+        "curated_sensitive_permissions": [
+          {
+            "label": "Services that cost you money : directly call phone numbers (D)",
+            "description": "can directly call phone numbers",
+            "group": "phone calling",
+            "category": "telephony",
+            "severity": "high"
+          },
+          {
+            "label": "Services that cost you money : send SMS messages (D)",
+            "description": "can send SMS messages (which may incur charges)",
+            "group": "SMS sending",
+            "category": "sms",
+            "severity": "high"
+          },
+          {
+            "label": "System tools : display system-level alerts (D)",
+            "description": "can draw pop-ups or other content over other apps",
+            "group": "screen overlays",
+            "category": "overlay",
+            "severity": "high"
+          },
+          {
+            "label": "Your messages : receive SMS (D)",
+            "description": "can intercept incoming SMS",
+            "group": "SMS interception",
+            "category": "sms",
+            "severity": "high"
+          },
+          {
+            "label": "Your personal information : read contact data (D)",
+            "description": "can read your contacts",
+            "group": "contact access",
+            "category": "contacts",
+            "severity": "high"
+          },
+          {
+            "label": "Network communication : full Internet access (D)",
+            "description": "has full internet access",
+            "group": "internet access",
+            "category": "network",
+            "severity": "medium"
+          },
+          {
+            "label": "Phone calls : read phone state and identity (D)",
+            "description": "can read your phone identity (device ID)",
+            "group": "phone identity access",
+            "category": "telephony",
+            "severity": "medium"
+          },
+          {
+            "label": "Storage : modify/delete USB storage contents modify/delete SD card contents (D)",
+            "description": "can modify or delete files in your storage",
+            "group": "storage modification",
+            "category": "storage",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : automatically start at boot (S)",
+            "description": "starts automatically when the phone boots",
+            "group": "startup permission",
+            "category": "persistence",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : retrieve running applications (D)",
+            "description": "can see what other apps are running",
+            "group": "app monitoring",
+            "category": "system",
+            "severity": "medium"
+          },
+          {
+            "label": "Your personal information : read sensitive log data (D)",
+            "description": "can read sensitive device logs",
+            "group": "log access",
+            "category": "system",
+            "severity": "medium"
+          }
+        ],
+        "permission_findings": [
+          "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+          "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+          "Contact access combined with internet access could expose address-book data if misused; verify that both are necessary.",
+          "This app can directly call phone numbers.",
+          "This app can intercept incoming SMS.",
+          "This app can read your phone identity (device ID).",
+          "This app can modify or delete files in your storage.",
+          "This app can see what other apps are running.",
+          "This app can read sensitive device logs.",
+          "This app can check network connectivity.",
+          "This app can check Wi-Fi status.",
+          "This app can control the vibrator.",
+          "This app can prevent the phone from sleeping.",
+          "This app can modify your contacts."
+        ],
+        "legacy_flagged_permission_count": 14,
+        "legacy_safe_permission_count": 6
+      },
+      "diagnostics": {
+        "model_name": "RandomForestClassifier",
+        "mode": "APK Analysis Mode",
+        "permission_band_range": "31-70",
+        "overall_band_range": "31-70",
+        "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+        "internal_install_source": "google_play_store",
+        "decision_threshold": 0.5,
+        "matched_model_permissions": 23,
+        "model_feature_count": 241,
+        "legacy_confidence": 0.56,
+        "category_classification": null
+      },
+      "threat_assessment": null,
+      "model_prediction": "Malicious",
+      "malware_probability": 0.56,
+      "overall_risk_score": 56,
+      "overall_risk_level": "Suspicious",
+      "risk_score": 56,
+      "risk_level": "Suspicious",
+      "prediction": "Malicious",
+      "probability_malware": 0.56,
+      "confidence": 0.56,
+      "explanation": "Overall risk is Suspicious (56/100). The combined assessment found factors that warrant careful review. The reported install source (Google Play Store) adds no contextual concern, but source alone does not guarantee safety.",
+      "reasons": [
+        "SMS sending combined with automatic startup can resume messaging activity after a restart; verify that the app genuinely needs both.",
+        "Overlay access combined with automatic startup can support persistent pop-ups or other always-available behaviour; legitimate apps may also use this combination.",
+        "The project's curated catalog identified 11 sensitive permissions among 23 requested permissions.",
+        "Reported as installed from Google Play Store. This source adds no contextual risk adjustment, but store origin alone does not guarantee safety."
+      ],
+      "permission_risk_score": 56,
+      "permission_risk_level": "Suspicious",
+      "integration_note": "Install source (Google Play Store) did not increase the permission-based risk score.",
+      "band_range": "31-70",
+      "model_name": "RandomForestClassifier",
+      "dangerous_permission_count": 14,
+      "safe_permission_count": 6,
+      "package": "com.mix.kr",
+      "filename": "banking-verification.apk",
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CALL_PHONE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.GET_TASKS",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.MODIFY_PHONE_STATE",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_LOGS",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECEIVE_SMS",
+        "android.permission.RESTART_PACKAGES",
+        "android.permission.SEND_SMS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "com.android.launcher.permission.UNINSTALL_SHORTCUT"
+      ],
+      "permissions_detected": 23,
+      "mode": "APK Analysis Mode"
+    },
+    "binary_benign_context_raised": {
+      "install_source": "apk_sideload",
+      "install_source_display": "APK sideload",
+      "source_risk_level": "High",
+      "source_risk_points": 20,
+      "source_explanation": "Reported as installed by sideloading an APK. This can make publisher and origin verification harder, adding contextual uncertainty; sideloading alone is not evidence that the app is malware.",
+      "summary": {
+        "app": {
+          "package": "com.world.youcinemobile",
+          "filename": "youcine-verification.apk"
+        },
+        "overall_risk_score": 34,
+        "overall_risk_level": "Suspicious",
+        "recommendation": "Verify the publisher and install source, then review the highlighted permissions before installing or keeping the app.",
+        "final_explanation": "Overall risk is Suspicious (34/100). The combined assessment found factors that warrant careful review. APK sideload adds contextual uncertainty about the app's provenance; the install source alone is not evidence that the app is malware.",
+        "important_reasons": [
+          "This app can use the camera.",
+          "This app has full internet access.",
+          "The project's curated catalog identified 4 sensitive permissions among 31 requested permissions.",
+          "Reported as installed by sideloading an APK. This can make publisher and origin verification harder, adding contextual uncertainty; sideloading alone is not evidence that the app is malware."
+        ],
+        "install_source_display": "APK sideload",
+        "total_permission_count": 31,
+        "curated_sensitive_permission_count": 4
+      },
+      "risk_components": {
+        "permission_assessment": {
+          "risk_score": 14,
+          "risk_level": "Safe",
+          "model_prediction": "Benign",
+          "malware_probability": 0.14
+        },
+        "contextual_adjustment": {
+          "install_source_display": "APK sideload",
+          "score_adjustment": 20,
+          "context_level": "High",
+          "explanation": "Reported as installed by sideloading an APK. This can make publisher and origin verification harder, adding contextual uncertainty; sideloading alone is not evidence that the app is malware."
+        }
+      },
+      "advanced_details": {
+        "permissions": [
+          "android.permission.ACCESS_ADSERVICES_AD_ID",
+          "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+          "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+          "android.permission.ACCESS_ADSERVICES_TOPICS",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.BLUETOOTH",
+          "android.permission.CAMERA",
+          "android.permission.CHANGE_NETWORK_STATE",
+          "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+          "android.permission.CHANGE_WIFI_STATE",
+          "android.permission.FOREGROUND_SERVICE",
+          "android.permission.GET_TASKS",
+          "android.permission.INTERNET",
+          "android.permission.MANAGE_EXTERNAL_STORAGE",
+          "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+          "android.permission.POST_NOTIFICATIONS",
+          "android.permission.READ_CALENDAR",
+          "android.permission.READ_EXTERNAL_STORAGE",
+          "android.permission.READ_MEDIA_AUDIO",
+          "android.permission.READ_MEDIA_IMAGES",
+          "android.permission.REQUEST_INSTALL_PACKAGES",
+          "android.permission.VIBRATE",
+          "android.permission.WAKE_LOCK",
+          "android.permission.WRITE_CALENDAR",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "com.google.android.c2dm.permission.RECEIVE",
+          "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+          "com.google.android.gms.permission.AD_ID",
+          "com.huawei.android.launcher.permission.CHANGE_BADGE",
+          "com.vivo.notification.permission.BADGE_ICON"
+        ],
+        "total_permission_count": 31,
+        "curated_sensitive_permission_count": 4,
+        "curated_sensitive_permissions": [
+          {
+            "label": "Hardware controls : take pictures and videos (D)",
+            "description": "can use the camera",
+            "group": "camera access",
+            "category": "camera",
+            "severity": "high"
+          },
+          {
+            "label": "Network communication : full Internet access (D)",
+            "description": "has full internet access",
+            "group": "internet access",
+            "category": "network",
+            "severity": "medium"
+          },
+          {
+            "label": "Storage : modify/delete USB storage contents modify/delete SD card contents (D)",
+            "description": "can modify or delete files in your storage",
+            "group": "storage modification",
+            "category": "storage",
+            "severity": "medium"
+          },
+          {
+            "label": "System tools : retrieve running applications (D)",
+            "description": "can see what other apps are running",
+            "group": "app monitoring",
+            "category": "system",
+            "severity": "medium"
+          }
+        ],
+        "permission_findings": [
+          "This app can use the camera.",
+          "This app has full internet access.",
+          "This app can modify or delete files in your storage.",
+          "This app can see what other apps are running.",
+          "This app can check network connectivity.",
+          "This app can check Wi-Fi status.",
+          "This app can use Bluetooth.",
+          "This app can read your calendar.",
+          "This app can read files on your storage.",
+          "This app can control the vibrator.",
+          "This app can prevent the phone from sleeping.",
+          "This app can modify your calendar."
+        ],
+        "legacy_flagged_permission_count": 12,
+        "legacy_safe_permission_count": 4
+      },
+      "diagnostics": {
+        "model_name": "RandomForestClassifier",
+        "mode": "APK Analysis Mode",
+        "permission_band_range": "0-30",
+        "overall_band_range": "31-70",
+        "integration_note": "Overall risk raised from Safe to Suspicious after the contextual install-source adjustment (APK sideload, +20).",
+        "internal_install_source": "apk_sideload",
+        "decision_threshold": 0.5,
+        "matched_model_permissions": 18,
+        "model_feature_count": 241,
+        "legacy_confidence": 0.86,
+        "category_classification": null
+      },
+      "threat_assessment": null,
+      "model_prediction": "Benign",
+      "malware_probability": 0.14,
+      "overall_risk_score": 34,
+      "overall_risk_level": "Suspicious",
+      "risk_score": 34,
+      "risk_level": "Suspicious",
+      "prediction": "Benign",
+      "probability_malware": 0.14,
+      "confidence": 0.86,
+      "explanation": "Overall risk is Suspicious (34/100). The combined assessment found factors that warrant careful review. APK sideload adds contextual uncertainty about the app's provenance; the install source alone is not evidence that the app is malware.",
+      "reasons": [
+        "This app can use the camera.",
+        "This app has full internet access.",
+        "The project's curated catalog identified 4 sensitive permissions among 31 requested permissions.",
+        "Reported as installed by sideloading an APK. This can make publisher and origin verification harder, adding contextual uncertainty; sideloading alone is not evidence that the app is malware."
+      ],
+      "permission_risk_score": 14,
+      "permission_risk_level": "Safe",
+      "integration_note": "Overall risk raised from Safe to Suspicious after the contextual install-source adjustment (APK sideload, +20).",
+      "band_range": "31-70",
+      "model_name": "RandomForestClassifier",
+      "dangerous_permission_count": 12,
+      "safe_permission_count": 4,
+      "package": "com.world.youcinemobile",
+      "filename": "youcine-verification.apk",
+      "permissions": [
+        "android.permission.ACCESS_ADSERVICES_AD_ID",
+        "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+        "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+        "android.permission.ACCESS_ADSERVICES_TOPICS",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.CAMERA",
+        "android.permission.CHANGE_NETWORK_STATE",
+        "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.GET_TASKS",
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_CALENDAR",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "com.google.android.gms.permission.AD_ID",
+        "com.huawei.android.launcher.permission.CHANGE_BADGE",
+        "com.vivo.notification.permission.BADGE_ICON"
+      ],
+      "permissions_detected": 31,
+      "mode": "APK Analysis Mode"
+    }
+  }
+}

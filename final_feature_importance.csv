@@ -1,0 +1,158 @@
+feature,importance_mean,importance_std
+Price,0.1262224035271289,0.005011011343590102
+Number of ratings,0.12309362018843899,0.00231106596492708
+Your location : fine (GPS) location (D),0.018042190947293646,0.0017719150592564875
+Rating,0.007563913503664699,0.0012773003422930798
+Network communication : view network state (S),0.005142093441367202,0.0006523724637068377
+System tools : set wallpaper (S),0.004766810408364996,0.0008728758074212389
+Dangerous permissions count,0.004538435700459931,0.0011068024259018592
+Phone calls : read phone state and identity (D),0.00204834940711085,0.0009343180539722713
+Safe permissions count,0.0018420101928128042,0.000683930738187115
+Storage : modify/delete USB storage contents modify/delete SD card contents (D),0.0015131693413335645,0.00038209119877837325
+Your personal information : read contact data (D),0.0013114969999105553,0.0006374123290324214
+Hardware controls : control vibrator (S),0.0011844493150420464,0.00045856598947822524
+Network communication : view Wi-Fi state (S),0.0011664312589259706,0.0002825340957149116
+Services that cost you money : send SMS messages (D),0.0010780627372705132,0.00036436219050106796
+Services that cost you money : directly call phone numbers (D),0.0010631106202923402,0.0007210191129193978
+Your personal information : write Browser's history and bookmarks (D),0.000885739244745909,0.00048636778857264016
+Your location : mock location sources for testing (D),0.0008622840551833155,0.0010620222616569328
+System tools : send sticky broadcast (S),0.0005712312811577691,0.0003431567002136307
+Hardware controls : record audio (D),0.0004371304259570996,0.00011690054089077768
+Network communication : receive data from Internet (S),0.0003570686359561703,0.0003005079510772183
+System tools : kill background processes (S),0.0003368908296099038,0.00030736044252685756
+System tools : mount and unmount filesystems (D),0.0003109738268478379,0.00021032283072648997
+System tools : retrieve running applications (D),0.00030944840885309687,5.8648043914656516e-05
+Your messages : read SMS or MMS (D),0.0003051591146896682,0.00025066056271105905
+System tools : change network connectivity (D),0.0002453204404803122,0.00018189351053795317
+Your personal information : read Browser's history and bookmarks (D),0.0002414238281769565,0.0002345094123504006
+Your personal information : read sensitive log data (D),0.00023607731362109696,0.0010005583732257753
+System tools : prevent device from sleeping (D),0.00023560911601885337,0.00018506775329656653
+Default : power device on or off (S),0.00022397969170246946,0.00011792629812555775
+System tools : display system-level alerts (D),0.00018812481725192232,4.780578089754367e-05
+Your accounts : manage the accounts list (D),0.00017539286309775637,0.0001697890589777759
+System tools : write sync settings (D),0.00014789002974717745,4.391764968635336e-05
+Default : access checkin properties (S),0.0001035169795636115,7.402885521526577e-05
+Phone calls : modify phone state (S),9.653932497386553e-05,9.232156499724892e-05
+Your messages : receive SMS (D),8.44870125005892e-05,0.00032649379574324177
+Your personal information : write contact data (D),7.894415701481527e-05,0.0004491050970885784
+Default : control location update notifications (S),6.639344064225394e-05,3.804981606906101e-05
+Hardware controls : control flashlight (S),6.074486311711258e-05,0.00016269037354146962
+Your accounts : use the authentication credentials of an account (D),5.422030298127822e-05,0.00028986888204448035
+System tools : change your UI settings (D),5.30573605496576e-05,0.00020674539123253247
+Your location : access extra location provider commands (S),5.286101961960998e-05,0.00014793842686370497
+Default : disable or modify status bar (S),5.275529758037578e-05,6.21072904398596e-05
+System tools : modify global system settings (D),5.121477643714734e-05,0.00021917880023198243
+System tools : automatically start at boot (S),4.829986878387427e-05,0.0002905237594766817
+Your messages : read Gmail (D),4.505269186438898e-05,1.4093236558136754e-05
+Your accounts : act as an account authenticator (D),3.562832722359133e-05,3.5091781128400874e-05
+Network communication : create Bluetooth connections (D),3.44955910889011e-05,9.57892756222292e-05
+System tools : expand/collapse status bar (S),2.715546093601251e-05,1.744826156538801e-05
+System tools : write subscribed feeds (D),2.1552192856355566e-05,3.730286888805955e-05
+Your personal information : add or modify calendar events and send email to guests (D),1.918099854771871e-05,0.00021814184263601919
+System tools : make application always run (D),1.87732135392249e-05,9.969789071039188e-05
+Hardware controls : test hardware (S),1.3018913974893742e-05,8.827606168551013e-06
+Network communication : full Internet access (D),1.2475200630279737e-05,0.00013833984721578878
+Your location : coarse (network-based) location (D),1.1251845604753897e-05,0.00013007359845126608
+Your accounts : access other Google services (D),1.0693029111652485e-05,0.00025435836721211276
+Your accounts : view configured accounts (S),5.044451586577736e-06,4.572332962606993e-05
+System tools : allow Wi-Fi Multicast reception (D),4.7725949142485294e-06,2.6331567284078103e-05
+Phone calls : intercept outgoing calls (D),2.733669871779476e-06,0.00013764695312143302
+Your messages : receive MMS (D),1.6613463309278486e-06,0.00015935643207135006
+Your messages : read instant messages (D),0.0,0.0
+System tools : send package removed broadcast (S),0.0,0.0
+Your personal information : choose widgets (S),0.0,0.0
+System tools : reorder running applications (D),0.0,0.0
+Your personal information : retrieve system internal state (S),0.0,0.0
+Your messages : send WAP-PUSH-received broadcast (S),0.0,0.0
+System tools : read/write to resources owned by diag (S),0.0,0.0
+System tools : read subscribed feeds (S),0.0,0.0
+System tools : set time zone (D),0.0,0.0
+Your messages : send SMS-received broadcast (S),0.0,0.0
+Your personal information : set alarm in alarm clock (S),0.0,0.0
+Your accounts : Google Maps (D),0.0,0.0
+Your messages : Read Email attachments (D),0.0,0.0
+System tools : write Access Point Name settings (D),0.0,0.0
+Your messages : modify Gmail (D),0.0,0.0
+Your messages : Send Gmail (S),0.0,0.0
+Your accounts : Google Finance (D),0.0,0.0
+Your accounts : read Google service configuration (S),0.0,0.0
+Your accounts : contacts data in Google accounts (D),0.0,0.0
+Your accounts : access all Google services (S),0.0,0.0
+Your accounts : YouTube usernames (D),0.0,0.0
+Your accounts : Picasa Web Albums (D),0.0,0.0
+Your accounts : Google App Engine (D),0.0,0.0
+Your accounts : Google Docs (D),0.0,0.0
+Your accounts : Google mail (D),0.0,0.0
+Your accounts : Google Voice (D),0.0,0.0
+Your accounts : Google Spreadsheets (D),0.0,0.0
+Your accounts : YouTube (D),0.0,0.0
+Default : Access DRM content. (S),0.0,0.0
+System tools : modify global animation speed (D),0.0,0.0
+Default : control system backup and restore (S),0.0,0.0
+Default : partial shutdown (S),0.0,0.0
+Default : monitor and control all application launching (S),0.0,0.0
+Default : manage application tokens (S),0.0,0.0
+Default : interact with a device admin (S),0.0,0.0
+Default : force device reboot (S),0.0,0.0
+Default : force application to close (S),0.0,0.0
+Default : enable or disable application components (S),0.0,0.0
+Default : display unauthorized windows (S),0.0,0.0
+Default : directly call any phone numbers (S),0.0,0.0
+Default : delete other applications' data (S),0.0,0.0
+Default : delete other applications' caches (S),0.0,0.0
+Default : delete applications (S),0.0,0.0
+Default : bind to an input method (S),0.0,0.0
+Default : press keys and control buttons (S),0.0,0.0
+Default : bind to a wallpaper (S),0.0,0.0
+Default : access the cache filesystem (S),0.0,0.0
+Default : access SurfaceFlinger (S),0.0,0.0
+Default : Voice Search Shortcuts (S),0.0,0.0
+Default : Send download notifications. (S),0.0,0.0
+Default : Read Google settings (S),0.0,0.0
+Default : Move application resources (S),0.0,0.0
+Default : Modify Google settings (S),0.0,0.0
+Default : Install DRM content. (S),0.0,0.0
+Default : Audio File Access (S),0.0,0.0
+Default : Advanced download manager functions. (S),0.0,0.0
+Default : Access download manager. (S),0.0,0.0
+Default : permission to install a location provider (S),0.0,0.0
+Default : modify the Google services map (S),0.0,0.0
+log_number_of_ratings,0.0,0.0
+Network communication : Broadcast data messages to applications. (S),0.0,0.0
+Development tools : send Linux signals to applications (D),0.0,0.0
+Development tools : make all background applications close (D),0.0,0.0
+Network communication : make/receive Internet calls (D),0.0,0.0
+Development tools : limit number of running processes (D),0.0,0.0
+Development tools : enable application debugging (D),0.0,0.0
+Default : update component usage statistics (S),0.0,0.0
+Default : set time (S),0.0,0.0
+Default : record what you type and actions you take (S),0.0,0.0
+Default : read phone state and identity (S),0.0,0.0
+Default : Access Email provider data (S),0.0,0.0
+System tools : force stop other applications (S),0.0,0.0
+System tools : format external storage (D),0.0,0.0
+Default : read frame buffer (S),0.0,0.0
+Default : prevent app switches (S),0.0,0.0
+Default : change screen orientation (S),-1.3139739162726371e-06,7.162406973520053e-05
+System tools : set preferred applications (S),-2.069131339399455e-06,0.00016031953748369413
+System tools : measure application storage space (S),-2.1144407847062397e-06,5.005409897081072e-05
+System tools : read sync statistics (S),-3.5039304432604724e-06,5.100662167166409e-06
+Network communication : control Near Field Communication (D),-7.838534052151403e-06,2.2072382113019477e-05
+Default : modify battery statistics (S),-1.1629424316317305e-05,3.0206296925960885e-06
+Default : directly install applications (S),-1.4212062703400363e-05,7.690825728810304e-05
+System tools : delete all application cache data (D),-2.5146742190407246e-05,2.2950972202369e-05
+System tools : bluetooth administration (D),-3.1052073239412616e-05,2.462273663404303e-05
+Your personal information : write to user defined dictionary (S),-3.1142692130115e-05,1.443197313056805e-05
+System tools : set wallpaper size hints (S),-3.707822947607298e-05,2.733452911839638e-05
+Your messages : receive WAP (D),-4.360278961190733e-05,0.00016766507473502256
+Your personal information : read user defined dictionary (D),-5.793567750305151e-05,3.8849408127998696e-05
+Your personal information : read calendar events (D),-8.125493872950252e-05,6.72940435935577e-05
+Your accounts : act as the AccountManagerService (S),-8.459273453980121e-05,6.361607488882279e-05
+Hardware controls : change your audio settings (D),-9.283905360044642e-05,0.00024412995936203403
+Default : modify secure system settings (S),-0.00012975114844340218,5.4715361407970236e-05
+System tools : read sync settings (S),-0.00013283219072981466,0.00016247384908754366
+Your messages : edit SMS or MMS (D),-0.00016436756471998047,0.00026096842328698433
+System tools : change Wi-Fi state (D),-0.0002444595610178846,0.00035325141153719734
+System tools : disable keylock (D),-0.0005373549191558747,0.0003912331524323858
+Your accounts : discover known accounts (S),-0.0005493015095898501,0.00043396834205625064
+Hardware controls : take pictures and videos (D),-0.0010218941281375348,0.00047781539941580206

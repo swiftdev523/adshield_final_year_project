@@ -1,16 +1,20 @@
 import type { ReactElement } from "react";
 import { FlatList, Text, View } from "react-native";
 
-import { ActivityItem } from "../../lib/mockData";
+import {
+  formatActivityTime,
+  type HomeActivityItem,
+} from "../../lib/home/deriveHomeDashboard";
 import Card from "../ui/Card";
 
 type ActivityFeedProps = {
-  data: ActivityItem[];
+  data: HomeActivityItem[];
   header?: ReactElement | null;
   contentPaddingBottom?: number;
+  loading?: boolean;
 };
 
-const levelColor: Record<ActivityItem["level"], string> = {
+const levelColor: Record<HomeActivityItem["level"], string> = {
   safe: "#00C853",
   caution: "#FF8C00",
   dangerous: "#FF4444",
@@ -20,6 +24,7 @@ export default function ActivityFeed({
   data,
   header,
   contentPaddingBottom,
+  loading = false,
 }: ActivityFeedProps) {
   const paddingBottom = 32 + (contentPaddingBottom ?? 0);
 
@@ -29,6 +34,22 @@ export default function ActivityFeed({
       keyExtractor={(item) => item.id}
       ListHeaderComponent={header ?? null}
       contentContainerStyle={{ paddingBottom }}
+      ListEmptyComponent={
+        <View className="px-6 pb-3">
+          <Card className="bg-surfaceHigh/80">
+            <Text className="text-center text-sm font-semibold text-textPrimary font-sans">
+              {loading
+                ? "Loading recent security activity..."
+                : "No recorded security activity yet"}
+            </Text>
+            <Text className="mt-2 text-center text-xs leading-5 text-textMuted font-sans">
+              {loading
+                ? "AdShield is reading local scan and notification state."
+                : "Completed scans, notification alerts, and verified access changes will appear here."}
+            </Text>
+          </Card>
+        </View>
+      }
       renderItem={({ item }) => (
         <View className="px-6 pb-3">
           <Card className="flex-row items-center justify-between bg-surfaceHigh/80">
@@ -41,7 +62,9 @@ export default function ActivityFeed({
                 {item.text}
               </Text>
             </View>
-            <Text className="text-xs text-textDim font-sans">{item.time}</Text>
+            <Text className="text-xs text-textDim font-sans">
+              {formatActivityTime(item.occurredAt)}
+            </Text>
           </Card>
         </View>
       )}

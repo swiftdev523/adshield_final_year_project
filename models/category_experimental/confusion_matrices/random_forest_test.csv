@@ -1,0 +1,5 @@
+,predicted_Adware,predicted_Banking Malware,predicted_SMS Malware,predicted_Riskware
+actual_Adware,187,10,1,2
+actual_Banking Malware,8,181,3,8
+actual_SMS Malware,0,5,195,0
+actual_Riskware,10,9,1,180

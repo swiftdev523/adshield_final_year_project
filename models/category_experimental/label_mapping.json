@@ -1,0 +1,16 @@
+{
+  "dataset_class_id_to_name": {
+    "1": "Adware",
+    "2": "Banking Malware",
+    "3": "SMS Malware",
+    "4": "Riskware",
+    "5": "Benign"
+  },
+  "model_class_index_to_name": {
+    "0": "Adware",
+    "1": "Banking Malware",
+    "2": "SMS Malware",
+    "3": "Riskware"
+  },
+  "benign_dataset_class_excluded": 5
+}

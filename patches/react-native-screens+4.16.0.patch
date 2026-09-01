@@ -1,0 +1,10 @@
+diff --git a/node_modules/react-native-screens/android/CMakeLists.txt b/node_modules/react-native-screens/android/CMakeLists.txt
+index 86ec079..b6dcdb5 100644
+--- a/node_modules/react-native-screens/android/CMakeLists.txt
++++ b/node_modules/react-native-screens/android/CMakeLists.txt
+@@ -78,3 +78,5 @@ else()
+         android
+     )
+ endif()
++
++target_link_libraries(rnscreens c++_shared)

@@ -1,0 +1,304 @@
+{
+  "protocol": {
+    "repeats": 5,
+    "folds": 5,
+    "seeds": [
+      6201,
+      6202,
+      6203,
+      6204,
+      6205
+    ],
+    "splitter": "StratifiedGroupKFold",
+    "group": "normalized package (strip + casefold); missing package is unique row group",
+    "same_splits_for_all_models": true,
+    "repeat_metric": "concatenated complete OOF vector; each row once per repeat",
+    "historical_test_packages_excluded_in_full": true
+  },
+  "models": {
+    "Logistic Regression": {
+      "repeat_count": 5,
+      "mean_macro_f1": 0.8882354568405326,
+      "macro_f1_sample_standard_deviation": 0.003954818642237707,
+      "macro_f1_standard_error_for_one_se_rule": 0.0017686486645453867,
+      "mean_balanced_accuracy": 0.8886803185437998,
+      "balanced_accuracy_sample_standard_deviation": 0.0038715853984040375,
+      "mean_worst_class_recall": 0.8166097838452787,
+      "per_class_precision": {
+        "Adware": {
+          "mean": 0.874928729355583,
+          "sample_standard_deviation": 0.006302511302527714
+        },
+        "Banking Malware": {
+          "mean": 0.8535998823782922,
+          "sample_standard_deviation": 0.008998514469488654
+        },
+        "SMS Malware": {
+          "mean": 0.934137545749872,
+          "sample_standard_deviation": 0.010875759086299466
+        },
+        "Riskware": {
+          "mean": 0.89161538977389,
+          "sample_standard_deviation": 0.005833192323526648
+        }
+      },
+      "per_class_recall": {
+        "Adware": {
+          "mean": 0.9308304891922641,
+          "sample_standard_deviation": 0.0028327416605207724
+        },
+        "Banking Malware": {
+          "mean": 0.8166097838452787,
+          "sample_standard_deviation": 0.012524558766346228
+        },
+        "SMS Malware": {
+          "mean": 0.9372013651877132,
+          "sample_standard_deviation": 0.009995851029118897
+        },
+        "Riskware": {
+          "mean": 0.8700796359499432,
+          "sample_standard_deviation": 0.005933290016111617
+        }
+      }
+    },
+    "Random Forest": {
+      "repeat_count": 5,
+      "mean_macro_f1": 0.9145319265188838,
+      "macro_f1_sample_standard_deviation": 0.002646104228680019,
+      "macro_f1_standard_error_for_one_se_rule": 0.0011833737861756343,
+      "mean_balanced_accuracy": 0.9146757679180887,
+      "balanced_accuracy_sample_standard_deviation": 0.0025676151998389797,
+      "mean_worst_class_recall": 0.8532423208191127,
+      "per_class_precision": {
+        "Adware": {
+          "mean": 0.8848387079696994,
+          "sample_standard_deviation": 0.002247883308673945
+        },
+        "Banking Malware": {
+          "mean": 0.8861221223555024,
+          "sample_standard_deviation": 0.007694077035421563
+        },
+        "SMS Malware": {
+          "mean": 0.9684630463379962,
+          "sample_standard_deviation": 0.0077444038494281645
+        },
+        "Riskware": {
+          "mean": 0.9224037128333441,
+          "sample_standard_deviation": 0.0035924228927001426
+        }
+      },
+      "per_class_recall": {
+        "Adware": {
+          "mean": 0.9597269624573379,
+          "sample_standard_deviation": 0.0019036633140707038
+        },
+        "Banking Malware": {
+          "mean": 0.8532423208191127,
+          "sample_standard_deviation": 0.007589114939776053
+        },
+        "SMS Malware": {
+          "mean": 0.9426621160409556,
+          "sample_standard_deviation": 0.005889501299451531
+        },
+        "Riskware": {
+          "mean": 0.9030716723549489,
+          "sample_standard_deviation": 0.004649105060683152
+        }
+      }
+    },
+    "HistGradientBoosting": {
+      "repeat_count": 5,
+      "mean_macro_f1": 0.9084466900405479,
+      "macro_f1_sample_standard_deviation": 0.001534453548966023,
+      "macro_f1_standard_error_for_one_se_rule": 0.0006862284887607659,
+      "mean_balanced_accuracy": 0.9083048919226393,
+      "balanced_accuracy_sample_standard_deviation": 0.0014860466982495176,
+      "mean_worst_class_recall": 0.8589306029579067,
+      "per_class_precision": {
+        "Adware": {
+          "mean": 0.8999004477909768,
+          "sample_standard_deviation": 0.003914130458263359
+        },
+        "Banking Malware": {
+          "mean": 0.856806596638835,
+          "sample_standard_deviation": 0.004916882647943453
+        },
+        "SMS Malware": {
+          "mean": 0.9639616483122442,
+          "sample_standard_deviation": 0.0034347695224926944
+        },
+        "Riskware": {
+          "mean": 0.915009042165661,
+          "sample_standard_deviation": 0.004930351501841557
+        }
+      },
+      "per_class_recall": {
+        "Adware": {
+          "mean": 0.9346985210466439,
+          "sample_standard_deviation": 0.004593089701521351
+        },
+        "Banking Malware": {
+          "mean": 0.8589306029579067,
+          "sample_standard_deviation": 0.005688282138794076
+        },
+        "SMS Malware": {
+          "mean": 0.9310580204778157,
+          "sample_standard_deviation": 0.00459308970152133
+        },
+        "Riskware": {
+          "mean": 0.908532423208191,
+          "sample_standard_deviation": 0.004799777726900795
+        }
+      }
+    }
+  },
+  "selection": {
+    "selected_model": "Random Forest",
+    "raw_mean_macro_f1_leader": "Random Forest",
+    "rule": "Highest mean repeat-level OOF Macro F1 defines the leader. Models within one leader standard error are eligible; among them choose the lowest repeat-level Macro-F1 standard deviation, then higher mean balanced accuracy, higher mean worst-class recall, then the simpler family.",
+    "statistical_caveat": "This is a precommitted stability heuristic, not a formal confidence interval: repeat OOF scores are dependent and five repeats provide a noisy SD estimate.",
+    "leader_mean_macro_f1": 0.9145319265188838,
+    "leader_standard_error": 0.0011833737861756343,
+    "one_standard_error_threshold": 0.9133485527327082,
+    "eligible_models": [
+      "Random Forest"
+    ],
+    "historical_test_metrics_consulted_by_rule": false,
+    "pairwise_repeat_differences": [
+      {
+        "left_model": "Logistic Regression",
+        "right_model": "Random Forest",
+        "mean_paired_repeat_macro_f1_difference_left_minus_right": -0.026296469678351087,
+        "sample_standard_deviation_of_difference": 0.0035411359919483186,
+        "left_repeat_wins": 0,
+        "ties": 0,
+        "right_repeat_wins": 5,
+        "note": "Descriptive only; repeated CV folds are dependent, so no p-value is claimed."
+      },
+      {
+        "left_model": "Logistic Regression",
+        "right_model": "HistGradientBoosting",
+        "mean_paired_repeat_macro_f1_difference_left_minus_right": -0.020211233200015343,
+        "sample_standard_deviation_of_difference": 0.0039360514389120554,
+        "left_repeat_wins": 0,
+        "ties": 0,
+        "right_repeat_wins": 5,
+        "note": "Descriptive only; repeated CV folds are dependent, so no p-value is claimed."
+      },
+      {
+        "left_model": "Random Forest",
+        "right_model": "HistGradientBoosting",
+        "mean_paired_repeat_macro_f1_difference_left_minus_right": 0.0060852364783357425,
+        "sample_standard_deviation_of_difference": 0.001974462829469411,
+        "left_repeat_wins": 5,
+        "ties": 0,
+        "right_repeat_wins": 0,
+        "note": "Descriptive only; repeated CV folds are dependent, so no p-value is claimed."
+      }
+    ]
+  },
+  "repeated_oof_confusion_matrices": {
+    "Logistic Regression": {
+      "labels": [
+        "Adware",
+        "Banking Malware",
+        "SMS Malware",
+        "Riskware"
+      ],
+      "rows_actual_columns_predicted": [
+        [
+          4091,
+          145,
+          0,
+          159
+        ],
+        [
+          306,
+          3589,
+          222,
+          278
+        ],
+        [
+          10,
+          238,
+          4119,
+          28
+        ],
+        [
+          269,
+          233,
+          69,
+          3824
+        ]
+      ]
+    },
+    "Random Forest": {
+      "labels": [
+        "Adware",
+        "Banking Malware",
+        "SMS Malware",
+        "Riskware"
+      ],
+      "rows_actual_columns_predicted": [
+        [
+          4218,
+          113,
+          0,
+          64
+        ],
+        [
+          281,
+          3750,
+          129,
+          235
+        ],
+        [
+          21,
+          196,
+          4143,
+          35
+        ],
+        [
+          247,
+          173,
+          6,
+          3969
+        ]
+      ]
+    },
+    "HistGradientBoosting": {
+      "labels": [
+        "Adware",
+        "Banking Malware",
+        "SMS Malware",
+        "Riskware"
+      ],
+      "rows_actual_columns_predicted": [
+        [
+          4108,
+          188,
+          1,
+          98
+        ],
+        [
+          249,
+          3775,
+          135,
+          236
+        ],
+        [
+          19,
+          247,
+          4092,
+          37
+        ],
+        [
+          189,
+          196,
+          17,
+          3993
+        ]
+      ]
+    }
+  }
+}

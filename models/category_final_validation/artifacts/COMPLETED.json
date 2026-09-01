@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "run_manifest_sha256": "29d02e890b7d8293a7ec4992ce5e672566985e78b6cf4e46ece3edd06a58ad55",
+  "report_sha256": "ce6fcda69d508e1acd5c0efce755e1860723a866808bbdb2a144d159721385cc",
+  "historical_artifacts_unchanged": true,
+  "fresh_four_class_holdout_evaluated": false
+}

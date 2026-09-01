@@ -1,0 +1,5 @@
+class,actual_count,actual_accepted_count,true_class_coverage,actual_class_accepted_accuracy,accepted_predicted_count,accepted_precision
+Adware,49,41,0.8367346938775511,1.0,42,0.9761904761904762
+Banking Malware,49,17,0.3469387755102041,0.8823529411764706,16,0.9375
+SMS Malware,49,23,0.46938775510204084,1.0,23,1.0
+Riskware,49,43,0.8775510204081632,0.9767441860465116,43,0.9767441860465116

@@ -1,0 +1,41 @@
+{
+  "status": "unavailable_current_corpus",
+  "strict_requirement": "Fresh samples must have normalized package groups absent from historical train, validation, and test, and all four classes must be represented.",
+  "never_seen_inventory": {
+    "Adware": {
+      "rows": 151,
+      "normalized_groups": 138,
+      "verifiably_named_rows": 151,
+      "verifiably_named_groups": 138
+    },
+    "Banking Malware": {
+      "rows": 0,
+      "normalized_groups": 0,
+      "verifiably_named_rows": 0,
+      "verifiably_named_groups": 0
+    },
+    "SMS Malware": {
+      "rows": 0,
+      "normalized_groups": 0,
+      "verifiably_named_rows": 0,
+      "verifiably_named_groups": 0
+    },
+    "Riskware": {
+      "rows": 1252,
+      "normalized_groups": 1031,
+      "verifiably_named_rows": 1227,
+      "verifiably_named_groups": 1006
+    }
+  },
+  "blocking_classes": [
+    "Banking Malware",
+    "SMS Malware"
+  ],
+  "fresh_holdout_created": false,
+  "fresh_holdout_evaluated": false,
+  "fresh_holdout_macro_f1": null,
+  "fresh_holdout_per_class_precision_recall": null,
+  "fresh_holdout_confusion_matrix": null,
+  "substitution_with_unused_rows_from_seen_packages": false,
+  "required_next_data": "Independently labelled, schema-compatible new Banking Malware and SMS Malware packages (and preferably new packages for all classes), with hashes."
+}

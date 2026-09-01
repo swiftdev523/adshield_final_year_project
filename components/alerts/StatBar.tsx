@@ -1,22 +1,26 @@
-import { AlertOctagon, BellDot, ShieldAlert } from "lucide-react-native";
+import {
+  AlertOctagon,
+  BellDot,
+  ShieldCheck,
+} from "lucide-react-native";
 import { Text, View } from "react-native";
 
 type StatBarProps = {
-  spamApps: number;
-  suspiciousApps: number;
-  totalNotifs: number;
-  spamNotifs: number;
-  suspiciousNotifs: number;
-  normalNotifs: number;
+  possibleSpamCount: number;
+  normalCount: number;
+  skippedCount: number;
+  awaitingAnalysisCount: number;
+  analysisErrorCount: number;
+  totalObserved: number;
 };
 
 export default function StatBar({
-  spamApps,
-  suspiciousApps,
-  totalNotifs,
-  spamNotifs,
-  suspiciousNotifs,
-  normalNotifs,
+  possibleSpamCount,
+  normalCount,
+  skippedCount,
+  awaitingAnalysisCount,
+  analysisErrorCount,
+  totalObserved,
 }: StatBarProps) {
   return (
     <View className="gap-3">
@@ -24,41 +28,58 @@ export default function StatBar({
         <View className="flex-1 items-center rounded-2xl border border-border bg-surfaceHigh/80 p-3">
           <AlertOctagon color="#FF375F" size={16} />
           <Text className="mt-2 text-lg font-bold text-textPrimary font-sans">
-            {spamApps}
+            {possibleSpamCount}
           </Text>
-          <Text className="text-[10px] text-textMuted font-sans">
-            Spam Apps
+          <Text className="text-center text-[10px] text-textMuted font-sans">
+            Possible Spam
           </Text>
         </View>
         <View className="flex-1 items-center rounded-2xl border border-border bg-surfaceHigh/80 p-3">
-          <ShieldAlert color="#F59E0B" size={16} />
+          <ShieldCheck color="#22C55E" size={16} />
           <Text className="mt-2 text-lg font-bold text-textPrimary font-sans">
-            {suspiciousApps}
+            {normalCount}
           </Text>
-          <Text className="text-[10px] text-textMuted font-sans">
-            Suspicious
-          </Text>
+          <Text className="text-[10px] text-textMuted font-sans">Normal</Text>
         </View>
         <View className="flex-1 items-center rounded-2xl border border-border bg-surfaceHigh/80 p-3">
           <BellDot color="#5B6A8C" size={16} />
           <Text className="mt-2 text-lg font-bold text-textPrimary font-sans">
-            {totalNotifs}
+            {totalObserved}
           </Text>
-          <Text className="text-[10px] text-textMuted font-sans">
-            Total Notifs
-          </Text>
+          <Text className="text-[10px] text-textMuted font-sans">Observed</Text>
         </View>
       </View>
 
-      {/* Progress bar showing proportion of notifications by category */}
       <View
-        className="h-1.5 flex-row rounded-full overflow-hidden"
-        style={{ gap: 2 }}
+        accessibilityLabel={`${possibleSpamCount} possible spam notifications, ${normalCount} normal notifications, ${skippedCount} skipped notifications, ${awaitingAnalysisCount} awaiting analysis, ${analysisErrorCount} analysis errors`}
+        className="h-1.5 flex-row overflow-hidden rounded-full bg-surfaceHigh"
+        style={{ gap: totalObserved > 0 ? 2 : 0 }}
       >
-        <View style={{ flex: spamNotifs, backgroundColor: "#FF375F" }} />
-        <View style={{ flex: suspiciousNotifs, backgroundColor: "#F59E0B" }} />
-        <View style={{ flex: normalNotifs, backgroundColor: "#5B6A8C" }} />
+        {possibleSpamCount > 0 && (
+          <View style={{ flex: possibleSpamCount, backgroundColor: "#FF375F" }} />
+        )}
+        {normalCount > 0 && (
+          <View style={{ flex: normalCount, backgroundColor: "#22C55E" }} />
+        )}
+        {skippedCount > 0 && (
+          <View style={{ flex: skippedCount, backgroundColor: "#5B6A8C" }} />
+        )}
+        {awaitingAnalysisCount > 0 && (
+          <View
+            style={{ flex: awaitingAnalysisCount, backgroundColor: "#58D6FF" }}
+          />
+        )}
+        {analysisErrorCount > 0 && (
+          <View
+            style={{ flex: analysisErrorCount, backgroundColor: "#F59E0B" }}
+          />
+        )}
       </View>
+
+      <Text className="text-[11px] leading-5 text-textMuted font-sans">
+        {skippedCount} skipped service/status | {awaitingAnalysisCount} awaiting
+        analysis | {analysisErrorCount} analysis {analysisErrorCount === 1 ? "error" : "errors"}
+      </Text>
     </View>
   );
 }

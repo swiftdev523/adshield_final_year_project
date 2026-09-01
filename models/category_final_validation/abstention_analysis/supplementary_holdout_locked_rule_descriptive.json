@@ -1,0 +1,14 @@
+{
+  "status": "descriptive_only_not_clean_v2_evaluation",
+  "threshold_search_on_holdout": false,
+  "locked_margin_applied": 0.7,
+  "sample_count": 196,
+  "accepted_count": 124,
+  "rejected_count": 72,
+  "coverage": 0.6326530612244898,
+  "accepted_accuracy": 0.9758064516129032,
+  "accepted_macro_precision": 0.972608665559247,
+  "input_path": "models/category_final_validation/category_validation/final_evaluation/final_predictions.csv",
+  "input_sha256": "ba667b42e6f1fccc2f5714c0af3f664d0ebe1cb9623b5369f55d2ee9d8ca62fd",
+  "warning": "This 196-sample holdout was consumed previously and did not influence the threshold or locked rule. Results are descriptive only."
+}

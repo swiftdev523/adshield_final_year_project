@@ -1,0 +1,23 @@
+{
+  "static_rows": 11598,
+  "static_columns": 50621,
+  "exported_row_index_removed": true,
+  "final_feature_count": 153,
+  "source_permission_columns_before_or": 309,
+  "single_source_features": 11,
+  "multi_source_features": 142,
+  "ordered_feature_list_sha256": "7aecf3b202c88d707e458a3705b4e3a326a9ee062c9b1e0f209a6b9a5c087c34",
+  "cross_label_package_count": 18,
+  "cross_label_rows_removed_all_classes": 264,
+  "clean_malicious_rows": 9543,
+  "clean_malicious_counts": {
+    "Adware": 1250,
+    "Banking Malware": 2037,
+    "SMS Malware": 3757,
+    "Riskware": 2499
+  },
+  "benign_samples_used": 0,
+  "dynamic_input_features_used": false,
+  "label_alignment_assumption": "feature_vectors_static.csv contains no label or hash. Labels are attached by row position because the static matrix and both accompanying 5-category files have exactly 11,598 rows, both Class vectors match row-for-row, and their contiguous class runs exactly match the category counts and order published for CICMalDroid 2020. This is strong positional evidence, not an independently keyed hash join.",
+  "package_is_model_feature": false
+}

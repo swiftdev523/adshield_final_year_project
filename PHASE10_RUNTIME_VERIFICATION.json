@@ -1,0 +1,223 @@
+{
+  "captured_on": "2026-08-11",
+  "backend_url": "http://127.0.0.1:8000",
+  "backend_health": "ok",
+  "whatsapp_installed_app": {
+    "source": "connected Infinix X683 PackageManager via adb dumpsys",
+    "package": "com.whatsapp",
+    "install_source": "google_play_store",
+    "install_source_display": "Google Play Store",
+    "submitted_permission_count": 85,
+    "submitted_permissions": [
+      "android.permission.RECEIVE_SMS",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.VIBRATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.DETECT_SCREEN_CAPTURE",
+      "android.permission.INTERNET",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.BLUETOOTH",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.NEARBY_WIFI_DEVICES",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.READ_PHONE_NUMBERS",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_CAMERA",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+      "android.permission.FOREGROUND_SERVICE_PHONE_CALL",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "com.android.vending.BILLING",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.MANAGE_OWN_CALLS",
+      "android.permission.CALL_PHONE",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "android.permission.DETECT_SCREEN_RECORDING",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.ACCESS_MEDIA_LOCATION",
+      "android.permission.BROADCAST_STICKY",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE_LOCATION",
+      "android.permission.GET_TASKS",
+      "android.permission.INSTALL_SHORTCUT",
+      "android.permission.MANAGE_ACCOUNTS",
+      "android.permission.NFC",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_BASIC_PHONE_STATE",
+      "android.permission.READ_PROFILE",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.READ_SYNC_STATS",
+      "android.permission.SEND_SMS",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.USE_FULL_SCREEN_INTENT",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.android.launcher.permission.UNINSTALL_SHORTCUT",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.google.android.gms.permission.AD_ID",
+      "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "com.sec.android.provider.badge.permission.READ",
+      "com.sec.android.provider.badge.permission.WRITE",
+      "com.htc.launcher.permission.READ_SETTINGS",
+      "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "com.whatsapp.permission.BROADCAST",
+      "com.whatsapp.permission.MAPS_RECEIVE",
+      "com.whatsapp.permission.REGISTRATION",
+      "com.whatsapp.sticker.READ",
+      "android.permission.ANSWER_PHONE_CALLS",
+      "android.permission.READ_CALL_LOG",
+      "android.permission.RUN_USER_INITIATED_JOBS",
+      "com.facebook.services.identity.FEO2",
+      "com.whatsapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "matched_model_feature_count": 46,
+    "model_feature_count": 241,
+    "inactive_model_feature_count": 195,
+    "binary_input_contract": "partial",
+    "binary_feature_coverage": {
+      "expected": 241,
+      "available": 208,
+      "missing": 33,
+      "static_api_features_available": 0,
+      "matched_current_input": 46
+    },
+    "normalization_collisions": [
+      {
+        "normalized_token": "INSTALL_SHORTCUT",
+        "original_permissions": [
+          "android.permission.INSTALL_SHORTCUT",
+          "com.android.launcher.permission.INSTALL_SHORTCUT"
+        ],
+        "affects_model_feature": true
+      },
+      {
+        "normalized_token": "READ",
+        "original_permissions": [
+          "com.sec.android.provider.badge.permission.READ",
+          "com.whatsapp.sticker.READ"
+        ],
+        "affects_model_feature": true
+      },
+      {
+        "normalized_token": "READ_SETTINGS",
+        "original_permissions": [
+          "com.htc.launcher.permission.READ_SETTINGS",
+          "com.huawei.android.launcher.permission.READ_SETTINGS"
+        ],
+        "affects_model_feature": true
+      }
+    ],
+    "model_prediction": "Benign",
+    "malware_probability": 0.4,
+    "permission_risk_score": 40,
+    "permission_risk_level": "Suspicious",
+    "source_risk_points": 0,
+    "overall_risk_score": 40,
+    "overall_risk_level": "Suspicious",
+    "recommendation": "Permission Review Recommended: The declared-permission model did not indicate malware. Review the highlighted sensitive permissions, confirm that they match the app's purpose, and verify any install-source uncertainty.",
+    "final_explanation": "The declared-permission model did not classify this app as malware. Its permission profile produced a moderate review score (40/100), so reviewing sensitive permissions is recommended. Google Play Store added no contextual risk points. This result is not evidence that the app is malware, and it is not a guarantee that the app is safe.",
+    "threat_assessment": null
+  },
+  "known_banking_apk": {
+    "dataset_label": "Banking",
+    "filename": "04205e4d6749cca28254aff8a36043ad47a08e4f131aaf6f8339803af5aba4f2.apk",
+    "sha256": "04205e4d6749cca28254aff8a36043ad47a08e4f131aaf6f8339803af5aba4f2",
+    "package": "com.mix.kr",
+    "permissions_detected": 23,
+    "matched_model_feature_count": 23,
+    "binary_input_contract": "partial",
+    "binary_feature_coverage": {
+      "expected": 241,
+      "available": 208,
+      "missing": 33,
+      "static_api_features_available": 0,
+      "matched_current_input": 23
+    },
+    "model_prediction": "Malicious",
+    "malware_probability": 0.56,
+    "permission_risk_score": 56,
+    "permission_risk_level": "Suspicious",
+    "source_risk_points": 20,
+    "overall_risk_score": 76,
+    "overall_risk_level": "High Risk",
+    "recommendation": "Avoid installing, or remove the app, unless its publisher and permission needs can be independently verified.",
+    "final_explanation": "Overall risk is High Risk (76/100). The combined assessment found significant indicators that require caution. APK sideload adds contextual uncertainty about the app's provenance; the install source alone is not evidence that the app is malware.",
+    "threat_assessment": {
+      "status": "classified",
+      "likely_category": "Banking Malware",
+      "supported_categories": [
+        "Adware",
+        "Banking Malware",
+        "SMS Malware",
+        "Riskware"
+      ],
+      "method": "selective_category_classification"
+    },
+    "category_diagnostics": {
+      "top_score": 0.9925,
+      "second_score": 0.0075,
+      "margin": 0.9850000000000001,
+      "threshold": 0.7,
+      "matched_category_feature_count": 22
+    }
+  },
+  "category_all_zero_fixture": {
+    "model_inference_called": false,
+    "threat_assessment": {
+      "status": "uncertain",
+      "likely_category": null,
+      "supported_categories": [
+        "Adware",
+        "Banking Malware",
+        "SMS Malware",
+        "Riskware"
+      ],
+      "method": "selective_category_classification",
+      "message": "The app does not contain enough supported permission evidence to assign a threat category."
+    },
+    "diagnostics": {
+      "reason": "no_supported_category_features",
+      "matched_category_feature_count": 0
+    }
+  },
+  "minimal_benign_sideload_fixture": {
+    "submitted_permissions": [
+      "android.permission.INTERNET"
+    ],
+    "model_prediction": "Benign",
+    "malware_probability": 0.0,
+    "permission_risk_score": 0,
+    "permission_risk_level": "Safe",
+    "source_risk_points": 20,
+    "overall_risk_score": 20,
+    "overall_risk_level": "Safe",
+    "source_explanation": "Reported as installed by sideloading an APK. This can make publisher and origin verification harder, adding contextual uncertainty; sideloading alone is not evidence that the app is malware.",
+    "final_explanation": "The declared-permission model did not classify this app as malware. Its permission profile produced a low review score (0/100). APK sideload added 20 contextual risk points because the app's provenance is harder to verify; this adjustment is not evidence that the app is malware. The combined review score is 20/100. This result is not evidence that the app is malware, and it is not a guarantee that the app is safe.",
+    "threat_assessment": null
+  }
+}

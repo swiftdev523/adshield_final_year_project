@@ -1,0 +1,36 @@
+{
+  "status": "verified_positional_invariants_with_documented_assumption",
+  "static_rows_expected": 11598,
+  "class_vectors_identical": true,
+  "expected_and_observed_class_runs": {
+    "1": {
+      "name": "Adware",
+      "rows": 1253
+    },
+    "2": {
+      "name": "Banking Malware",
+      "rows": 2100
+    },
+    "3": {
+      "name": "SMS Malware",
+      "rows": 3904
+    },
+    "4": {
+      "name": "Riskware",
+      "rows": 2546
+    },
+    "5": {
+      "name": "Benign",
+      "rows": 1795
+    }
+  },
+  "dynamic_input_features_used": false,
+  "class_columns_only": true,
+  "assumption": "feature_vectors_static.csv contains no label or hash. Labels are attached by row position because the static matrix and both accompanying 5-category files have exactly 11,598 rows, both Class vectors match row-for-row, and their contiguous class runs exactly match the category counts and order published for CICMalDroid 2020. This is strong positional evidence, not an independently keyed hash join.",
+  "official_reference": "https://www.unb.ca/cic/datasets/maldroid-2020.html",
+  "exported_static_index_exact_0_to_11597": true,
+  "raw_apk_hash_conflicts_not_linkable_to_static_rows": [
+    "00847524ec1e69b2cdd53205cd9725295e87094eeed1567b3efb12191ded24d2",
+    "97bfb35785c155686de96095e3c87e243e0fdcd37976e7c7254e48f66c75d1c5"
+  ]
+}

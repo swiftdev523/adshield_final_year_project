@@ -1,0 +1,25 @@
+# Backend dependencies for the Android Adware Detection and Prevention System.
+
+# --- API service (scoring layer) ---
+fastapi==0.136.3
+uvicorn[standard]==0.49.0
+pydantic==2.13.4
+python-multipart==0.0.32
+
+# --- ML runtime (loading and running final_model.joblib) ---
+scikit-learn==1.6.1
+pandas==3.0.1
+numpy==1.26.4
+
+# --- APK Analysis Mode (permission extraction) ---
+# Parses an APK and its binary AndroidManifest.xml to read declared permissions.
+pyaxmlparser==0.3.31
+
+# Loads the feature-column contract (models/feature_columns.joblib) so the
+# extractor emits a vector matching the model's training columns. (Schema only;
+# the ML model itself is not invoked by the extraction module.)
+joblib==1.5.3
+
+# Optional, more full-featured APK parser. pyaxmlparser already covers
+# permission extraction; uncomment if deeper manifest analysis is needed later.
+# androguard>=3.4.0

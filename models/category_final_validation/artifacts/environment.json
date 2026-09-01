@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22000-SP0",
+  "scikit_learn": "1.6.1",
+  "scipy": "1.17.1",
+  "numpy": "1.26.4",
+  "pandas": "3.0.1",
+  "joblib": "1.5.3",
+  "required_scikit_learn": "1.6.1",
+  "exact_version_match": true
+}
