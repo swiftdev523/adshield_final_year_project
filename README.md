@@ -2,7 +2,16 @@
 
 **AI-Powered Mobile Security & Privacy Protection**
 
-AdShield is a React Native mobile application built with Expo that helps users protect their Android devices from adware, spam notifications, and potentially dangerous applications. The app provides comprehensive APK scanning, real-time notification monitoring, and intelligent risk assessment powered by AI.
+AdShield is a full-stack mobile security system consisting of a React Native (Expo) frontend and a Python (FastAPI) backend powered by machine learning. It helps users protect their Android devices from adware, spam notifications, and potentially dangerous applications — providing comprehensive APK scanning, real-time notification monitoring, and intelligent risk assessment.
+
+---
+
+## 👥 Team & Attribution
+
+| Contributor | GitHub | Role |
+|---|---|---|
+| **Swift Dev** | [@swiftdev523](https://github.com/swiftdev523) | Frontend — React Native app, UI/UX, state management, native modules, frontend tests |
+| **Terry Mensah Pepra** | [@Terrypepra](https://github.com/Terrypepra) | Backend — FastAPI server, ML model training & validation, APK analysis engine, backend tests |
 
 ---
 
@@ -187,12 +196,18 @@ Currently, the app uses mock data for demonstration purposes:
 - Pre-configured app rankings
 - Example activity feed items
 
+### **Backend & ML (Completed)**
+✅ FastAPI REST API server (`backend/`)  
+✅ APK permission extraction and feature engineering  
+✅ ML model training pipeline (`final_train.py`, `models/`)  
+✅ Notification spam classification model  
+✅ Category classification with abstention logic  
+✅ Risk score computation service  
+✅ APK upload & analysis endpoint  
+✅ Backend regression & unit tests (`tests_backend/`)  
+
 ### **Future Enhancements**
-🔄 Real APK file analysis integration  
-🔄 Actual notification monitoring implementation  
-🔄 Backend API integration for AI-powered analysis  
 🔄 User authentication and cloud sync  
-🔄 Historical data and trend analysis  
 🔄 Export scan reports  
 🔄 Scheduled automatic scans  
 🔄 Whitelist/blacklist management  
